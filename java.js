@@ -219,6 +219,16 @@ function getplayernumber() {
         });
     }
   }
-    var test = fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vSWpkVgP8kZvSW-uAyznifIDcgRzT7BHZVwlEWr7zSKTyDRTLZCah_YDnhB6fYvwzQhmAXJ6eQoNS6m/pub?outputjson')
- 
-   console.log(test)
+  fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vSWpkVgP8kZvSW-uAyznifIDcgRzT7BHZVwlEWr7zSKTyDRTLZCah_YDnhB6fYvwzQhmAXJ6eQoNS6m/pub?output=json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok: ' + response.statusText);
+    }
+    return response.json(); // Parses the JSON from the response
+  })
+  .then(data => {
+    console.log(data); // Logs the actual data
+  })
+  .catch(error => {
+    console.error('There was a problem with the fetch operation:', error);
+  });
