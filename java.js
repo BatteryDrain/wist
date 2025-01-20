@@ -1,7 +1,7 @@
 let NUMBER_OF_USERS;
-let P1P = 9;
-let P2P = 8;
-let P3P = 1;
+let P1P = 0;
+let P2P = 0;
+let P3P = 0;
 let P4P = 0;
 let P5P = 0;
 let P6P = 0;
@@ -219,8 +219,21 @@ function getplayernumber() {
         });
     }
   }
-
-  fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vSWpkVgP8kZvSW-uAyznifIDcgRzT7BHZVwlEWr7zSKTyDRTLZCah_YDnhB6fYvwzQhmAXJ6eQoNS6m/pubhtml')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error('Error:', error));
+  var url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWpkVgP8kZvSW-uAyznifIDcgRzT7BHZVwlEWr7zSKTyDRTLZCah_YDnhB6fYvwzQhmAXJ6eQoNS6m/pub?output=json';
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok ' + response.statusText);
+      }
+      return response.json(); // Parse JSON if the response is valid
+    })
+    .then(data => {
+      console.log(data); // Successfully fetched and parsed JSON
+    })
+    .catch(error => {
+      console.error('Error fetching data:', error);
+    });
+  
+//   var test = fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vSWpkVgP8kZvSW-uAyznifIDcgRzT7BHZVwlEWr7zSKTyDRTLZCah_YDnhB6fYvwzQhmAXJ6eQoNS6m/pub?outputjson')
+ 
+//   console.log(test)
