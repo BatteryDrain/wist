@@ -1,0 +1,13 @@
+input{
+    display: none;
+}
+#savenames{
+    display: none;
+}
+#note{
+    display:none;
+}
+.color{
+    border: none;
+    background-color: white;
+}

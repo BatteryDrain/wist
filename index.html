@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>Wist graph</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+   <main>
+    <label id="playernumberlabel" for="player#" class="player number select">number of players:</label>
+    <select id="player#" class="player number select">
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+    </select>
+    <button id="sibmitbutton" onclick="getplayernumber()" class="player number select">submit</button>
+
+    <input id="player1n" placeholder="player 1">
+    <input class="color" id="player1c" type="color" value="#ff0000">
+
+    <input id="player2n" placeholder="player 2">
+    <input class="color" id="player2c" type="color" value="#00ff00">
+
+    <input id="player3n" placeholder="player 3">
+    <input class="color" id="player3c" type="color" value="#0000ff">
+
+    <input id="player4n" placeholder="player 4">
+    <input class="color" id="player4c" type="color" value="#9d00ff">
+
+    <input id="player5n" placeholder="player 5">
+    <input class="color" id="player5c" type="color" value="#00fbff">
+
+    <input id="player6n" placeholder="player 6">
+    <input class="color" id="player6c" type="color" value="#ff00ea">
+
+    <input id="player7n" placeholder="player 7">
+    <input class="color" id="player7c" type="color" value="#ffa500">
+
+    <input id="player8n" placeholder="player 8">
+    <input class="color" id="player8c" type="color" value="#ffff00">
+
+    <button id="savenames" onclick="savenames()">save</button>
+
+    <p id="note">note: each player gets delt __ cards</p>
+
+    <div>
+        <canvas id="bar_chart"></canvas>
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+   </main>
+   <script src="java.js"></script>
+  </body>
+
+  <!-- font stacking -->
+  <!-- image compression -->
+   <!-- use variant fonts -->
+    <!-- press download font so you have it -->
+     <!-- font sqrierl, google fonts -->
+
+<!-- Databases
+ Entities = names
+ Attributes = holds data relating to an entity link phonenumbers 
+ relationships = how data relates to other data-->
+<!-- host gator.com
+ docard
+ digital ocean
+ zoho sheets-->
+ <!-- ?nearly free speack.net -->
+  <!-- change -->
