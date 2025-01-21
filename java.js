@@ -6,7 +6,7 @@ let P4P = 0;
 let P5P = 0;
 let P6P = 0;
 let P7P = 0;
-let P8P = 0;
+let P8P = 0; 
 
 function getplayernumber() {
     // Get the select element by its ID
@@ -85,7 +85,18 @@ function getplayernumber() {
     console.log(player1color); //test
 
     console.log(NUMBER_OF_USERS);
-    
+    fetch(player1name, player2name, player3name, player4name, player5name, player6name, player7name, player8name);
+  }
+  function fetch(player1name, player2name, player3name, player4name, player5name, player6name, player7name, player8name)  {
+  const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWpkVgP8kZvSW-uAyznifIDcgRzT7BHZVwlEWr7zSKTyDRTLZCah_YDnhB6fYvwzQhmAXJ6eQoNS6m/pub?output=csv';
+  fetch(url)
+    .then(response => response.text())
+    .then(data => {
+      console.log(data);  // CSV data as a string
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
     if(NUMBER_OF_USERS==3){
         const ctx = document.getElementById('bar_chart');
     
@@ -219,16 +230,3 @@ function getplayernumber() {
         });
     }
   }
-  const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWpkVgP8kZvSW-uAyznifIDcgRzT7BHZVwlEWr7zSKTyDRTLZCah_YDnhB6fYvwzQhmAXJ6eQoNS6m/pub?output=csv';
-  fetch(url)
-    .then(response => response.text())
-    .then(data => {
-      console.log(data);  // CSV data as a string
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
-
-    function setup8()   {
-
-    }
