@@ -7,14 +7,14 @@ let P5P = 0;
 let P6P = 0;
 let P7P = 0;
 let P8P = 0;
-csvData = `name,points
+DARRAYEX = `name,points
 John,25
 Alice,30
 Bob,22`;
-data = "no values,";
+DATA = "no values,";
 
 
-array = csvToArray(csvData);
+ARRAY = ["none",];
 
 sibmitbutton.addEventListener("click", function(){
     getplayernumber();
@@ -112,19 +112,17 @@ savenames.addEventListener("click", function(){
   fetch(url)
     .then(response => response.text())
     .then(data => {
-      console.log("data = "+data);  // CSV data as a string
+      console.log("data = "+DATA);  // CSV data as a string
     })
     .catch(error => {
       console.error('Error:', error);
      });
-
-
   }
 
   set.addEventListener("click", function(){
-     //array = csvToArray(data);
-     csvToArray(data);
-     console.log("array = "+array);
+     //array = ARRAYEX(DATA);
+     csvToArray(DATA);
+    //  console.log("ARRAY = "+ARRAY);
   });
 
 // function csvToArray(csvString) {
@@ -140,7 +138,7 @@ function csvToArray(csvString) {
         }
         else {
             console.log("csvString" + i + "=" + temp);
-            array.push(temp);
+            ARRAY.push(temp);
         }
     }
 }
