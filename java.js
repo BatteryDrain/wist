@@ -118,7 +118,8 @@ savenames.addEventListener("click", function(){
       console.error('Error:', error);
      });
 
-     array = csvToArray(data);
+     //array = csvToArray(data);
+     csvToArray(data);
      console.log("array = "+array);
   }
 
@@ -135,6 +136,7 @@ function csvToArray(csvString) {
         }
         else {
             console.log("csvString" + i + "=" + temp);
+            array.push(temp);
         }
     }
 }
