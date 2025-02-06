@@ -118,10 +118,14 @@ savenames.addEventListener("click", function(){
       console.error('Error:', error);
      });
 
+
+  }
+
+  set.addEventListener("click", function(){
      //array = csvToArray(data);
      csvToArray(data);
      console.log("array = "+array);
-  }
+  });
 
 // function csvToArray(csvString) {
 // const rows = csvString.split("\n"); // Split by line
