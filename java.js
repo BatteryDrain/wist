@@ -8,6 +8,10 @@ let P6P = 0;
 let P7P = 0;
 let P8P = 0; 
 
+sibmitbutton.addEventListener("click", function(){
+    getplayernumber();
+  });
+  
 function getplayernumber() {
     // Get the select element by its ID
     var selectElement = document.getElementById('player#');
@@ -55,8 +59,11 @@ function getplayernumber() {
     NUMBER_OF_USERS = selectedValue;
   }
 
+savenames.addEventListener("click", function(){
+  savingnames();
+});
 
-  function savenames()  {
+  function savingnames()  {
     var player1name = document.getElementById('player1n').value;
     var player1color = document.getElementById('player1c').value;
 
