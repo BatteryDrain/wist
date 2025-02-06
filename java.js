@@ -142,4 +142,5 @@ function csvToArray(csvString) {
             temp = "";
         }
     }
+    console.log(ARRAY);
 }
