@@ -12,6 +12,8 @@ John,25,New York
 Alice,30,Los Angeles
 Bob,22,Chicago`;
 
+array = csvToArray(csvData);
+
 sibmitbutton.addEventListener("click", function(){
     getplayernumber();
   });
@@ -251,6 +253,8 @@ function csvToArray(csvString) {
 const rows = csvString.split("\n"); // Split by line
 return rows.map(row => row.split(",")); // Split each row by comma
 
-const array = csvToArray(csvData);
 console.log(array);
 }
+
+
+
