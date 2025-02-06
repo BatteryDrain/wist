@@ -139,6 +139,7 @@ function csvToArray(csvString) {
         else {
             console.log("csvString" + i + "=" + temp);
             ARRAY.push(temp);
+            temp = "";
         }
     }
 }
