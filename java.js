@@ -111,7 +111,7 @@ savenames.addEventListener("click", function(){
   fetch(url)
     .then(response => response.text())
     .then(data => {
-      console.log("data"+data);  // CSV data as a string
+      console.log("data = "+data);  // CSV data as a string
     })
     .catch(error => {
       console.error('Error:', error);
@@ -124,7 +124,7 @@ const rows = csvString.split("\n"); // Split by line
 return rows.map(row => row.split(",")); // Split each row by comma
 
 array = csvToArray(csvData);
-console.log(array);
+console.log("array = "+array);
 }
 
 
