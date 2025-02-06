@@ -223,7 +223,6 @@ function getplayernumber() {
     }
   }
 
-
   function gofetch()  {
   const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWpkVgP8kZvSW-uAyznifIDcgRzT7BHZVwlEWr7zSKTyDRTLZCah_YDnhB6fYvwzQhmAXJ6eQoNS6m/pub?output=csv';
   fetch(url)
@@ -234,7 +233,7 @@ function getplayernumber() {
     .catch(error => {
       console.error('Error:', error);
      });
-     csvToArray();
+     csvToArray(data);
   }
   function csvToArray(csvString) {
     const rows = csvString.split("\n"); // Split by line
