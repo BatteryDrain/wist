@@ -11,6 +11,7 @@ csvData = `name,age,city
 John,25,New York
 Alice,30,Los Angeles
 Bob,22,Chicago`;
+data = "";
 
 array = csvToArray(csvData);
 
@@ -102,142 +103,11 @@ savenames.addEventListener("click", function(){
     console.log(NUMBER_OF_USERS);
     gofetch();
     // player1name, player2name, player3name, player4name, player5name, player6name, player7name, player8name
-    if(NUMBER_OF_USERS==3){
-        const ctx = document.getElementById('bar_chart');
-    
-        new Chart(ctx, {
-          type: 'bar',
-          data: {
-            labels: [player1name, player2name, player3name],
-            datasets: [{
-              label: 'points',
-              data: [P1P, P2P, P3P, P4P, P5P, P6P, P7P, P8P],
-              borderWidth: 1
-            }]
-          },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true
-              }
-            }
-          }
-        });
-    }
-    if(NUMBER_OF_USERS==4){
-        const ctx = document.getElementById('bar_chart');
-    
-        new Chart(ctx, {
-          type: 'bar',
-          data: {
-            labels: [player1name, player2name, player3name, player4name],
-            datasets: [{
-              label: 'points',
-              data: [P1P, P2P, P3P, P4P, P5P, P6P, P7P, P8P],
-              borderWidth: 1
-            }]
-          },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true
-              }
-            }
-          }
-        });
-    }
-    if(NUMBER_OF_USERS==5){
-        const ctx = document.getElementById('bar_chart');
-    
-        new Chart(ctx, {
-          type: 'bar',
-          data: {
-            labels: [player1name, player2name, player3name, player4name, player5name],
-            datasets: [{
-              label: 'points',
-              data: [P1P, P2P, P3P, P4P, P5P, P6P, P7P, P8P],
-              borderWidth: 1
-            }]
-          },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true
-              }
-            }
-          }
-        });
-    }
-    if(NUMBER_OF_USERS==6){
-        const ctx = document.getElementById('bar_chart');
-    
-        new Chart(ctx, {
-          type: 'bar',
-          data: {
-            labels: [player1name, player2name, player3name, player4name, player5name, player6name],
-            datasets: [{
-              label: 'points',
-              data: [P1P, P2P, P3P, P4P, P5P, P6P, P7P, P8P],
-              borderWidth: 1
-            }]
-          },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true
-              }
-            }
-          }
-        });
-    }
-    if(NUMBER_OF_USERS==7){
-        const ctx = document.getElementById('bar_chart');
-    
-        new Chart(ctx, {
-          type: 'bar',
-          data: {
-            labels: [player1name, player2name, player3name, player4name, player5name, player6name, player7name],
-            datasets: [{
-              label: 'points',
-              data: [P1P, P2P, P3P, P4P, P5P, P6P, P7P, P8P],
-              borderWidth: 1
-            }]
-          },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true
-              }
-            }
-          }
-        });
-    }
-    if(NUMBER_OF_USERS==8){
-        const ctx = document.getElementById('bar_chart');
-    
-        new Chart(ctx, {
-          type: 'bar',
-          data: {
-            labels: [player1name, player2name, player3name, player4name, player5name, player6name, player7name, player8name],
-            datasets: [{
-              label: 'points',
-              data: [P1P, P2P, P3P, P4P, P5P, P6P, P7P, P8P],
-              borderWidth: 1
-            }]
-          },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true
-              }
-            }
-          }
-        });
-    }
   }
 
   function gofetch()  {
   const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWpkVgP8kZvSW-uAyznifIDcgRzT7BHZVwlEWr7zSKTyDRTLZCah_YDnhB6fYvwzQhmAXJ6eQoNS6m/pub?output=csv';
+  
   fetch(url)
     .then(response => response.text())
     .then(data => {
