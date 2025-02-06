@@ -6,7 +6,11 @@ let P4P = 0;
 let P5P = 0;
 let P6P = 0;
 let P7P = 0;
-let P8P = 0; 
+let P8P = 0;
+csvData = `name,age,city
+John,25,New York
+Alice,30,Los Angeles
+Bob,22,Chicago`;
 
 sibmitbutton.addEventListener("click", function(){
     getplayernumber();
@@ -242,16 +246,11 @@ savenames.addEventListener("click", function(){
      });
      csvToArray(data);
   }
-  function csvToArray(csvString) {
-    const rows = csvString.split("\n"); // Split by line
-    return rows.map(row => row.split(",")); // Split each row by comma
-}
 
-// Example CSV string
-const csvData = `name,age,city
-John,25,New York
-Alice,30,Los Angeles
-Bob,22,Chicago`;
+function csvToArray(csvString) {
+const rows = csvString.split("\n"); // Split by line
+return rows.map(row => row.split(",")); // Split each row by comma
 
 const array = csvToArray(csvData);
 console.log(array);
+}
