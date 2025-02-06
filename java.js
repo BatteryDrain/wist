@@ -111,7 +111,7 @@ savenames.addEventListener("click", function(){
   
   fetch(url)
     .then(response => response.text())
-    .then(data => {
+    .then(DATA => {
       console.log("DATA = "+DATA);  // CSV data as a string
     })
     .catch(error => {
