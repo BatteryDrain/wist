@@ -89,6 +89,138 @@ function getplayernumber() {
     console.log(NUMBER_OF_USERS);
     gofetch();
     // player1name, player2name, player3name, player4name, player5name, player6name, player7name, player8name
+    if(NUMBER_OF_USERS==3){
+        const ctx = document.getElementById('bar_chart');
+    
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: [player1name, player2name, player3name],
+            datasets: [{
+              label: 'points',
+              data: [P1P, P2P, P3P, P4P, P5P, P6P, P7P, P8P],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+    }
+    if(NUMBER_OF_USERS==4){
+        const ctx = document.getElementById('bar_chart');
+    
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: [player1name, player2name, player3name, player4name],
+            datasets: [{
+              label: 'points',
+              data: [P1P, P2P, P3P, P4P, P5P, P6P, P7P, P8P],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+    }
+    if(NUMBER_OF_USERS==5){
+        const ctx = document.getElementById('bar_chart');
+    
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: [player1name, player2name, player3name, player4name, player5name],
+            datasets: [{
+              label: 'points',
+              data: [P1P, P2P, P3P, P4P, P5P, P6P, P7P, P8P],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+    }
+    if(NUMBER_OF_USERS==6){
+        const ctx = document.getElementById('bar_chart');
+    
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: [player1name, player2name, player3name, player4name, player5name, player6name],
+            datasets: [{
+              label: 'points',
+              data: [P1P, P2P, P3P, P4P, P5P, P6P, P7P, P8P],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+    }
+    if(NUMBER_OF_USERS==7){
+        const ctx = document.getElementById('bar_chart');
+    
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: [player1name, player2name, player3name, player4name, player5name, player6name, player7name],
+            datasets: [{
+              label: 'points',
+              data: [P1P, P2P, P3P, P4P, P5P, P6P, P7P, P8P],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+    }
+    if(NUMBER_OF_USERS==8){
+        const ctx = document.getElementById('bar_chart');
+    
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: [player1name, player2name, player3name, player4name, player5name, player6name, player7name, player8name],
+            datasets: [{
+              label: 'points',
+              data: [P1P, P2P, P3P, P4P, P5P, P6P, P7P, P8P],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+    }
   }
 
 
@@ -102,4 +234,18 @@ function getplayernumber() {
     .catch(error => {
       console.error('Error:', error);
      });
+     csvToArray();
   }
+  function csvToArray(csvString) {
+    const rows = csvString.split("\n"); // Split by line
+    return rows.map(row => row.split(",")); // Split each row by comma
+}
+
+// Example CSV string
+const csvData = `name,age,city
+John,25,New York
+Alice,30,Los Angeles
+Bob,22,Chicago`;
+
+const array = csvToArray(csvData);
+console.log(array);
