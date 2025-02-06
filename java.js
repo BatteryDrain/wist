@@ -253,6 +253,7 @@ function csvToArray(csvString) {
 const rows = csvString.split("\n"); // Split by line
 return rows.map(row => row.split(",")); // Split each row by comma
 
+array = csvToArray(csvData);
 console.log(array);
 }
 
