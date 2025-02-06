@@ -10,7 +10,6 @@ let P8P = 0;
 
 sibmitbutton.addEventListener("click", function(){
     getplayernumber();
-    document.getElementById("sibmitbutton").innerHTML = "The Problem";
   });
 
 function getplayernumber() {
