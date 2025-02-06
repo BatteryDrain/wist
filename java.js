@@ -10,8 +10,9 @@ let P8P = 0;
 
 sibmitbutton.addEventListener("click", function(){
     getplayernumber();
+    document.getElementById("sibmitbutton").innerHTML = "The Problem";
   });
-  
+
 function getplayernumber() {
     // Get the select element by its ID
     var selectElement = document.getElementById('player#');
