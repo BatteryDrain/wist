@@ -13,6 +13,7 @@ Alice,30
 Bob,22`;
 data = "no values,";
 
+
 array = csvToArray(csvData);
 
 sibmitbutton.addEventListener("click", function(){
@@ -117,14 +118,13 @@ savenames.addEventListener("click", function(){
       console.error('Error:', error);
      });
      csvToArray(data);
+     array = csvToArray(csvData);
+     console.log("array = "+array);
   }
 
 function csvToArray(csvString) {
 const rows = csvString.split("\n"); // Split by line
 return rows.map(row => row.split(",")); // Split each row by comma
-
-array = csvToArray(csvData);
-console.log("array = "+array);
 }
 
 
