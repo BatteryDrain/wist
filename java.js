@@ -14,7 +14,7 @@ Bob,22`;
 DATA = "no values,";
 
 
-ARRAY = ["names","points"];
+ARRAY = [0], [1];
 
 sibmitbutton.addEventListener("click", function(){
     getplayernumber();
@@ -112,7 +112,7 @@ savenames.addEventListener("click", function(){
   fetch(url)
     .then(response => response.text())
     .then(DATA => {
-      console.log("DATA = "+DATA);  // CSV data as a string
+      console.log("DATA = " + DATA);  // CSV data as a string
     })
     .catch(error => {
       console.error('Error:', error);
