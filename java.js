@@ -7,14 +7,14 @@ let P5P = 0;
 let P6P = 0;
 let P7P = 0;
 let P8P = 0;
-DARRAYEX = `name,points
+ARRAYEX = `name,points
 John,25
 Alice,30
 Bob,22`;
 var DATA = "no values,";
 
 
-ARRAY = [name, points,];
+ARRAY = ["name", "points",];
 
 sibmitbutton.addEventListener("click", function(){
     getplayernumber();
