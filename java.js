@@ -102,7 +102,7 @@ savenames.addEventListener("click", function(){
     console.log(player1color); //test
 
     console.log(NUMBER_OF_USERS);
-    gofetch();
+   // gofetch();
     // player1name, player2name, player3name, player4name, player5name, player6name, player7name, player8name
   }
 
