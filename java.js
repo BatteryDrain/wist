@@ -13,7 +13,7 @@ Alice,30
 Bob,22`;
 var DATA = "no values,";
 
-
+/* */
 ARRAY = ["name", "points",];
 
 sibmitbutton.addEventListener("click", function(){
