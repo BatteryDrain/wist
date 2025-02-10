@@ -102,28 +102,27 @@ savenames.addEventListener("click", function(){
     console.log(player1color); //test
 
     console.log(NUMBER_OF_USERS);
-   // gofetch();
     // player1name, player2name, player3name, player4name, player5name, player6name, player7name, player8name
   }
 
-// function gofetch()  {
   const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWpkVgP8kZvSW-uAyznifIDcgRzT7BHZVwlEWr7zSKTyDRTLZCah_YDnhB6fYvwzQhmAXJ6eQoNS6m/pub?output=csv';
   
   fetch(url)
     .then(response => response.text())
-    .then(DATA => {
-      console.log("DATA = " + DATA);  // CSV data as a string
+    .then(temp => {
+      console.log("DATA = " + temp);  // CSV data as a string
     })
     .catch(error => {
       console.error('Error:', error);
-      csvToArray(DATA);
+      DATA = temp;
+    //   csvToArray(DATA);
+
      });
-//  }
 
   set.addEventListener("click", function(){
-     //array = ARRAYEX(DATA);
+
      csvToArray(DATA);
-    //  console.log("ARRAY = "+ARRAY);
+
   });
 
 // function csvToArray(csvString) {
