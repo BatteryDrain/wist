@@ -11,10 +11,10 @@ DARRAYEX = `name,points
 John,25
 Alice,30
 Bob,22`;
-DATA = "no values,";
+var DATA = "no values,";
 
 
-ARRAY = [name, points];
+ARRAY = [name, points,];
 
 sibmitbutton.addEventListener("click", function(){
     getplayernumber();
@@ -106,7 +106,7 @@ savenames.addEventListener("click", function(){
     // player1name, player2name, player3name, player4name, player5name, player6name, player7name, player8name
   }
 
-  function gofetch()  {
+// function gofetch()  {
   const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWpkVgP8kZvSW-uAyznifIDcgRzT7BHZVwlEWr7zSKTyDRTLZCah_YDnhB6fYvwzQhmAXJ6eQoNS6m/pub?output=csv';
   
   fetch(url)
@@ -117,7 +117,7 @@ savenames.addEventListener("click", function(){
     .catch(error => {
       console.error('Error:', error);
      });
-  }
+//  }
 
   set.addEventListener("click", function(){
      //array = ARRAYEX(DATA);
