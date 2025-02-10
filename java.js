@@ -116,6 +116,7 @@ savenames.addEventListener("click", function(){
     })
     .catch(error => {
       console.error('Error:', error);
+      csvToArray(DATA);
      });
 //  }
 
