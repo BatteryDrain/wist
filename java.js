@@ -14,7 +14,7 @@ Bob,22`;
 DATA = "no values,";
 
 
-ARRAY = [0], [1];
+ARRAY = [name, points];
 
 sibmitbutton.addEventListener("click", function(){
     getplayernumber();
