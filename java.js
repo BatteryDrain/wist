@@ -143,4 +143,4 @@ savenames.addEventListener("click", function(){
 
 reset.addEventListener("click", function(){
  getdata();
-}
+});
