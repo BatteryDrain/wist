@@ -11,7 +11,8 @@ input{
     border: none;
     background-color: white;
 }
-.controls{
+div.controls{
+    background-color: grey;
     display: flex;
     flex-direction: column;
 }
