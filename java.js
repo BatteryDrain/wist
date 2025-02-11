@@ -125,6 +125,7 @@ savenames.addEventListener("click", function(){
   }
 
  function csvToArray(csvString) {
+    ARRAY = [];
     temp = ""
     for ( i = 0; i < 90; i++ ) {
         if( csvString[i] == ","){
