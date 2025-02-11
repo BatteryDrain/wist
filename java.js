@@ -104,7 +104,7 @@ savenames.addEventListener("click", function(){
     console.log(NUMBER_OF_USERS);
     // player1name, player2name, player3name, player4name, player5name, player6name, player7name, player8name
   }
-
+  function getdata (){
   const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWpkVgP8kZvSW-uAyznifIDcgRzT7BHZVwlEWr7zSKTyDRTLZCah_YDnhB6fYvwzQhmAXJ6eQoNS6m/pub?output=csv';
   
   fetch(url)
@@ -122,7 +122,7 @@ savenames.addEventListener("click", function(){
 
      csvToArray(DATA);
   });
-
+  }
 
  function csvToArray(csvString) {
     temp = ""
@@ -139,4 +139,8 @@ savenames.addEventListener("click", function(){
     console.log("ARRAY = " + ARRAY);
     dataOut.innerHTML = "DATA = " + DATA
     arrayOut.innerHTML = "ARRAY = " + ARRAY
+}
+
+reset.addEventListener("click", function(){
+ getdata();
 }
