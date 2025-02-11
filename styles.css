@@ -15,4 +15,5 @@ input{
     background-color: grey;
     display: flex;
     flex-direction: column;
+    width = "100px"
 }
