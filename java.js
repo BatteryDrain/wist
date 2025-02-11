@@ -125,19 +125,17 @@ savenames.addEventListener("click", function(){
 
 
  function csvToArray(csvString) {
-//     temp = ""
-//     for ( i = 0; i < 90; i++ ) {
-//         if( csvString[i] == ","){
-//             console.log("csvString" + i + "=" + temp);
-//             ARRAY.push(temp);
-//             temp = "";
-//         }
-//         else {
-//             temp = temp + csvString[i];
-//         }
-    const rows = csvString.split("\n"); // Split by line
-    return rows.map(row => row.split(",")); // Split each row by comma
-//     }
+    temp = ""
+    for ( i = 0; i < 90; i++ ) {
+        if( csvString[i] == ","){
+            console.log("csvString" + i + "=" + temp);
+            ARRAY.push(temp);
+            temp = "";
+        }
+        else {
+            temp = temp + csvString[i];
+        }
+    }
     console.log("ARRAY = " + ARRAY);
     dataOut.innerHTML = "DATA = " + DATA
     arrayOut.innerHTML = "ARRAY = " + ARRAY
