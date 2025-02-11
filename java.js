@@ -120,16 +120,11 @@ savenames.addEventListener("click", function(){
 
   set.addEventListener("click", function(){
 
-     //csvToArray(DATA);
-     csvToArray(csvString)
+     csvToArray(DATA);
   });
 
-function csvToArray(csvString) {
-const rows = csvString.split("\n"); // Split by line
-return rows.map(row => row.split(",")); // Split each row by comma
-}
 
-// function csvToArray(csvString) {
+ function csvToArray(csvString) {
 //     temp = ""
 //     for ( i = 0; i < 90; i++ ) {
 //         if( csvString[i] == ","){
@@ -140,6 +135,8 @@ return rows.map(row => row.split(",")); // Split each row by comma
 //         else {
 //             temp = temp + csvString[i];
 //         }
+    const rows = csvString.split("\n"); // Split by line
+    return rows.map(row => row.split(",")); // Split each row by comma
 //     }
     console.log("ARRAY = " + ARRAY);
     dataOut.innerHTML = "DATA = " + DATA
