@@ -11,3 +11,7 @@ input{
     border: none;
     background-color: white;
 }
+.controls{
+    display: flex;
+    flex-direction: column;
+}
