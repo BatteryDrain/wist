@@ -16,7 +16,3 @@ input{
     flex-direction: column;
     width: 100px;
 }
-.rate{
-    display: flex;
-    flex-direction: row;
-}
