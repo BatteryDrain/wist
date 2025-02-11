@@ -145,3 +145,8 @@ savenames.addEventListener("click", function(){
 reset.addEventListener("click", function(){
  getdata();
 });
+rreset.addEventListener("change", function(){
+    if( rreset.value == 5){
+        
+    }
+});
