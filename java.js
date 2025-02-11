@@ -111,11 +111,11 @@ savenames.addEventListener("click", function(){
     .then(response => response.text())
     .then(temp => {
       console.log("temp = " + temp);  // CSV data as a string
+      DATA = temp;
+      //   csvToArray(DATA);
     })
     .catch(error => {
       console.error('Error:', error);
-      DATA = temp;
-    //   csvToArray(DATA);
 
      });
 
