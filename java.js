@@ -143,5 +143,6 @@ function csvToArray(csvString) {
         }
     }
     console.log("ARRAY = " + ARRAY);
-    dataOut.innerHTML = "DATA = " + ARR
+    dataOut.innerHTML = "DATA = " + DATA
+    arrayOut.innerHTML = "ARRAY = " + ARRAY
 }
