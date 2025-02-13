@@ -194,6 +194,7 @@ function newcsvToArray(csvString) {
     i = 0;
     for(ii = 1; ii < 3; ii++){
         temp = "";
+        i++
         while(i < 1000 && csvString[i] != ","){
             temp = temp + csvString[i];
             i++;
