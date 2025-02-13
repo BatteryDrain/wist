@@ -34,5 +34,5 @@ table{
 #globalVARs{
     display: flex;
     flex-direction: column;
-    flex-shrink: initial;
+    flex-shrink: 1;
 }
