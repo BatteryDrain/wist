@@ -179,5 +179,6 @@ rreset.addEventListener("change", function(){
 });
 function setroundnumber(){
     NUMBER_OF_ROUNDS = NUMBER_OF_USERS * 3 + 12;
-    numberOfPlayers.innerHTML = NUMBER_OF_USERS;
+    numberOfPlayers.innerHTML = "there are " + NUMBER_OF_USERS + " players";
+    numberOfRounds.innerHTML = "there will be " + NUMBER_OF_ROUNDS + " rounds";
 }
