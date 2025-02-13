@@ -195,9 +195,14 @@ function newcsvToArray(csvString) {
     for(ii = 1; ii < 100; ii++){
         temp = "";
         i++
-        while(i < 1000 && csvString[i] != ","){
+        while(i < 1000 && csvString[i] != "," || "\\"){
             temp = temp + csvString[i];
-            i++;
+            if(csvString[i] == ","){
+                i++;
+            }
+            else{
+                i = i + 3;
+            }
         }
         console.log("ii = " + ii + " " + temp);
         if(ii % 17 == 1){
