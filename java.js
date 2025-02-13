@@ -176,8 +176,8 @@ rreset.addEventListener("change", function(){
     if( rreset.value == 5){
 
     }
-  function setroundnumber(){
+});
+function setroundnumber(){
     NUMBER_OF_ROUNDS = NUMBER_OF_USERS * 3 + 12;
     numberOfPlayers.innerHTML = NUMBER_OF_USERS;
-  }
-});
+}
