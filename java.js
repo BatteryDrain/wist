@@ -198,7 +198,7 @@ function newcsvToArray(csvString) {
             temp = temp + csvString[i];
             i++;
         }
-        console.log(temp);
+        console.log(ii + " " + temp);
         if(ii % 17 == 1){
             Columb_A.push(temp);
         }
