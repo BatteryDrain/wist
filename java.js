@@ -181,7 +181,7 @@ function setroundnumber(){
     NUMBER_OF_ROUNDS = NUMBER_OF_USERS * 3 + 12;
     numberOfPlayers.innerHTML = "there are " + NUMBER_OF_USERS + " players";
     numberOfRounds.innerHTML = "there will be " + NUMBER_OF_ROUNDS + " rounds";
-
+}
 testb.addEventListener("click", function(){
     console.log("test");
     newcsvToArray(DATA);
@@ -195,5 +195,4 @@ function newcsvToArray(csvString) {
         i++;
     }
     console.log(temp);
-}
 }
