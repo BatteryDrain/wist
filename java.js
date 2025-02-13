@@ -183,7 +183,6 @@ function setroundnumber(){
     numberOfRounds.innerHTML = "there will be " + NUMBER_OF_ROUNDS + " rounds";
 }
 testb.addEventListener("click", function(){
-    console.log("test");
     newcsvToArray(DATA);
 });
 
