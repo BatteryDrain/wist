@@ -181,4 +181,12 @@ function setroundnumber(){
     NUMBER_OF_ROUNDS = NUMBER_OF_USERS * 3 + 12;
     numberOfPlayers.innerHTML = "there are " + NUMBER_OF_USERS + " players";
     numberOfRounds.innerHTML = "there will be " + NUMBER_OF_ROUNDS + " rounds";
+function newcsvToArray(csvString) {
+    temp = "";
+    i = 0;
+    while(i < 10 && temp != ","){
+        temp = temp + csvString[i];
+        i++;
+    }
+}
 }
