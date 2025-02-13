@@ -192,7 +192,7 @@ testb.addEventListener("click", function(){
 function newcsvToArray(csvString) {
     resetarray();
     i = 0;
-    for(ii = 1; ii < 5; ii++){
+    for(ii = 1; ii < 100; ii++){
         temp = "";
         i++
         while(i < 1000 && csvString[i] != ","){
