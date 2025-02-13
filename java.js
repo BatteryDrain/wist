@@ -1,4 +1,5 @@
-let NUMBER_OF_USERS;
+NUMBER_OF_USERS;
+NUMBER_OF_ROUNDS;
 let P1P = 0;
 let P2P = 0;
 let P3P = 0;
@@ -7,11 +8,33 @@ let P5P = 0;
 let P6P = 0;
 let P7P = 0;
 let P8P = 0;
-ARRAYEX = `name,points
-John,25
-Alice,30
-Bob,22`;
-var DATA = "no values,";
+DATA = "no values,";
+Columb_A = []
+Columb_B = []
+Columb_C = []
+Columb_D = []
+Columb_E = []
+Columb_F = []
+Columb_G = []
+Columb_H = []
+Columb_I = []
+Columb_J = []
+Columb_K = []
+Columb_L = []
+Columb_M = []
+Columb_N = []
+Columb_O = []
+Columb_P = []
+Columb_Q = []
+Columb_R = []
+Columb_S = []
+Columb_T = []
+Columb_U = []
+Columb_V = []
+Columb_W = []
+Columb_X = []
+Columb_Y = []
+Columb_Z = []
 
 /* */
 ARRAY = ["name", "points",];
@@ -65,6 +88,7 @@ function getplayernumber() {
     document.getElementById('note').style.display = 'block';
 
     NUMBER_OF_USERS = selectedValue;
+    setroundnumber();
   }
 
 savenames.addEventListener("click", function(){
@@ -126,16 +150,19 @@ savenames.addEventListener("click", function(){
 
  function csvToArray(csvString) {
     ARRAY = [];
-    temp = ""
-    for ( i = 0; i < 90; i++ ) {
-        if( csvString[i] == ","){
-            console.log("csvString" + i + "=" + temp);
-            ARRAY.push(temp);
-            temp = "";
+    for(i = 0; i < 9; i++){
+        temp = ""
+        for ( i = 0; i < 90; i++ ) {
+            if( csvString[i] == ","){
+                console.log("csvString" + i + "=" + temp);
+                ARRAY.push(temp);
+                temp = "";
+            }
+            else {
+                temp = temp + csvString[i];
+            }
         }
-        else {
-            temp = temp + csvString[i];
-        }
+            
     }
     console.log("ARRAY = " + ARRAY);
     dataOut.innerHTML = "DATA = " + DATA
@@ -147,6 +174,10 @@ reset.addEventListener("click", function(){
 });
 rreset.addEventListener("change", function(){
     if( rreset.value == 5){
-        
+
     }
+  function setroundnumber(){
+    NUMBER_OF_ROUNDS = NUMBER_OF_USERS * 3 + 12;
+    numberOfPlayers.innerHTML = NUMBER_OF_USERS;
+  }
 });
