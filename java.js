@@ -191,9 +191,9 @@ testb.addEventListener("click", function(){
 
 function newcsvToArray(csvString) {
     resetarray();
+    i = 0;
     for(ii = 1; ii < 3; ii++){
         temp = "";
-        i = 0;
         while(i < 1000 && csvString[i] != ","){
             temp = temp + csvString[i];
             i++;
