@@ -9,32 +9,35 @@ let P6P = 0;
 let P7P = 0;
 let P8P = 0;
 DATA = "no values,";
-Columb_A = [];
-Columb_B = [];
-Columb_C = [];
-Columb_D = [];
-Columb_E = [];
-Columb_F = [];
-Columb_G = [];
-Columb_H = [];
-Columb_I = [];
-Columb_J = [];
-Columb_K = [];
-Columb_L = [];
-Columb_M = [];
-Columb_N = [];
-Columb_O = [];
-Columb_P = [];
-Columb_Q = [];
-Columb_R = [];
-Columb_S = [];
-Columb_T = [];
-Columb_U = [];
-Columb_V = [];
-Columb_W = [];
-Columb_X = [];
-Columb_Y = [];
-Columb_Z = [];
+function resetarray(){
+    Columb_A = [];
+    Columb_B = [];
+    Columb_C = [];
+    Columb_D = [];
+    Columb_E = [];
+    Columb_F = [];
+    Columb_G = [];
+    Columb_H = [];
+    Columb_I = [];
+    Columb_J = [];
+    Columb_K = [];
+    Columb_L = [];
+    Columb_M = [];
+    Columb_N = [];
+    Columb_O = [];
+    Columb_P = [];
+    Columb_Q = [];
+    Columb_R = [];
+    Columb_S = [];
+    Columb_T = [];
+    Columb_U = [];
+    Columb_V = [];
+    Columb_W = [];
+    Columb_X = [];
+    Columb_Y = [];
+    Columb_Z = [];
+}
+
 
 /* */
 ARRAY = ["name", "points",];
@@ -187,11 +190,20 @@ testb.addEventListener("click", function(){
 });
 
 function newcsvToArray(csvString) {
-    temp = "";
-    i = 0;
-    while(i < 1000 && csvString[i] != ","){
-        temp = temp + csvString[i];
-        i++;
+    resetarray();
+    for(ii = 1; ii < 3; ii++){
+        temp = "";
+        i = 0;
+        while(i < 1000 && csvString[i] != ","){
+            temp = temp + csvString[i];
+            i++;
+        }
+        console.log(temp);
+        if(ii % 17 == 1){
+            Columb_A.push(temp);
+        }
+        if(ii % 17 == 2){
+            Columb_B.push(temp);
+        }
     }
-    console.log(temp);
 }
