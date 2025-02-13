@@ -188,5 +188,6 @@ function newcsvToArray(csvString) {
         temp = temp + csvString[i];
         i++;
     }
+    console.log(temp);
 }
 }
