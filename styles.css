@@ -33,4 +33,5 @@ table{
   }
 #globalVARs{
     display: flex;
+    flex-direction: column;
 }
