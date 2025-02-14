@@ -264,10 +264,12 @@ function newcsvToArray(csvString) {
             Columb_Z.push(temp);
         }
     }
-
-    for(i=0; i<112; i++){
-        var cell = document.createElement('p');
-        cell.innerHTML = "hi";
-        newp.appendChild(cell);
+    for(i = 0; i < numberOfRounds; i++){
+        var row = document.createElement('tr');
+        newp.appendChild(row);
+        for(i = 0; i < numberOfPlayers; i++){
+            var row = document.createElement('td');
+            newp.appendChild(row);
+        }
     }
 }
