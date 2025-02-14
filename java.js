@@ -280,7 +280,8 @@ function newcsvToArray(csvString) {
         newp.appendChild(row);
         for(i = 0; i < numberOfPlayers; i++){
             var cell = document.createElement('td');
-            newp.appendChild(cell);
+            cell.textContent = "x";
+            row.appendChild(cell);
         }
     }
 }
