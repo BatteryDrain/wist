@@ -264,11 +264,11 @@ function newcsvToArray(csvString) {
             Columb_Z.push(temp);
         }
     }
-    
+
     console.log("make table");
 
-    var row = document.createElement('tr');
-    newp.appendChild(row);
+    var headderRow = document.createElement('tr');
+    newp.appendChild(headderRow);
     for(i = 0; i < numberOfPlayers; i++){
         var head = document.createElement('th');
         newp.appendChild(head);
