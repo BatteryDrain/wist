@@ -266,23 +266,20 @@ function newcsvToArray(csvString) {
     }
     console.log("make table");
 
-    numberOfPlayers = 4; // Example number of players
-    numberOfRounds = 3;  // Example number of rounds
-
     newp = document.getElementById("newp");
 
     var headderRow = document.createElement('tr');
     newp.appendChild(headderRow);
-    for(i = 0; i < numberOfPlayers; i++){
+    for(i = 0; i < NUMBER_OF_USERS; i++){
     var head = document.createElement('th');
     head.textContent = "Player " + (i + 1);
     headderRow.appendChild(head);
     }
 
-    for(i = 0; i < numberOfRounds; i++){
+    for(i = 0; i < NUMBER_OF_ROUNDS; i++){
     var row = document.createElement('tr');
     newp.appendChild(row);
-    for(j = 0; j < numberOfPlayers; j++){
+    for(j = 0; j < NUMBER_OF_USERS; j++){
         var cell = document.createElement('td');
         cell.textContent = "x";
         row.appendChild(cell);
