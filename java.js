@@ -268,8 +268,8 @@ function newcsvToArray(csvString) {
         var row = document.createElement('tr');
         newp.appendChild(row);
         for(i = 0; i < numberOfPlayers; i++){
-            var row = document.createElement('td');
-            newp.appendChild(row);
+            var cell = document.createElement('td');
+            newp.appendChild(cell);
         }
     }
 }
