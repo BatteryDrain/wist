@@ -264,6 +264,14 @@ function newcsvToArray(csvString) {
             Columb_Z.push(temp);
         }
     }
+
+    var row = document.createElement('tr');
+    newp.appendChild(row);
+    for(i = 0; i < numberOfPlayers; i++){
+        var head = document.createElement('th');
+        newp.appendChild(head);
+    }
+
     for(i = 0; i < numberOfRounds; i++){
         var row = document.createElement('tr');
         newp.appendChild(row);
