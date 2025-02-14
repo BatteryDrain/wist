@@ -287,7 +287,7 @@ function newcsvToArray(csvString) {
         //for(i=0; i<112; i++){
             var cell = document.createElement('p');
             cell.innerHTML = "hi";
-            document.body.newp.appendChild(cell);
+            newp.appendChild(cell);
         //}
     }
 }
