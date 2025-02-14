@@ -264,6 +264,8 @@ function newcsvToArray(csvString) {
             Columb_Z.push(temp);
         }
     }
+    
+    console.log("make table");
 
     var row = document.createElement('tr');
     newp.appendChild(row);
