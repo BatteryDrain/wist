@@ -288,21 +288,21 @@ function newcsvToArray(csvString) {
 
     newt2 = document.getElementById("newt2");
 
-    var headderRow = document.createElement('tr');
-    newt2.appendChild(headderRow);
+    var headderRow2 = document.createElement('tr');
+    newt2.appendChild(headderRow2);
     for(i = 0; i < NUMBER_OF_USERS; i++){
-        var head = document.createElement('th');
-        head.textContent = "Player " + (i + 1);
-        headderRow.appendChild(head);
+        var head2 = document.createElement('th');
+        head2.textContent = "Player " + (i + 1);
+        headderRow.appendChild(head2);
     }
 
     for(i = 0; i < NUMBER_OF_ROUNDS; i++){
-        var row = document.createElement('tr');
-        newt2.appendChild(row);
+        var row2 = document.createElement('tr');
+        newt2.appendChild(row2);
         for(j = 0; j < NUMBER_OF_USERS; j++){
-            var cell = document.createElement('td');
-            cell.textContent = "x";
-            row.appendChild(cell);
+            var cell2 = document.createElement('td');
+            cell2.textContent = "x";
+            row.appendChild(cell2);
         }
     }
 }
