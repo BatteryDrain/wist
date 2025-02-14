@@ -281,7 +281,7 @@ function newcsvToArray(csvString) {
         newt.appendChild(row);
         for(j = 0; j < NUMBER_OF_USERS; j++){
             var cell = document.createElement('td');
-            cell.textContent = "x2";
+            cell.textContent = "x";
             row.appendChild(cell);
         }
     }
@@ -301,7 +301,7 @@ function newcsvToArray(csvString) {
         newt2.appendChild(row2);
         for(j = 0; j < NUMBER_OF_USERS; j++){
             var cell2 = document.createElement('td');
-            cell2.textContent = "x";
+            cell2.textContent = "x2";
             row.appendChild(cell2);
         }
     }
