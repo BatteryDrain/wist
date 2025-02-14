@@ -278,7 +278,7 @@ for(i = 0; i < numberOfPlayers; i++){
 for(i = 0; i < numberOfRounds; i++){
     var row = document.createElement('tr');
     newp.appendChild(row);
-    for(i = 0; i < numberOfPlayers; i++){
+    for(j = 0; j < numberOfPlayers; j++){
         var cell = document.createElement('td');
         cell.textContent = "x";
         row.appendChild(cell);
