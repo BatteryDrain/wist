@@ -302,7 +302,7 @@ function newcsvToArray(csvString) {
         for(j = 0; j < NUMBER_OF_USERS; j++){
             var cell2 = document.createElement('td');
             cell2.textContent = "x2";
-            row.appendChild(cell2);
+            row2.appendChild(cell2);
         }
     }
 }
