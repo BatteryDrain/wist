@@ -271,7 +271,8 @@ function newcsvToArray(csvString) {
     newp.appendChild(headderRow);
     for(i = 0; i < numberOfPlayers; i++){
         var head = document.createElement('th');
-        newp.appendChild(head);
+        head.textContent = "Player " + (i + 1);
+        headderRow.appendChild(head);
     }
 
     for(i = 0; i < numberOfRounds; i++){
