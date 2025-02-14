@@ -266,24 +266,43 @@ function newcsvToArray(csvString) {
     }
     console.log("make table");
 
-    newp = document.getElementById("newp");
+    newt = document.getElementById("newt");
 
     var headderRow = document.createElement('tr');
-    newp.appendChild(headderRow);
+    newt.appendChild(headderRow);
     for(i = 0; i < NUMBER_OF_USERS; i++){
-    var head = document.createElement('th');
-    head.textContent = "Player " + (i + 1);
-    headderRow.appendChild(head);
+        var head = document.createElement('th');
+        head.textContent = "Player " + (i + 1);
+        headderRow.appendChild(head);
     }
 
     for(i = 0; i < NUMBER_OF_ROUNDS; i++){
-    var row = document.createElement('tr');
-    newp.appendChild(row);
-    for(j = 0; j < NUMBER_OF_USERS; j++){
-        var cell = document.createElement('td');
-        cell.textContent = "x";
-        row.appendChild(cell);
+        var row = document.createElement('tr');
+        newt.appendChild(row);
+        for(j = 0; j < NUMBER_OF_USERS; j++){
+            var cell = document.createElement('td');
+            cell.textContent = "x2";
+            row.appendChild(cell);
+        }
     }
+
+    newt2 = document.getElementById("newt2");
+
+    var headderRow = document.createElement('tr');
+    newt2.appendChild(headderRow);
+    for(i = 0; i < NUMBER_OF_USERS; i++){
+        var head = document.createElement('th');
+        head.textContent = "Player " + (i + 1);
+        headderRow.appendChild(head);
+    }
+
+    for(i = 0; i < NUMBER_OF_ROUNDS; i++){
+        var row = document.createElement('tr');
+        newt2.appendChild(row);
+        for(j = 0; j < NUMBER_OF_USERS; j++){
+            var cell = document.createElement('td');
+            cell.textContent = "x";
+            row.appendChild(cell);
+        }
     }
 }
-
