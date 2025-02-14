@@ -264,24 +264,23 @@ function newcsvToArray(csvString) {
             Columb_Z.push(temp);
         }
     }
+}
+console.log("make table");
 
-    console.log("make table");
+var headderRow = document.createElement('tr');
+newp.appendChild(headderRow);
+for(i = 0; i < numberOfPlayers; i++){
+    var head = document.createElement('th');
+    head.textContent = "Player " + (i + 1);
+    headderRow.appendChild(head);
+}
 
-    var headderRow = document.createElement('tr');
-    newp.appendChild(headderRow);
+for(i = 0; i < numberOfRounds; i++){
+    var row = document.createElement('tr');
+    newp.appendChild(row);
     for(i = 0; i < numberOfPlayers; i++){
-        var head = document.createElement('th');
-        head.textContent = "Player " + (i + 1);
-        headderRow.appendChild(head);
-    }
-
-    for(i = 0; i < numberOfRounds; i++){
-        var row = document.createElement('tr');
-        newp.appendChild(row);
-        for(i = 0; i < numberOfPlayers; i++){
-            var cell = document.createElement('td');
-            cell.textContent = "x";
-            row.appendChild(cell);
-        }
+        var cell = document.createElement('td');
+        cell.textContent = "x";
+        row.appendChild(cell);
     }
 }
