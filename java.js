@@ -272,7 +272,11 @@ function newcsvToArray(csvString) {
     newt.appendChild(headderRow);
     for(i = 0; i < NUMBER_OF_USERS; i++){
         var head = document.createElement('th');
-        head.textContent = "Player " + (i + 1);
+        head.textContent = "Player " + (i + 1) + " bet";
+        headderRow.appendChild(head);
+
+        var head = document.createElement('th');
+        head.textContent = "Player " + i + " made";
         headderRow.appendChild(head);
     }
 
