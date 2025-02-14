@@ -293,7 +293,7 @@ function newcsvToArray(csvString) {
     for(i = 0; i < NUMBER_OF_USERS; i++){
         var head2 = document.createElement('th');
         head2.textContent = "Player " + (i + 1);
-        headderRow.appendChild(head2);
+        headderRow2.appendChild(head2);
     }
 
     for(i = 0; i < NUMBER_OF_ROUNDS; i++){
