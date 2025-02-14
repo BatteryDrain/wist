@@ -276,7 +276,7 @@ function newcsvToArray(csvString) {
         headderRow.appendChild(head);
 
         var head = document.createElement('th');
-        head.textContent = "Player " + i + " made";
+        head.textContent = "Player " + (i + 1) + " made";
         headderRow.appendChild(head);
     }
 
