@@ -284,10 +284,11 @@ function newcsvToArray(csvString) {
         if(ii % 17 == 26){
             Columb_Z.push(temp);
         }
-        //for(i=0; i<112; i++){
-            var cell = document.createElement('p');
-            cell.innerHTML = "hi";
-            newp.appendChild(cell);
-        //}
+    }
+    
+    for(i=0; i<112; i++){
+        var cell = document.createElement('p');
+        cell.innerHTML = "hi";
+        newp.appendChild(cell);
     }
 }
