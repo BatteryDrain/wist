@@ -266,6 +266,9 @@ function newcsvToArray(csvString) {
     }
     console.log("make table");
 
+    numberOfPlayers = 4; // Example number of players
+    numberOfRounds = 3;  // Example number of rounds
+
     newp = document.getElementById("newp");
 
     var headderRow = document.createElement('tr');
