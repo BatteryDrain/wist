@@ -166,11 +166,11 @@ savenames.addEventListener("click", function(){
 //             }
 //         }
             
-    }
-    console.log("ARRAY = " + ARRAY);
-    dataOut.innerHTML = "DATA = " + DATA
-    arrayOut.innerHTML = "ARRAY = " + ARRAY
-}
+//     }
+//     console.log("ARRAY = " + ARRAY);
+//     dataOut.innerHTML = "DATA = " + DATA
+//     arrayOut.innerHTML = "ARRAY = " + ARRAY
+// }
 
 reset.addEventListener("click", function(){
  getdata();
