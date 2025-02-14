@@ -151,20 +151,20 @@ savenames.addEventListener("click", function(){
   });
   }
 
- function csvToArray(csvString) {
-    ARRAY = [];
-    for(i = 0; i < 9; i++){
-        temp = ""
-        for ( i = 0; i < 90; i++ ) {
-            if( csvString[i] == ","){
-                console.log("csvString" + i + "=" + temp);
-                ARRAY.push(temp);
-                temp = "";
-            }
-            else {
-                temp = temp + csvString[i];
-            }
-        }
+//  function csvToArray(csvString) {
+//     ARRAY = [];
+//     for(i = 0; i < 9; i++){
+//         temp = ""
+//         for ( i = 0; i < 90; i++ ) {
+//             if( csvString[i] == ","){
+//                 console.log("csvString" + i + "=" + temp);
+//                 ARRAY.push(temp);
+//                 temp = "";
+//             }
+//             else {
+//                 temp = temp + csvString[i];
+//             }
+//         }
             
     }
     console.log("ARRAY = " + ARRAY);
@@ -285,7 +285,7 @@ function newcsvToArray(csvString) {
             Columb_Z.push(temp);
         }
     }
-    
+
     for(i=0; i<112; i++){
         var cell = document.createElement('p');
         cell.innerHTML = "hi";
