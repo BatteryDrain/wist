@@ -273,9 +273,9 @@ function newcsvToArray(csvString) {
         head.textContent = "Player " + (i + 1) + " bet";
         headderRow.appendChild(head);
 
-        // var head = document.createElement('th');
-        // head.textContent = "Player " + (i + 1) + " made";
-        // headderRow.appendChild(head);
+        var head = document.createElement('th');
+        head.textContent = "Player " + (i + 1) + " made";
+        headderRow.appendChild(head);
     }
 
     for(i = TABLE_1_OFFSET_Y; i < (NUMBER_OF_ROUNDS+TABLE_1_OFFSET_Y); i++){
@@ -285,9 +285,10 @@ function newcsvToArray(csvString) {
             var cell = document.createElement('td');
             cell.textContent = findArray(j,i);
             row.appendChild(cell);
-            var cell = document.createElement('td');
-            cell.textContent = "-";
-            row.appendChild(cell);
+
+            // var cell = document.createElement('td');
+            // cell.textContent = "-";
+            // row.appendChild(cell);
         }
     }
 
