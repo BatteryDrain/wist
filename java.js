@@ -320,149 +320,77 @@ function findArray(indexToLetter){
     if(indexToLetter % 17 == 1){
         return(Columb_B[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 2){
+        return(Columb_C[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 3){
+        return(Columb_D[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 4){
+        return(Columb_E[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 5){
+        return(Columb_F[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 6){
+        return(Columb_G[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 7){
+        return(Columb_H[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 8){
+        return(Columb_I[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 9){
+        return(Columb_J[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 10){
+        return(Columb_K[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 11){
+        return(Columb_L[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 12){
+        return(Columb_M[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 13){
+        return(Columb_N[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 14){
+        return(Columb_O[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 15){
+        return(Columb_P[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 16){
+        return(Columb_Q[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 17){
+        return(Columb_R[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 18){
+        return(Columb_S[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 19){
+        return(Columb_T[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 20){
+        return(Columb_U[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 21){
+        return(Columb_V[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 22){
+        return(Columb_W[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 23){
+        return(Columb_X[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 24){
+        return(Columb_Y[indexToLetter]);
     }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
-    }
-    if(indexToLetter % 17 == 0){
-        return(Columb_A[indexToLetter]);
+    if(indexToLetter % 17 == 25){
+        return(Columb_Z[indexToLetter]);
     }
 }
 
