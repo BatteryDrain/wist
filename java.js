@@ -92,7 +92,7 @@ function getplayernumber() {
     document.getElementById('savenames').style.display = 'block';
     document.getElementById('note').style.display = 'block';
 
-    NUMBER_OF_USERS = selectedValue;
+    NUMBER_OF_USERS = int(selectedValue);
     setroundnumber();
   }
 
