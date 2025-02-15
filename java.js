@@ -132,7 +132,6 @@ savenames.addEventListener("click", function(){
     console.log(player1color); //test
 
     console.log(NUMBER_OF_USERS);
-    // player1name, player2name, player3name, player4name, player5name, player6name, player7name, player8name
   }
   function getdata (){
   const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWpkVgP8kZvSW-uAyznifIDcgRzT7BHZVwlEWr7zSKTyDRTLZCah_YDnhB6fYvwzQhmAXJ6eQoNS6m/pub?output=csv';
