@@ -464,5 +464,5 @@ function findArray(indexToLetter){
     if(indexToLetter % 17 == 0){
         return(Columb_A[indexToLetter]);
     }
-    }
 }
+
