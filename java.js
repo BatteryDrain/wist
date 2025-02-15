@@ -147,11 +147,10 @@ function savingnames()  {
 
      });
 
-  set.addEventListener("click", function(){
-
-     csvToArray(DATA);
-  });
-  }
+//   set.addEventListener("click", function(){
+//      csvToArray(DATA);
+//   });
+//   }
 
 reset.addEventListener("click", function(){
  getdata();
