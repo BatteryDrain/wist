@@ -94,7 +94,9 @@ function getplayernumber() {
 
     NUMBER_OF_USERS = selectedValue;
     console.log("NUMBER_OF_USERS = " + NUMBER_OF_USERS)
-    setroundnumber();
+    NUMBER_OF_ROUNDS = NUMBER_OF_USERS * 3 + 12;
+    numberOfPlayers.innerHTML = "there are " + NUMBER_OF_USERS + " players";
+    numberOfRounds.innerHTML = "there will be " + NUMBER_OF_ROUNDS + " rounds";
   }
 
 savenames.addEventListener("click", function(){
@@ -160,11 +162,6 @@ rreset.addEventListener("change", function(){
 
     }
 });
-function setroundnumber(){
-    NUMBER_OF_ROUNDS = NUMBER_OF_USERS * 3 + 12;
-    numberOfPlayers.innerHTML = "there are " + NUMBER_OF_USERS + " players";
-    numberOfRounds.innerHTML = "there will be " + NUMBER_OF_ROUNDS + " rounds";
-}
 
 testb.addEventListener("click", function(){
     newcsvToArray(DATA);
