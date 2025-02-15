@@ -313,7 +313,7 @@ function newcsvToArray(csvString) {
         }
     }
 }
-function findArray(x)(y){
+function findArray(x,y){
     if(x % 17 == 0){
         return(Columb_A[y]);
     }
