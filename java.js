@@ -1,5 +1,7 @@
 NUMBER_OF_USERS = 0;
 NUMBER_OF_ROUNDS = 0;
+TABLE_1_OFFSET_X = 1;
+TABLE_1_OFFSET_Y = 1;
 let P1P = 0;
 let P2P = 0;
 let P3P = 0;
@@ -37,8 +39,6 @@ function resetarray(){
     Columb_Y = [];
     Columb_Z = [];
 }
-TABLE_1_OFFSET_X = 1;
-TABLE_1_OFFSET_Y = 1;
 
 
 /* */
