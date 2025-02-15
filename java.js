@@ -315,7 +315,7 @@ function newcsvToArray(csvString) {
 }
 function findArray(indexToLetter){
     if(indexToLetter % 17 == 1){
-        return(Columb_A)[indexToLetter];
+        return(Columb_A[indexToLetter]);
     }
     if(ii % 17 == 2){
         Columb_B.push(temp);
