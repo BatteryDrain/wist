@@ -155,6 +155,7 @@ function savingnames()  {
 //   }
 
 reset.addEventListener("click", function(){
+    console.log("run getdata");
  getdata();
 });
 rreset.addEventListener("change", function(){
@@ -164,6 +165,7 @@ rreset.addEventListener("change", function(){
 });
 
 testb.addEventListener("click", function(){
+    console.log("run newcsvToArray");
     newcsvToArray(DATA);
 });
 
