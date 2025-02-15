@@ -281,14 +281,10 @@ function newcsvToArray(csvString) {
     for(i = TABLE_1_OFFSET_Y; i < (NUMBER_OF_ROUNDS+TABLE_1_OFFSET_Y); i++){
         var row = document.createElement('tr');
         newt.appendChild(row);
-        for(j = TABLE_1_OFFSET_X; j < (NUMBER_OF_USERS+TABLE_1_OFFSET_X); j++){
+        for(j = TABLE_1_OFFSET_X; j < ((NUMBER_OF_USERS * 2)+TABLE_1_OFFSET_X); j++){
             var cell = document.createElement('td');
             cell.textContent = findArray(j,i);
             row.appendChild(cell);
-
-            // var cell = document.createElement('td');
-            // cell.textContent = "-";
-            // row.appendChild(cell);
         }
     }
 
