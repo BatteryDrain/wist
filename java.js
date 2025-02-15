@@ -288,7 +288,7 @@ function newcsvToArray(csvString) {
             cell.textContent = "x";
             row.appendChild(cell);
             var cell = document.createElement('td');
-            cell.textContent = "x";
+            cell.textContent = "-";
             row.appendChild(cell);
         }
     }
@@ -308,7 +308,7 @@ function newcsvToArray(csvString) {
         newt2.appendChild(row2);
         for(j = 0; j < NUMBER_OF_USERS; j++){
             var cell2 = document.createElement('td');
-            cell2.textContent = "x2";
+            cell2.textContent = "-";
             row2.appendChild(cell2);
         }
     }
