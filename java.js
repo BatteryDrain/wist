@@ -268,7 +268,7 @@ function newcsvToArray(csvString) {
 
     var headderRow = document.createElement('tr');
     newt.appendChild(headderRow);
-    for(i = 0; i < NUMBER_OF_USERS; i++){
+    for(i = 0; i < 3; i++){
         var head = document.createElement('th');
         head.textContent = "Player " + (i + 1) + " bet";
         headderRow.appendChild(head);
