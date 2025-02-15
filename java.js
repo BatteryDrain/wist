@@ -287,6 +287,9 @@ function newcsvToArray(csvString) {
             var cell = document.createElement('td');
             cell.textContent = "x";
             row.appendChild(cell);
+            var cell = document.createElement('td');
+            cell.textContent = "x";
+            row.appendChild(cell);
         }
     }
 
