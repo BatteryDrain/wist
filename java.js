@@ -101,7 +101,7 @@ savenames.addEventListener("click", function(){
   savingnames();
 });
 
-  function savingnames()  {
+function savingnames()  {
     var player1name = document.getElementById('player1n').value;
     var player1color = document.getElementById('player1c').value;
 
