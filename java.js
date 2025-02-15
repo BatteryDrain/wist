@@ -135,20 +135,21 @@ function savingnames()  {
 
     console.log(NUMBER_OF_USERS);
   }
-function getdata (){
-    const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWpkVgP8kZvSW-uAyznifIDcgRzT7BHZVwlEWr7zSKTyDRTLZCah_YDnhB6fYvwzQhmAXJ6eQoNS6m/pub?output=csv';
+  function getdata (){
+  const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWpkVgP8kZvSW-uAyznifIDcgRzT7BHZVwlEWr7zSKTyDRTLZCah_YDnhB6fYvwzQhmAXJ6eQoNS6m/pub?output=csv';
   
-    fetch(url)
+  fetch(url)
     .then(response => response.text())
     .then(temp => {
-        console.log("temp = " + temp);  // CSV data as a string
-        DATA = temp;
+      console.log("temp = " + temp);  // CSV data as a string
+      DATA = temp;
     })
-    
-        .catch(error => {
-        console.error('Error:', error);
+    .catch(error => {
+      console.error('Error:', error);
 
-    });
+     });
+
+
 }
 
 reset.addEventListener("click", function(){
@@ -285,10 +286,9 @@ function newcsvToArray(csvString) {
             var cell = document.createElement('td');
             cell.textContent = findArray(j,i);
             row.appendChild(cell);
-
-            // var cell = document.createElement('td');
-            // cell.textContent = "-";
-            // row.appendChild(cell);
+            var cell = document.createElement('td');
+            cell.textContent = "-";
+            row.appendChild(cell);
         }
     }
 
