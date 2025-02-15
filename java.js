@@ -283,9 +283,9 @@ function newcsvToArray(csvString) {
     for(i = 0; i < NUMBER_OF_ROUNDS; i++){
         var row = document.createElement('tr');
         newt.appendChild(row);
-        for(j = 0; j < NUMBER_OF_USERS; j++){
+        for(j = 1; j < NUMBER_OF_USERS; j++){
             var cell = document.createElement('td');
-            cell.textContent = findArray(j)(i);
+            cell.textContent = findArray(j,i);
             row.appendChild(cell);
             var cell = document.createElement('td');
             cell.textContent = "-";
