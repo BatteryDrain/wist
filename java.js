@@ -37,6 +37,8 @@ function resetarray(){
     Columb_Y = [];
     Columb_Z = [];
 }
+TABLE_1_OFFSET_X = 1;
+TABLE_1_OFFSET_Y = 1;
 
 
 /* */
@@ -280,10 +282,10 @@ function newcsvToArray(csvString) {
         headderRow.appendChild(head);
     }
 
-    for(i = 1; i < NUMBER_OF_ROUNDS; i++){
+    for(i = TABLE_1_OFFSET_Y; i < (NUMBER_OF_ROUNDS+TABLE_1_OFFSET_Y); i++){
         var row = document.createElement('tr');
         newt.appendChild(row);
-        for(j = 1; j < NUMBER_OF_USERS; j++){
+        for(j = TABLE_1_OFFSET_X; j < (NUMBER_OF_USERS+TABLE_1_OFFSET_X); j++){
             var cell = document.createElement('td');
             cell.textContent = findArray(i,j);
             row.appendChild(cell);
