@@ -144,7 +144,7 @@ function getdata (){
         console.log("temp = " + temp);  // CSV data as a string
         DATA = temp;
     })
-    
+
         .catch(error => {
         console.error('Error:', error);
 
@@ -286,7 +286,7 @@ function newcsvToArray(csvString) {
             cell.textContent = findArray(j,i);
             row.appendChild(cell);
             var cell = document.createElement('td');
-            cell.textContent = "-";
+            cell.textContent = findArray((j + 1), i);
             row.appendChild(cell);
         }
     }
