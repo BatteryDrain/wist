@@ -148,11 +148,10 @@ function savingnames()  {
       console.error('Error:', error);
 
      });
-
-  set.addEventListener("click", function(){
-     csvToArray(DATA);
-  });
-  }
+//   set.addEventListener("click", function(){
+//      csvToArray(DATA);
+//   });
+}
 
 reset.addEventListener("click", function(){
     console.log("run getdata");
@@ -394,4 +393,4 @@ function findArray(x,y){
         return(Columb_Z[y]);
     }
 }
-}
+
