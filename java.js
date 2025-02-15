@@ -135,7 +135,6 @@ function savingnames()  {
 
     console.log(NUMBER_OF_USERS);
   }
-
   function getdata (){
   const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWpkVgP8kZvSW-uAyznifIDcgRzT7BHZVwlEWr7zSKTyDRTLZCah_YDnhB6fYvwzQhmAXJ6eQoNS6m/pub?output=csv';
   
@@ -149,6 +148,10 @@ function savingnames()  {
       console.error('Error:', error);
 
      });
+
+//   set.addEventListener("click", function(){
+//      csvToArray(DATA);
+//   });
 }
 
 reset.addEventListener("click", function(){
