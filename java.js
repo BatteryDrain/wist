@@ -144,7 +144,7 @@ function getdata (){
         console.log("temp = " + temp);  // CSV data as a string
         DATA = temp;
     })
-
+    
         .catch(error => {
         console.error('Error:', error);
 
@@ -268,7 +268,7 @@ function newcsvToArray(csvString) {
 
     var headderRow = document.createElement('tr');
     newt.appendChild(headderRow);
-    for(i = 0; i < 3; i++){
+    for(i = 0; i < NUMBER_OF_USERS; i++){
         var head = document.createElement('th');
         head.textContent = "Player " + (i + 1) + " bet";
         headderRow.appendChild(head);
@@ -286,7 +286,7 @@ function newcsvToArray(csvString) {
             cell.textContent = findArray(j,i);
             row.appendChild(cell);
             var cell = document.createElement('td');
-            cell.textContent = findArray((j + 1), i);
+            cell.textContent = "-";
             row.appendChild(cell);
         }
     }
