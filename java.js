@@ -313,3 +313,83 @@ function newcsvToArray(csvString) {
         }
     }
 }
+function findArray(indexToLetter){
+    if(ii % 17 == 1){
+        return(Columb_A);
+    }
+    if(ii % 17 == 2){
+        Columb_B.push(temp);
+    }
+    if(ii % 17 == 3){
+        Columb_C.push(temp);
+    }
+    if(ii % 17 == 4){
+        Columb_D.push(temp);
+    }
+    if(ii % 17 == 5){
+        Columb_E.push(temp);
+    }
+    if(ii % 17 == 6){
+        Columb_F.push(temp);
+    }
+    if(ii % 17 == 7){
+        Columb_G.push(temp);
+    }
+    if(ii % 17 == 8){
+        Columb_H.push(temp);
+    }
+    if(ii % 17 == 9){
+        Columb_I.push(temp);
+    }
+    if(ii % 17 == 10){
+        Columb_J.push(temp);
+    }
+    if(ii % 17 == 11){
+        Columb_K.push(temp);
+    }
+    if(ii % 17 == 12){
+        Columb_L.push(temp);
+    }
+    if(ii % 17 == 13){
+        Columb_M.push(temp);
+    }
+    if(ii % 17 == 14){
+        Columb_N.push(temp);
+    }
+    if(ii % 17 == 15){
+        Columb_O.push(temp);
+    }
+    if(ii % 17 == 16){
+        Columb_P.push(temp);
+    }
+    if(ii % 17 == 17){
+        Columb_Q.push(temp);
+    }
+    if(ii % 17 == 18){
+        Columb_R.push(temp);
+    }
+    if(ii % 17 == 19){
+        Columb_S.push(temp);
+    }
+    if(ii % 17 == 20){
+        Columb_T.push(temp);
+    }
+    if(ii % 17 == 21){
+        Columb_U.push(temp);
+    }
+    if(ii % 17 == 22){
+        Columb_V.push(temp);
+    }
+    if(ii % 17 == 23){
+        Columb_W.push(temp);
+    }
+    if(ii % 17 == 24){
+        Columb_X.push(temp);
+    }
+    if(ii % 17 == 25){
+        Columb_Y.push(temp);
+    }
+    if(ii % 17 == 26){
+        Columb_Z.push(temp);
+    }
+}
