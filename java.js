@@ -161,11 +161,6 @@ rreset.addEventListener("change", function(){
     }
 });
 
-// testb.addEventListener("click", function(){
-//     console.log("run newcsvToArray");
-//     newcsvToArray(DATA);
-// });
-
 function newcsvToArray(csvString) {
     resetarray();
     i = 0;
@@ -265,9 +260,10 @@ function newcsvToArray(csvString) {
     console.log("make table");
 
     newt = document.getElementById("newt");
+    bets_and_made = document.createElement('table');
 
     var headderRow = document.createElement('tr');
-    newt.appendChild(headderRow);
+    best_and_made.appendChild(headderRow);
     for(i = 0; i < NUMBER_OF_USERS; i++){
         var head = document.createElement('th');
         head.textContent = "Player " + (i + 1) + " bet";
@@ -280,13 +276,15 @@ function newcsvToArray(csvString) {
 
     for(i = TABLE_1_OFFSET_Y; i < (NUMBER_OF_ROUNDS+TABLE_1_OFFSET_Y); i++){
         var row = document.createElement('tr');
-        newt.appendChild(row);
+        bets_and_made.appendChild(row);
         for(j = TABLE_1_OFFSET_X; j < ((NUMBER_OF_USERS * 2)+TABLE_1_OFFSET_X); j++){
             var cell = document.createElement('td');
             cell.textContent = findArray(j,i);
             row.appendChild(cell);
         }
     }
+
+    newt.appendChild(bets_and_made);
 
     newt2 = document.getElementById("newt2");
 
