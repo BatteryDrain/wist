@@ -161,10 +161,10 @@ rreset.addEventListener("change", function(){
     }
 });
 
-testb.addEventListener("click", function(){
-    console.log("run newcsvToArray");
-    newcsvToArray(DATA);
-});
+// testb.addEventListener("click", function(){
+//     console.log("run newcsvToArray");
+//     newcsvToArray(DATA);
+// });
 
 function newcsvToArray(csvString) {
     resetarray();
