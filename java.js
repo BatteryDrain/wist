@@ -265,13 +265,15 @@ function newcsvToArray(csvString) {
 
     var headderRow = document.createElement('tr');
     bets_and_made.appendChild(headderRow);
-    for(i = TABLE_1_OFFSET_X; i < NUMBER_OF_USERS; i++){
+    for(i = TABLE_1_OFFSET_X; i < (NUMBER_OF_USERS*2); i++){
         var head = document.createElement('th');
         head.textContent = findArray(i,1) + " bet";
         headderRow.appendChild(head);
 
+        i++;
+
         var head = document.createElement('th');
-        head.textContent = "Player " + (i + 1) + " made";
+        head.textContent = findArray(i,1) + " made";
         headderRow.appendChild(head);
     }
 
