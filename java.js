@@ -265,7 +265,7 @@ function newcsvToArray(csvString) {
 
     var headderRow = document.createElement('tr');
     bets_and_made.appendChild(headderRow);
-    for(i = 0; i < NUMBER_OF_USERS; i++){
+    for(i = TABLE_1_OFFSET_X; i < NUMBER_OF_USERS; i++){
         var head = document.createElement('th');
         head.textContent = findArray(i,1) + " bet";
         headderRow.appendChild(head);
