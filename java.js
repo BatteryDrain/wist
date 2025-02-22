@@ -261,7 +261,6 @@ function newcsvToArray(csvString) {
     }
     console.log("make table");
 
-    // newt = document.getElementById("newt");
     bets_and_made = document.createElement('table');
 
     var headderRow = document.createElement('tr');
@@ -288,7 +287,6 @@ function newcsvToArray(csvString) {
 
     newt.appendChild(bets_and_made);
 
-    // newt2 = document.getElementById("newt2");
     totals = document.createElement('table');
 
     var headderRow2 = document.createElement('tr');
