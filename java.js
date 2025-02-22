@@ -293,7 +293,7 @@ function newcsvToArray(csvString) {
 
     var headderRow2 = document.createElement('tr');
     totals.appendChild(headderRow2);
-    for(i = 0; i < NUMBER_OF_USERS; i++){
+    for(i = TABLE_1_OFFSET_X; i < NUMBER_OF_USERS; i++){
         var head2 = document.createElement('th');
         head2.textContent = findArray(i,1);
         headderRow2.appendChild(head2);
