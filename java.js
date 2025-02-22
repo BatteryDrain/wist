@@ -295,7 +295,7 @@ function newcsvToArray(csvString) {
     totals.appendChild(headderRow2);
     for(i = 0; i < NUMBER_OF_USERS; i++){
         var head2 = document.createElement('th');
-        head2.textContent = "Player " + (i + 1);
+        head2.textContent = findArray(i,1);
         headderRow2.appendChild(head2);
     }
 
