@@ -287,9 +287,10 @@ function newcsvToArray(csvString) {
     newt.appendChild(bets_and_made);
 
     newt2 = document.getElementById("newt2");
+    totals = document.createElement('table');
 
     var headderRow2 = document.createElement('tr');
-    newt2.appendChild(headderRow2);
+    totals.appendChild(headderRow2);
     for(i = 0; i < NUMBER_OF_USERS; i++){
         var head2 = document.createElement('th');
         head2.textContent = "Player " + (i + 1);
@@ -298,13 +299,14 @@ function newcsvToArray(csvString) {
 
     for(i = 0; i < NUMBER_OF_ROUNDS; i++){
         var row2 = document.createElement('tr');
-        newt2.appendChild(row2);
+        totals.appendChild(row2);
         for(j = 0; j < NUMBER_OF_USERS; j++){
             var cell2 = document.createElement('td');
             cell2.textContent = "-";
             row2.appendChild(cell2);
         }
     }
+    newt.appendChild(totals);
 }
 function findArray(x,y){
     if(x % 17 == 0){
