@@ -144,9 +144,9 @@ function getdata (){
         console.log("DATA = " + DATA);  // CSV data as a string
         DATA = temp;
         console.log("DATA = " + DATA);
-    })
-    
-        .catch(error => {
+    }).then(function () { 
+        console.log("DATA is still: " + DATA);
+    }).catch(error => {
         console.error('Error:', error);
 
     });
