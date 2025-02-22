@@ -263,7 +263,7 @@ function newcsvToArray(csvString) {
     bets_and_made = document.createElement('table');
 
     var headderRow = document.createElement('tr');
-    best_and_made.appendChild(headderRow);
+    bets_and_made.appendChild(headderRow);
     for(i = 0; i < NUMBER_OF_USERS; i++){
         var head = document.createElement('th');
         head.textContent = "Player " + (i + 1) + " bet";
