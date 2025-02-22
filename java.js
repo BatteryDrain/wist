@@ -141,8 +141,9 @@ function getdata (){
     fetch(url)
     .then(response => response.text())
     .then(temp => {
-        console.log("temp = " + temp);  // CSV data as a string
+        console.log("DATA = " + DATA);  // CSV data as a string
         DATA = temp;
+        console.log("DATA = " + DATA);
     })
     
         .catch(error => {
