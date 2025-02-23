@@ -542,7 +542,6 @@ function calculateTotals(){
             if(temp > 0){
                 temp = temp * -1;
             }
-            console.log(temp);
             PLAYER_1_TOTAL.push(temp);
         }
     }
