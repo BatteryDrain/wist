@@ -217,133 +217,133 @@ function newcsvToArray(csvString) {
             // }
         }
         console.log("ii = " + ii + " " + temp);
-        if(ii % 42 == 1){
+        if(ii % 43 == 1){
             Columb_A.push(temp);
         }
-        if(ii % 42 == 2){
+        if(ii % 43 == 2){
             Columb_B.push(temp);
         }
-        if(ii % 42 == 3){
+        if(ii % 43 == 3){
             Columb_C.push(temp);
         }
-        if(ii % 42 == 4){
+        if(ii % 43 == 4){
             Columb_D.push(temp);
         }
-        if(ii % 42 == 5){
+        if(ii % 43 == 5){
             Columb_E.push(temp);
         }
-        if(ii % 42 == 6){
+        if(ii % 43 == 6){
             Columb_F.push(temp);
         }
-        if(ii % 42 == 7){
+        if(ii % 43 == 7){
             Columb_G.push(temp);
         }
-        if(ii % 42 == 8){
+        if(ii % 43 == 8){
             Columb_H.push(temp);
         }
-        if(ii % 42 == 9){
+        if(ii % 43 == 9){
             Columb_I.push(temp);
         }
-        if(ii % 42 == 10){
+        if(ii % 43 == 10){
             Columb_J.push(temp);
         }
-        if(ii % 42 == 11){
+        if(ii % 43 == 11){
             Columb_K.push(temp);
         }
-        if(ii % 42 == 12){
+        if(ii % 43 == 12){
             Columb_L.push(temp);
         }
-        if(ii % 42 == 13){
+        if(ii % 43 == 13){
             Columb_M.push(temp);
         }
-        if(ii % 42 == 14){
+        if(ii % 43 == 14){
             Columb_N.push(temp);
         }
-        if(ii % 42 == 15){
+        if(ii % 43 == 15){
             Columb_O.push(temp);
         }
-        if(ii % 42 == 16){
+        if(ii % 43 == 16){
             Columb_P.push(temp);
         }
-        if(ii % 42 == 17){
+        if(ii % 43 == 17){
             Columb_Q.push(temp);
         }
-        if(ii % 42 == 18){
+        if(ii % 43 == 18){
             Columb_R.push(temp);
         }
-        if(ii % 42 == 19){
+        if(ii % 43 == 19){
             Columb_S.push(temp);
         }
-        if(ii % 42 == 20){
+        if(ii % 43 == 20){
             Columb_T.push(temp);
         }
-        if(ii % 42 == 21){
+        if(ii % 43 == 21){
             Columb_U.push(temp);
         }
-        if(ii % 42 == 22){
+        if(ii % 43 == 22){
             Columb_V.push(temp);
         }
-        if(ii % 42 == 23){
+        if(ii % 43 == 23){
             Columb_W.push(temp);
         }
-        if(ii % 42 == 24){
+        if(ii % 43 == 24){
             Columb_X.push(temp);
         }
-        if(ii % 42 == 25){
+        if(ii % 43 == 25){
             Columb_Y.push(temp);
         }
-        if(ii % 42 == 26){
+        if(ii % 43 == 26){
             Columb_Z.push(temp);
         }
-        if(ii % 42 == 27){
+        if(ii % 43 == 27){
             Columb_AA.push(temp);
         }
-        if(ii % 42 == 28){
+        if(ii % 43 == 28){
             Columb_AB.push(temp);
         }
-        if(ii % 42 == 29){
+        if(ii % 43 == 29){
             Columb_AC.push(temp);
         }
-        if(ii % 42 == 30){
+        if(ii % 43 == 30){
             Columb_AD.push(temp);
         }
-        if(ii % 42 == 31){
+        if(ii % 43 == 31){
             Columb_AE.push(temp);
         }
-        if(ii % 42 == 32){
+        if(ii % 43 == 32){
             Columb_AF.push(temp);
         }
-        if(ii % 42 == 33){
+        if(ii % 43 == 33){
             Columb_AG.push(temp);
         }
-        if(ii % 42 == 34){
+        if(ii % 43 == 34){
             Columb_AH.push(temp);
         }
-        if(ii % 42 == 35){
+        if(ii % 43 == 35){
             Columb_AI.push(temp);
         }
-        if(ii % 42 == 36){
+        if(ii % 43 == 36){
             Columb_AJ.push(temp);
         }
-        if(ii % 42 == 37){
+        if(ii % 43 == 37){
             Columb_AK.push(temp);
         }
-        if(ii % 42 == 38){
+        if(ii % 43 == 38){
             Columb_AL.push(temp);
         }
-        if(ii % 42 == 39){
+        if(ii % 43 == 39){
             Columb_AM.push(temp);
         }
-        if(ii % 42 == 40){
+        if(ii % 43 == 40){
             Columb_AN.push(temp);
         }
-        if(ii % 42 == 41){
+        if(ii % 43 == 41){
             Columb_AO.push(temp);
         }
-        if(ii % 42 == 42){
+        if(ii % 43 == 42){
             Columb_AP.push(temp);
         }
-        if(ii % 42 == 43){
+        if(ii % 43 == 43){
             Columb_AQ.push(temp);
         }
     }
