@@ -217,83 +217,134 @@ function newcsvToArray(csvString) {
             // }
         }
         console.log("ii = " + ii + " " + temp);
-        if(ii % 17 == 1){
+        if(ii % 42 == 1){
             Columb_A.push(temp);
         }
-        if(ii % 17 == 2){
+        if(ii % 42 == 2){
             Columb_B.push(temp);
         }
-        if(ii % 17 == 3){
+        if(ii % 42 == 3){
             Columb_C.push(temp);
         }
-        if(ii % 17 == 4){
+        if(ii % 42 == 4){
             Columb_D.push(temp);
         }
-        if(ii % 17 == 5){
+        if(ii % 42 == 5){
             Columb_E.push(temp);
         }
-        if(ii % 17 == 6){
+        if(ii % 42 == 6){
             Columb_F.push(temp);
         }
-        if(ii % 17 == 7){
+        if(ii % 42 == 7){
             Columb_G.push(temp);
         }
-        if(ii % 17 == 8){
+        if(ii % 42 == 8){
             Columb_H.push(temp);
         }
-        if(ii % 17 == 9){
+        if(ii % 42 == 9){
             Columb_I.push(temp);
         }
-        if(ii % 17 == 10){
+        if(ii % 42 == 10){
             Columb_J.push(temp);
         }
-        if(ii % 17 == 11){
+        if(ii % 42 == 11){
             Columb_K.push(temp);
         }
-        if(ii % 17 == 12){
+        if(ii % 42 == 12){
             Columb_L.push(temp);
         }
-        if(ii % 17 == 13){
+        if(ii % 42 == 13){
             Columb_M.push(temp);
         }
-        if(ii % 17 == 14){
+        if(ii % 42 == 14){
             Columb_N.push(temp);
         }
-        if(ii % 17 == 15){
+        if(ii % 42 == 15){
             Columb_O.push(temp);
         }
-        if(ii % 17 == 16){
+        if(ii % 42 == 16){
             Columb_P.push(temp);
         }
-        if(ii % 17 == 17){
+        if(ii % 42 == 17){
             Columb_Q.push(temp);
         }
-        if(ii % 17 == 18){
+        if(ii % 42 == 18){
             Columb_R.push(temp);
         }
-        if(ii % 17 == 19){
+        if(ii % 42 == 19){
             Columb_S.push(temp);
         }
-        if(ii % 17 == 20){
+        if(ii % 42 == 20){
             Columb_T.push(temp);
         }
-        if(ii % 17 == 21){
+        if(ii % 42 == 21){
             Columb_U.push(temp);
         }
-        if(ii % 17 == 22){
+        if(ii % 42 == 22){
             Columb_V.push(temp);
         }
-        if(ii % 17 == 23){
+        if(ii % 42 == 23){
             Columb_W.push(temp);
         }
-        if(ii % 17 == 24){
+        if(ii % 42 == 24){
             Columb_X.push(temp);
         }
-        if(ii % 17 == 25){
+        if(ii % 42 == 25){
             Columb_Y.push(temp);
         }
-        if(ii % 17 == 26){
+        if(ii % 42 == 26){
             Columb_Z.push(temp);
+        }
+        if(ii % 42 == 27){
+            Columb_AA.push(temp);
+        }
+        if(ii % 42 == 28){
+            Columb_AB.push(temp);
+        }
+        if(ii % 42 == 29){
+            Columb_AC.push(temp);
+        }
+        if(ii % 42 == 30){
+            Columb_AD.push(temp);
+        }
+        if(ii % 42 == 31){
+            Columb_AE.push(temp);
+        }
+        if(ii % 42 == 32){
+            Columb_AF.push(temp);
+        }
+        if(ii % 42 == 33){
+            Columb_AG.push(temp);
+        }
+        if(ii % 42 == 34){
+            Columb_AH.push(temp);
+        }
+        if(ii % 42 == 35){
+            Columb_AI.push(temp);
+        }
+        if(ii % 42 == 36){
+            Columb_AJ.push(temp);
+        }
+        if(ii % 42 == 37){
+            Columb_AK.push(temp);
+        }
+        if(ii % 42 == 38){
+            Columb_AL.push(temp);
+        }
+        if(ii % 42 == 39){
+            Columb_AM.push(temp);
+        }
+        if(ii % 42 == 40){
+            Columb_AN.push(temp);
+        }
+        if(ii % 42 == 41){
+            Columb_AO.push(temp);
+        }
+        if(ii % 42 == 42){
+            Columb_AP.push(temp);
+        }
+        if(ii % 42 == 43){
+            Columb_AQ.push(temp);
         }
     }
     console.log("make table");
