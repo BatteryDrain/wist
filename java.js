@@ -530,7 +530,7 @@ function findArray(x,y){
     }
 }
 function calculateTotals(){
-    for( i = 1; 1 < Columb_B.length; i++){
+    for( i = 1; 1 < 10; i++){
         if(Columb_B[i] - Columb_C[i] == 0){
             PLAYER_1_TOTAL.push(5);
         }
