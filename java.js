@@ -529,36 +529,83 @@ function findArray(x,y){
         return(Columb_AQ[y]);
     }
 }
-function calculateTotals(){
+function calculateTotals(AR1,AR2,PN){
     for( i = 2; i < 10; i++){
-        if(Columb_B[i] - Columb_C[i] == 0){
+        if(AR1[i] - AR2[i] == 0){
             PLAYER_1_TOTAL.push(5);
         }
         else{
-            if(Columb_B[i] == "" || Columb_C[i] == ""){
+            if(AR1[i] == "" || AR2[i] == ""){
                 PLAYER_1_TOTAL.push("-");
             }
-            temp = Columb_B[i] - Columb_C[i];
+            temp = AR1[i] - AR2[i];
             if(temp > 0){
                 temp = temp * -1;
             }
-            PLAYER_1_TOTAL.push(temp);
+            findPlayerTotalArray(PN).push(temp);
         }
     }
-    for( i = 2; i < 10; i++){
-        if(Columb_D[i] - Columb_E[i] == 0){
-            PLAYER_1_TOTAL.push(5);
-        }
-        else{
-            if(Columb_B[i] == "" || Columb_C[i] == ""){
-                PLAYER_1_TOTAL.push("-");
-            }
-            temp = Columb_D[i] - Columb_E[i];
-            if(temp > 0){
-                temp = temp * -1;
-            }
-            PLAYER_2_TOTAL.push(temp);
-        }
+}
+function findPlayerTotalArray(PN){
+    if(PN == 1){
+        return PLAYER_1_TOTAL;
+    }
+    if(PN == 2){
+        return PLAYER_2_TOTAL;
+    }
+    if(PN == 3){
+        return PLAYER_3_TOTAL;
+    }
+    if(PN == 4){
+        return PLAYER_4_TOTAL;
+    }
+    if(PN == 5){
+        return PLAYER_5_TOTAL;
+    }
+    if(PN == 6){
+        return PLAYER_6_TOTAL;
+    }
+    if(PN == 7){
+        return PLAYER_7_TOTAL;
+    }
+    if(PN == 8){
+        return PLAYER_8_TOTAL;
+    }
+    if(PN == 9){
+        return PLAYER_9_TOTAL;
+    }
+    if(PN == 10){
+        return PLAYER_10_TOTAL;
+    }
+    if(PN == 11){
+        return PLAYER_11_TOTAL;
+    }
+    if(PN == 12){
+        return PLAYER_12_TOTAL;
+    }
+    if(PN == 13){
+        return PLAYER_13_TOTAL;
+    }
+    if(PN == 14){
+        return PLAYER_14_TOTAL;
+    }
+    if(PN == 15){
+        return PLAYER_15_TOTAL;
+    }
+    if(PN == 16){
+        return PLAYER_16_TOTAL;
+    }
+    if(PN == 17){
+        return PLAYER_17_TOTAL;
+    }
+    if(PN == 18){
+        return PLAYER_18_TOTAL;
+    }
+    if(PN == 19){
+        return PLAYER_19_TOTAL;
+    }
+    if(PN == 20){
+        return PLAYER_20_TOTAL;
     }
 }
 function findTotalArray(x,y){
