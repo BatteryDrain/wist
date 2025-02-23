@@ -658,5 +658,64 @@ function findPlayerTotalArray(PN){
     }
 }
 function findTotalArray(x,y){
-
+    if(20 % x == 0){
+        return(PLAYER_1_TOTAL[y]);
+    }
+    if(20 % x == 1){
+        return(PLAYER_2_TOTAL[y]);
+    }
+    if(20 % x == 2){
+        return(PLAYER_3_TOTAL[y]);
+    }
+    if(20 % x == 3){
+        return(PLAYER_4_TOTAL[y]);
+    }
+    if(20 % x == 4){
+        return(PLAYER_5_TOTAL[y]);
+    }
+    if(20 % x == 5){
+        return(PLAYER_6_TOTAL[y]);
+    }
+    if(20 % x == 6){
+        return(PLAYER_7_TOTAL[y]);
+    }
+    if(20 % x == 7){
+        return(PLAYER_8_TOTAL[y]);
+    }
+    if(20 % x == 8){
+        return(PLAYER_9_TOTAL[y]);
+    }
+    if(20 % x == 9){
+        return(PLAYER_10_TOTAL[y]);
+    }
+    if(20 % x == 10){
+        return(PLAYER_11_TOTAL[y]);
+    }
+    if(20 % x == 11){
+        return(PLAYER_12_TOTAL[y]);
+    }
+    if(20 % x == 12){
+        return(PLAYER_13_TOTAL[y]);
+    }
+    if(20 % x == 13){
+        return(PLAYER_14_TOTAL[y]);
+    }
+    if(20 % x == 14){
+        return(PLAYER_15_TOTAL[y]);
+    }
+    if(20 % x == 15){
+        return(PLAYER_16_TOTAL[y]);
+    }
+    if(20 % x == 16){
+        return(PLAYER_17_TOTAL[y]);
+    }
+    if(20 % x == 17){
+        return(PLAYER_18_TOTAL[y]);
+    }
+    if(20 % x == 18){
+        return(PLAYER_19_TOTAL[y]);
+    }
+    if(20 % x == 19){
+        return(PLAYER_20_TOTAL[y]);
+    }
 }
