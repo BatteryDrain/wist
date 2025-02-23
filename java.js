@@ -399,133 +399,133 @@ function newcsvToArray(csvString) {
     newt.appendChild(totals);
 }
 function findArray(x,y){
-    if(x % 41 == 0){
+    if(x % 42 == 0){
         return(Columb_A[y]);
     }
-    if(x % 41 == 1){
+    if(x % 42 == 1){
         return(Columb_B[y]);
     }
-    if(x % 41 == 2){
+    if(x % 42 == 2){
         return(Columb_C[y]);
     }
-    if(x % 41 == 3){
+    if(x % 42 == 3){
         return(Columb_D[y]);
     }
-    if(x % 41 == 4){
+    if(x % 42 == 4){
         return(Columb_E[y]);
     }
-    if(x % 41 == 5){
+    if(x % 42 == 5){
         return(Columb_F[y]);
     }
-    if(x % 41 == 6){
+    if(x % 42 == 6){
         return(Columb_G[y]);
     }
-    if(x % 41 == 7){
+    if(x % 42 == 7){
         return(Columb_H[y]);
     }
-    if(x % 41 == 8){
+    if(x % 42 == 8){
         return(Columb_I[y]);
     }
-    if(x % 41 == 9){
+    if(x % 42 == 9){
         return(Columb_J[y]);
     }
-    if(x % 41 == 10){
+    if(x % 42 == 10){
         return(Columb_K[y]);
     }
-    if(x % 41 == 11){
+    if(x % 42 == 11){
         return(Columb_L[y]);
     }
-    if(x % 41 == 12){
+    if(x % 42 == 12){
         return(Columb_M[y]);
     }
-    if(x % 41 == 13){
+    if(x % 42 == 13){
         return(Columb_N[y]);
     }
-    if(x % 41 == 14){
+    if(x % 42 == 14){
         return(Columb_O[y]);
     }
-    if(x % 41 == 15){
+    if(x % 42 == 15){
         return(Columb_P[y]);
     }
-    if(x % 41 == 16){
+    if(x % 42 == 16){
         return(Columb_Q[y]);
     }
-    if(x % 41 == 17){
+    if(x % 42 == 17){
         return(Columb_R[y]);
     }
-    if(x % 41 == 18){
+    if(x % 42 == 18){
         return(Columb_S[y]);
     }
-    if(x % 41 == 19){
+    if(x % 42 == 19){
         return(Columb_T[y]);
     }
-    if(x % 41 == 20){
+    if(x % 42 == 20){
         return(Columb_U[y]);
     }
-    if(x % 41 == 21){
+    if(x % 42 == 21){
         return(Columb_V[y]);
     }
-    if(x % 41 == 22){
+    if(x % 42 == 22){
         return(Columb_W[y]);
     }
-    if(x % 41 == 23){
+    if(x % 42 == 23){
         return(Columb_X[y]);
     }
-    if(x % 41 == 24){
+    if(x % 42 == 24){
         return(Columb_Y[y]);
     }
-    if(x % 41 == 25){
+    if(x % 42 == 25){
         return(Columb_Z[y]);
     }
-    if(x % 41 == 26){
+    if(x % 42 == 26){
         return(Columb_AA[y]);
     }
-    if(x % 41 == 27){
+    if(x % 42 == 27){
         return(Columb_AB[y]);
     }
-    if(x % 41 == 28){
+    if(x % 42 == 28){
         return(Columb_AC[y]);
     }
-    if(x % 41 == 29){
+    if(x % 42 == 29){
         return(Columb_AD[y]);
     }
-    if(x % 41 == 30){
+    if(x % 42 == 30){
         return(Columb_AE[y]);
     }
-    if(x % 41 == 31){
+    if(x % 42 == 31){
         return(Columb_AF[y]);
     }
-    if(x % 41 == 32){
+    if(x % 42 == 32){
         return(Columb_AG[y]);
     }
-    if(x % 41 == 33){
+    if(x % 42 == 33){
         return(Columb_AH[y]);
     }
-    if(x % 41 == 34){
+    if(x % 42 == 34){
         return(Columb_AI[y]);
     }
-    if(x % 41 == 35){
+    if(x % 42 == 35){
         return(Columb_AJ[y]);
     }
-    if(x % 41 == 36){
+    if(x % 42 == 36){
         return(Columb_AK[y]);
     }
-    if(x % 41 == 37){
+    if(x % 42 == 37){
         return(Columb_AL[y]);
     }
-    if(x % 41 == 38){
+    if(x % 42 == 38){
         return(Columb_AM[y]);
     }
-    if(x % 41 == 39){
+    if(x % 42 == 39){
         return(Columb_AN[y]);
     }
-    if(x % 41 == 40){
+    if(x % 42 == 40){
         return(Columb_AO[y]);
     }
-    if(x % 41 == 41){
+    if(x % 42 == 41){
         return(Columb_AP[y]);
     }
-    if(x % 41 == 42){
+    if(x % 42 == 42){
         return(Columb_AQ[y]);
     }
 }
