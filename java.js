@@ -76,6 +76,50 @@ function resetarray(){
     PLAYER_19_TOTAL = [];
     PLAYER_20_TOTAL = [];
 }
+ListOfArrays = [
+"Columb_A",
+"Columb_B",
+"Columb_C",
+"Columb_D",
+"Columb_E",
+"Columb_F",
+"Columb_G",
+"Columb_H",
+"Columb_I",
+"Columb_J",
+"Columb_K",
+"Columb_L",
+"Columb_M",
+"Columb_N",
+"Columb_O",
+"Columb_P",
+"Columb_Q",
+"Columb_R",
+"Columb_S",
+"Columb_T",
+"Columb_U",
+"Columb_V",
+"Columb_W",
+"Columb_X",
+"Columb_Y",
+"Columb_Z",
+"Columb_AA",
+"Columb_AB",
+"Columb_AC",
+"Columb_AD",
+"Columb_AE",
+"Columb_AF",
+"Columb_AG",
+"Columb_AH",
+"Columb_AI",
+"Columb_AJ",
+"Columb_AK",
+"Columb_AL",
+"Columb_AM",
+"Columb_AN",
+"Columb_AO",
+"Columb_AP",
+"Columb_AQ"]
 
 
 /* */
@@ -527,6 +571,11 @@ function findArray(x,y){
     }
     if(x % 42 == 42){
         return(Columb_AQ[y]);
+    }
+}
+function launchCalcTotals(){
+    for(i = 1; i < NUMBER_OF_USERS; i++){
+        calculateTotals(ListOfArrays[(i+TABLE_1_OFFSET_X)],ListOfArrays[(i+TABLE_1_OFFSET_X+1)],i);
     }
 }
 function calculateTotals(AR1,AR2,PN){
