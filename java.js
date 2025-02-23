@@ -530,11 +530,14 @@ function findArray(x,y){
     }
 }
 function calculateTotals(){
-    for( i = 1; 1 < 10; i++){
+    for( i = 2; 1 < 10; i++){
         if(Columb_B[i] - Columb_C[i] == 0){
             PLAYER_1_TOTAL.push(5);
         }
         else{
+            if(Columb_B[i] == "" || Columb_C[i] == ""){
+                PLAYER_1_TOTAL.push(-);
+            }
             temp = Columb_B[i] - Columb_C[i];
             if(temp > 0){
                 temp = temp * -1;
