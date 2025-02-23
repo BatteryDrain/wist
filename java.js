@@ -545,6 +545,21 @@ function calculateTotals(){
             PLAYER_1_TOTAL.push(temp);
         }
     }
+    for( i = 2; i < 10; i++){
+        if(Columb_D[i] - Columb_E[i] == 0){
+            PLAYER_1_TOTAL.push(5);
+        }
+        else{
+            if(Columb_B[i] == "" || Columb_C[i] == ""){
+                PLAYER_1_TOTAL.push("-");
+            }
+            temp = Columb_D[i] - Columb_E[i];
+            if(temp > 0){
+                temp = temp * -1;
+            }
+            PLAYER_2_TOTAL.push(temp);
+        }
+    }
 }
 function findTotalArray(x,y){
 
