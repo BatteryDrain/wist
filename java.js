@@ -536,7 +536,7 @@ function calculateTotals(){
         }
         else{
             if(Columb_B[i] == "" || Columb_C[i] == ""){
-                PLAYER_1_TOTAL.push(-);
+                PLAYER_1_TOTAL.push("-");
             }
             temp = Columb_B[i] - Columb_C[i];
             if(temp > 0){
