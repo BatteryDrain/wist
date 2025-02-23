@@ -38,6 +38,31 @@ function resetarray(){
     Columb_X = [];
     Columb_Y = [];
     Columb_Z = [];
+    Columb_AA = [];
+    Columb_AB = [];
+    Columb_AC = [];
+    Columb_AD = [];
+    Columb_AE = [];
+    Columb_AF = [];
+    Columb_AG = [];
+    Columb_AH = [];
+    Columb_AI = [];
+    Columb_AJ = [];
+    Columb_AK = [];
+    Columb_AL = [];
+    Columb_AM = [];
+    Columb_AN = [];
+    Columb_AO = [];
+    Columb_AP = [];
+    Columb_AQ = [];
+    PLAYER_1_TOTAL = [];
+    PLAYER_1_TOTAL = [];
+    PLAYER_1_TOTAL = [];
+    PLAYER_1_TOTAL = [];
+    PLAYER_1_TOTAL = [];
+    PLAYER_1_TOTAL = [];
+    PLAYER_1_TOTAL = [];
+    PLAYER_1_TOTAL = [];
 }
 
 
@@ -295,7 +320,7 @@ function newcsvToArray(csvString) {
     totals.appendChild(headderRow2);
     for(i = TABLE_1_OFFSET_X; i < ((NUMBER_OF_USERS*2)+1); i = 2 + i){
         var head2 = document.createElement('th');
-        head2.textContent = findArray(i,1);
+        head2.textContent = findArray(i,1) + " score";
         headderRow2.appendChild(head2);
     }
 
@@ -304,90 +329,157 @@ function newcsvToArray(csvString) {
         totals.appendChild(row2);
         for(j = 0; j < NUMBER_OF_USERS; j++){
             var cell2 = document.createElement('td');
-            cell2.textContent = "-";
+            cell2.textContent = findTotalArray(j,i);
             row2.appendChild(cell2);
         }
     }
     newt.appendChild(totals);
 }
 function findArray(x,y){
-    if(x % 17 == 0){
+    if(x % 41 == 0){
         return(Columb_A[y]);
     }
-    if(x % 17 == 1){
+    if(x % 41 == 1){
         return(Columb_B[y]);
     }
-    if(x % 17 == 2){
+    if(x % 41 == 2){
         return(Columb_C[y]);
     }
-    if(x % 17 == 3){
+    if(x % 41 == 3){
         return(Columb_D[y]);
     }
-    if(x % 17 == 4){
+    if(x % 41 == 4){
         return(Columb_E[y]);
     }
-    if(x % 17 == 5){
+    if(x % 41 == 5){
         return(Columb_F[y]);
     }
-    if(x % 17 == 6){
+    if(x % 41 == 6){
         return(Columb_G[y]);
     }
-    if(x % 17 == 7){
+    if(x % 41 == 7){
         return(Columb_H[y]);
     }
-    if(x % 17 == 8){
+    if(x % 41 == 8){
         return(Columb_I[y]);
     }
-    if(x % 17 == 9){
+    if(x % 41 == 9){
         return(Columb_J[y]);
     }
-    if(x % 17 == 10){
+    if(x % 41 == 10){
         return(Columb_K[y]);
     }
-    if(x % 17 == 11){
+    if(x % 41 == 11){
         return(Columb_L[y]);
     }
-    if(x % 17 == 12){
+    if(x % 41 == 12){
         return(Columb_M[y]);
     }
-    if(x % 17 == 13){
+    if(x % 41 == 13){
         return(Columb_N[y]);
     }
-    if(x % 17 == 14){
+    if(x % 41 == 14){
         return(Columb_O[y]);
     }
-    if(x % 17 == 15){
+    if(x % 41 == 15){
         return(Columb_P[y]);
     }
-    if(x % 17 == 16){
+    if(x % 41 == 16){
         return(Columb_Q[y]);
     }
-    if(x % 17 == 17){
+    if(x % 41 == 17){
         return(Columb_R[y]);
     }
-    if(x % 17 == 18){
+    if(x % 41 == 18){
         return(Columb_S[y]);
     }
-    if(x % 17 == 19){
+    if(x % 41 == 19){
         return(Columb_T[y]);
     }
-    if(x % 17 == 20){
+    if(x % 41 == 20){
         return(Columb_U[y]);
     }
-    if(x % 17 == 21){
+    if(x % 41 == 21){
         return(Columb_V[y]);
     }
-    if(x % 17 == 22){
+    if(x % 41 == 22){
         return(Columb_W[y]);
     }
-    if(x % 17 == 23){
+    if(x % 41 == 23){
         return(Columb_X[y]);
     }
-    if(x % 17 == 24){
+    if(x % 41 == 24){
         return(Columb_Y[y]);
     }
-    if(x % 17 == 25){
+    if(x % 41 == 25){
         return(Columb_Z[y]);
     }
+    if(x % 41 == 26){
+        return(Columb_AA[y]);
+    }
+    if(x % 41 == 27){
+        return(Columb_AB[y]);
+    }
+    if(x % 41 == 28){
+        return(Columb_AC[y]);
+    }
+    if(x % 41 == 29){
+        return(Columb_AD[y]);
+    }
+    if(x % 41 == 30){
+        return(Columb_AE[y]);
+    }
+    if(x % 41 == 31){
+        return(Columb_AF[y]);
+    }
+    if(x % 41 == 32){
+        return(Columb_AG[y]);
+    }
+    if(x % 41 == 33){
+        return(Columb_AH[y]);
+    }
+    if(x % 41 == 34){
+        return(Columb_AI[y]);
+    }
+    if(x % 41 == 35){
+        return(Columb_AJ[y]);
+    }
+    if(x % 41 == 36){
+        return(Columb_AK[y]);
+    }
+    if(x % 41 == 37){
+        return(Columb_AL[y]);
+    }
+    if(x % 41 == 38){
+        return(Columb_AM[y]);
+    }
+    if(x % 41 == 39){
+        return(Columb_AN[y]);
+    }
+    if(x % 41 == 40){
+        return(Columb_AO[y]);
+    }
+    if(x % 41 == 41){
+        return(Columb_AP[y]);
+    }
+    if(x % 41 == 42){
+        return(Columb_AQ[y]);
+    }
 }
+function calculateTotals(){
+    for( i = 1; 1 < Columb_B.length; i++){
+        if(Columb_B[i] - Columb_C[i] == 0){
+            PLAYER_1_TOTAL.push(5);
+        }
+        else{
+            temp = Columb_B[i] - Columb_C[i];
+            if(temp > 0){
+                temp = temp * -1;
+            }
+            PLAYER_1_TOTAL.push(temp);
+        }
+    }
+}
+function findTotalArray(x,y){
 
+}
