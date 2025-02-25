@@ -142,33 +142,33 @@ function getplayernumber() {
     document.getElementById('playernumberlabel').style.display = 'none';
     document.getElementById('sibmitbutton').style.display = 'none';
 
-    document.getElementById('player1n').style.display = 'block';
-    document.getElementById('player1c').style.display = 'block';
-    document.getElementById('player2n').style.display = 'block';
-    document.getElementById('player2c').style.display = 'block';
-    document.getElementById('player3n').style.display = 'block';
-    document.getElementById('player3c').style.display = 'block';
+    // document.getElementById('player1n').style.display = 'block';
+    // document.getElementById('player1c').style.display = 'block';
+    // document.getElementById('player2n').style.display = 'block';
+    // document.getElementById('player2c').style.display = 'block';
+    // document.getElementById('player3n').style.display = 'block';
+    // document.getElementById('player3c').style.display = 'block';
 
-    if(selectedValue>=4){
-        document.getElementById('player4n').style.display = 'block';
-        document.getElementById('player4c').style.display = 'block';
-    }
-    if(selectedValue>=5){
-        document.getElementById('player5n').style.display = 'block';
-        document.getElementById('player5c').style.display = 'block';
-    }
-    if(selectedValue>=6){
-        document.getElementById('player6n').style.display = 'block';
-        document.getElementById('player6c').style.display = 'block';
-    }
-    if(selectedValue>=7){
-        document.getElementById('player7n').style.display = 'block';
-        document.getElementById('player7c').style.display = 'block';
-    }
-    if(selectedValue>=8){
-        document.getElementById('player8n').style.display = 'block';
-        document.getElementById('player8c').style.display = 'block';
-    }
+    // if(selectedValue>=4){
+    //     document.getElementById('player4n').style.display = 'block';
+    //     document.getElementById('player4c').style.display = 'block';
+    // }
+    // if(selectedValue>=5){
+    //     document.getElementById('player5n').style.display = 'block';
+    //     document.getElementById('player5c').style.display = 'block';
+    // }
+    // if(selectedValue>=6){
+    //     document.getElementById('player6n').style.display = 'block';
+    //     document.getElementById('player6c').style.display = 'block';
+    // }
+    // if(selectedValue>=7){
+    //     document.getElementById('player7n').style.display = 'block';
+    //     document.getElementById('player7c').style.display = 'block';
+    // }
+    // if(selectedValue>=8){
+    //     document.getElementById('player8n').style.display = 'block';
+    //     document.getElementById('player8c').style.display = 'block';
+    // }
 
     // document.getElementById('savenames').style.display = 'block';
     document.getElementById('note').style.display = 'block';
