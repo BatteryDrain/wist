@@ -180,9 +180,9 @@ function getplayernumber() {
     numberOfRounds.innerHTML = "there will be " + NUMBER_OF_ROUNDS + " rounds";
   }
 
-savenames.addEventListener("click", function(){
-  savingnames();
-});
+// savenames.addEventListener("click", function(){
+//   savingnames();
+// });
 
 // function savingnames()  {
 //     var player1name = document.getElementById('player1n').value;
