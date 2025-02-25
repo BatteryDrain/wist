@@ -170,7 +170,7 @@ function getplayernumber() {
         document.getElementById('player8c').style.display = 'block';
     }
 
-    document.getElementById('savenames').style.display = 'block';
+    // document.getElementById('savenames').style.display = 'block';
     document.getElementById('note').style.display = 'block';
 
     NUMBER_OF_USERS = selectedValue;
@@ -184,38 +184,38 @@ savenames.addEventListener("click", function(){
   savingnames();
 });
 
-function savingnames()  {
-    var player1name = document.getElementById('player1n').value;
-    var player1color = document.getElementById('player1c').value;
+// function savingnames()  {
+//     var player1name = document.getElementById('player1n').value;
+//     var player1color = document.getElementById('player1c').value;
 
-    var player2name = document.getElementById('player2n').value;
-    var player2color = document.getElementById('player2c').value;
+//     var player2name = document.getElementById('player2n').value;
+//     var player2color = document.getElementById('player2c').value;
 
-    var player3name = document.getElementById('player3n').value;
-    var player3color = document.getElementById('player3c').value;
+//     var player3name = document.getElementById('player3n').value;
+//     var player3color = document.getElementById('player3c').value;
 
-    var player4name = document.getElementById('player4n').value;
-    var player4color = document.getElementById('player4c').value;
+//     var player4name = document.getElementById('player4n').value;
+//     var player4color = document.getElementById('player4c').value;
 
-    var player5name = document.getElementById('player5n').value;
-    var player5color = document.getElementById('player5c').value;
+//     var player5name = document.getElementById('player5n').value;
+//     var player5color = document.getElementById('player5c').value;
 
-    var player6name = document.getElementById('player6n').value;
-    var player6color = document.getElementById('player6c').value;
+//     var player6name = document.getElementById('player6n').value;
+//     var player6color = document.getElementById('player6c').value;
 
-    var player7name = document.getElementById('player7n').value;
-    var player7color = document.getElementById('player7c').value;
+//     var player7name = document.getElementById('player7n').value;
+//     var player7color = document.getElementById('player7c').value;
 
 
-    var player8name = document.getElementById('player8n').value;
-    var player8color = document.getElementById('player8c').value;
+//     var player8name = document.getElementById('player8n').value;
+//     var player8color = document.getElementById('player8c').value;
 
     
-    console.log(player1name);
-    console.log(player1color); //test
+//     console.log(player1name);
+//     console.log(player1color); //test
 
-    console.log(NUMBER_OF_USERS);
-  }
+//     console.log(NUMBER_OF_USERS);
+//   }
 function getdata (){
     newt.innerHTML = "";
     newt2.innerHTML = "";
