@@ -227,9 +227,25 @@ function totalCalc(i,j){
     }
 }
 function buildTotals(){
-    for(i = TABLE_1_OFFSET_X; i < NUMBER_OF_USERS; i++){
-        for(j = 0 ; j < NUMBER_OF_ROUNDS)
-        BIGARRAY[i][];
+    for(x = TABLE_1_OFFSET_X; x < NUMBER_OF_USERS; x++){
+        for(y = 0 ; y < NUMBER_OF_ROUNDS; y++){
+            if(BIGARRAY[x][y] =="" || BIGARRAY[x + 1][y] == ""){
+                TOTALSARRAY[x].push("");
+            }
+            else{
+                val = BIGARRAY[x][y] - BIGARRAY[x + 1][y];
+                if(val == 0){
+                    TOTALSARRAY[x].push(5);                
+                }
+                else{
+                    if(val > 0){
+                        TOTALSARRAY[x].push(val * -1);
+                    }
+                    else{
+                        TOTALSARRAY[x].push(val);
+                    }
+                }
+        }
     }
 }
 
