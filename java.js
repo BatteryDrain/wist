@@ -133,7 +133,7 @@ function csvToBIGARRAY(csvString) {
 
     var headderRow2 = document.createElement('tr');
     totals.appendChild(headderRow2);
-    console.log(NUMBER_OF_USERS);
+    console.log("NUMBER_OF_USERS = " + NUMBER_OF_USERS);
     for(i = TABLE_1_OFFSET_X; i < ((NUMBER_OF_USERS*2)+1); i = 2 + i){
         var head2 = document.createElement('th');
         head2.textContent = BIGARRAY[i][1] + " score";
