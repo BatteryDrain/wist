@@ -236,17 +236,9 @@ function csvToBIGARRAY(csvString) {
         SMALLARRAY.push(temp);
     }
 
-    startingValue = 0;
-    for(row = 0; row < 42; row++){
-        ii = startingValue;
+    for(row = 0; row < (SMALLARRAY.length/e42); row++){
         for(i = 0; i < 42; i++){
             temp = "";
-            ii++;
-                while(ii < 1000 && csvString[ii] != ","){
-                    temp = temp + csvString[ii];
-                    ii++
-                }
-            startingValue = startingValue + ii;
             console.log("row = " + row + " temp = " + temp);
             BIGARRAY[row].push(temp);
         }
