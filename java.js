@@ -245,6 +245,56 @@ function csvToBIGARRAY(csvString) {
             BIGARRAY[row].push(SMALLARRAY[(row*42)+i]);
         }
     }
+    console.log("make table");
+
+    bets_and_made = document.createElement('table');
+
+    var headderRow = document.createElement('tr');
+    bets_and_made.appendChild(headderRow);
+    for(i = TABLE_1_OFFSET_X; i < (NUMBER_OF_USERS*2); i++){
+        var head = document.createElement('th');
+        head.textContent = BIGARRAY[i][1] + " bet";
+        headderRow.appendChild(head);
+
+        i++;
+
+        var head = document.createElement('th');
+        head.textContent = BIGARRAY[i][1] + " made";
+        headderRow.appendChild(head);
+    }
+
+    for(i = (TABLE_1_OFFSET_Y+1); i < (NUMBER_OF_ROUNDS+TABLE_1_OFFSET_Y); i++){
+        var row = document.createElement('tr');
+        bets_and_made.appendChild(row);
+        for(j = TABLE_1_OFFSET_X; j < ((NUMBER_OF_USERS * 2)+TABLE_1_OFFSET_X); j++){
+            var cell = document.createElement('td');
+            cell.textContent = BIGARRAY[j][i];
+            row.appendChild(cell);
+        }
+    }
+
+    newt.appendChild(bets_and_made);
+
+    totals = document.createElement('table');
+
+    var headderRow2 = document.createElement('tr');
+    totals.appendChild(headderRow2);
+    for(i = TABLE_1_OFFSET_X; i < ((NUMBER_OF_USERS*2)+1); i = 2 + i){
+        var head2 = document.createElement('th');
+        head2.textContent = BIGARRAY[i][1] + " score";
+        headderRow2.appendChild(head2);
+    }
+
+    for(i = 0; i < NUMBER_OF_ROUNDS; i++){
+        var row2 = document.createElement('tr');
+        totals.appendChild(row2);
+        for(j = 0; j < NUMBER_OF_USERS; j++){
+            var cell2 = document.createElement('td');
+            cell2.textContent = "-";
+            row2.appendChild(cell2);
+        }
+    }
+    newt.appendChild(totals);
 }
 
 
