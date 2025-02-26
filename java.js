@@ -154,7 +154,7 @@ function csvToBIGARRAY(csvString) {
 
 function buildTotals(){
     for(x = TABLE_1_OFFSET_X; x < ((NUMBER_OF_USERS * 2) + TABLE_1_OFFSET_X); x++){
-        for(y = 1 ; y < (NUMBER_OF_ROUNDS + 1); y++){
+        for(y = 0 ; y < (NUMBER_OF_ROUNDS + 0); y++){
             if(BIGARRAY[x][y] == "" || BIGARRAY[x + 1][y] == ""){
                 TOTALSARRAY[x].push("");
             }
