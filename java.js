@@ -201,7 +201,7 @@ function csvToBIGARRAY(csvString) {
         totals.appendChild(row2);
         for(j = TABLE_1_OFFSET_X; j < ((NUMBER_OF_USERS * 2) + TABLE_1_OFFSET_X); j = j + 2){
             var cell2 = document.createElement('td');
-            cell2.textContent = totalCalc(i,j);
+            cell2.textContent = TOTALSARRAY[j][i];
             row2.appendChild(cell2);
         }
     }
@@ -245,7 +245,7 @@ function buildTotals(){
                         TOTALSARRAY[x].push(val);
                     }
                 }
+            }
         }
     }
 }
-
