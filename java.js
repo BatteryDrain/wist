@@ -230,7 +230,7 @@ function csvToBIGARRAY(csvString) {
     for(i = 0; i < 1000; i++){
         temp = "";
         ii++;
-            while(ii < 1000 && csvString[ii] != "," || csvString[ii] != "\\r\\"){
+            while(ii < 1000 && csvString[ii] != ","){
                 temp = temp + csvString[ii];
                 ii++
             }
