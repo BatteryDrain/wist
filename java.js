@@ -165,7 +165,6 @@ function getdata (){
         DATA = temp;
         console.log("DATA = " + DATA);
         newcsvToArray(DATA);
-        make2Darray();
     })
     .catch(error => {
         console.error('Error:', error);
@@ -200,135 +199,136 @@ function newcsvToArray(csvString) {
             // }
         }
         console.log("ii = " + ii + " " + temp);
-        if(ii % 43 == 1){
-            Columb_A.push(temp);
-        }
-        if(ii % 43 == 2){
-            Columb_B.push(temp);
-        }
-        if(ii % 43 == 3){
-            Columb_C.push(temp);
-        }
-        if(ii % 43 == 4){
-            Columb_D.push(temp);
-        }
-        if(ii % 43 == 5){
-            Columb_E.push(temp);
-        }
-        if(ii % 43 == 6){
-            Columb_F.push(temp);
-        }
-        if(ii % 43 == 7){
-            Columb_G.push(temp);
-        }
-        if(ii % 43 == 8){
-            Columb_H.push(temp);
-        }
-        if(ii % 43 == 9){
-            Columb_I.push(temp);
-        }
-        if(ii % 43 == 10){
-            Columb_J.push(temp);
-        }
-        if(ii % 43 == 11){
-            Columb_K.push(temp);
-        }
-        if(ii % 43 == 12){
-            Columb_L.push(temp);
-        }
-        if(ii % 43 == 13){
-            Columb_M.push(temp);
-        }
-        if(ii % 43 == 14){
-            Columb_N.push(temp);
-        }
-        if(ii % 43 == 15){
-            Columb_O.push(temp);
-        }
-        if(ii % 43 == 16){
-            Columb_P.push(temp);
-        }
-        if(ii % 43 == 17){
-            Columb_Q.push(temp);
-        }
-        if(ii % 43 == 18){
-            Columb_R.push(temp);
-        }
-        if(ii % 43 == 19){
-            Columb_S.push(temp);
-        }
-        if(ii % 43 == 20){
-            Columb_T.push(temp);
-        }
-        if(ii % 43 == 21){
-            Columb_U.push(temp);
-        }
-        if(ii % 43 == 22){
-            Columb_V.push(temp);
-        }
-        if(ii % 43 == 23){
-            Columb_W.push(temp);
-        }
-        if(ii % 43 == 24){
-            Columb_X.push(temp);
-        }
-        if(ii % 43 == 25){
-            Columb_Y.push(temp);
-        }
-        if(ii % 43 == 26){
-            Columb_Z.push(temp);
-        }
-        if(ii % 43 == 27){
-            Columb_AA.push(temp);
-        }
-        if(ii % 43 == 28){
-            Columb_AB.push(temp);
-        }
-        if(ii % 43 == 29){
-            Columb_AC.push(temp);
-        }
-        if(ii % 43 == 30){
-            Columb_AD.push(temp);
-        }
-        if(ii % 43 == 31){
-            Columb_AE.push(temp);
-        }
-        if(ii % 43 == 32){
-            Columb_AF.push(temp);
-        }
-        if(ii % 43 == 33){
-            Columb_AG.push(temp);
-        }
-        if(ii % 43 == 34){
-            Columb_AH.push(temp);
-        }
-        if(ii % 43 == 35){
-            Columb_AI.push(temp);
-        }
-        if(ii % 43 == 36){
-            Columb_AJ.push(temp);
-        }
-        if(ii % 43 == 37){
-            Columb_AK.push(temp);
-        }
-        if(ii % 43 == 38){
-            Columb_AL.push(temp);
-        }
-        if(ii % 43 == 39){
-            Columb_AM.push(temp);
-        }
-        if(ii % 43 == 40){
-            Columb_AN.push(temp);
-        }
-        if(ii % 43 == 41){
-            Columb_AO.push(temp);
-        }
-        if(ii % 43 == 42){
-            Columb_AP.push(temp);
-        }
-        if(ii % 43 == 43){
-            Columb_AQ.push(temp);
-        }
+        BIGARRAY[i].push(temp);
+        // if(ii % 43 == 1){
+        //     Columb_A.push(temp);
+        // }
+        // if(ii % 43 == 2){
+        //     Columb_B.push(temp);
+        // }
+        // if(ii % 43 == 3){
+        //     Columb_C.push(temp);
+        // }
+        // if(ii % 43 == 4){
+        //     Columb_D.push(temp);
+        // }
+        // if(ii % 43 == 5){
+        //     Columb_E.push(temp);
+        // }
+        // if(ii % 43 == 6){
+        //     Columb_F.push(temp);
+        // }
+        // if(ii % 43 == 7){
+        //     Columb_G.push(temp);
+        // }
+        // if(ii % 43 == 8){
+        //     Columb_H.push(temp);
+        // }
+        // if(ii % 43 == 9){
+        //     Columb_I.push(temp);
+        // }
+        // if(ii % 43 == 10){
+        //     Columb_J.push(temp);
+        // }
+        // if(ii % 43 == 11){
+        //     Columb_K.push(temp);
+        // }
+        // if(ii % 43 == 12){
+        //     Columb_L.push(temp);
+        // }
+        // if(ii % 43 == 13){
+        //     Columb_M.push(temp);
+        // }
+        // if(ii % 43 == 14){
+        //     Columb_N.push(temp);
+        // }
+        // if(ii % 43 == 15){
+        //     Columb_O.push(temp);
+        // }
+        // if(ii % 43 == 16){
+        //     Columb_P.push(temp);
+        // }
+        // if(ii % 43 == 17){
+        //     Columb_Q.push(temp);
+        // }
+        // if(ii % 43 == 18){
+        //     Columb_R.push(temp);
+        // }
+        // if(ii % 43 == 19){
+        //     Columb_S.push(temp);
+        // }
+        // if(ii % 43 == 20){
+        //     Columb_T.push(temp);
+        // }
+        // if(ii % 43 == 21){
+        //     Columb_U.push(temp);
+        // }
+        // if(ii % 43 == 22){
+        //     Columb_V.push(temp);
+        // }
+        // if(ii % 43 == 23){
+        //     Columb_W.push(temp);
+        // }
+        // if(ii % 43 == 24){
+        //     Columb_X.push(temp);
+        // }
+        // if(ii % 43 == 25){
+        //     Columb_Y.push(temp);
+        // }
+        // if(ii % 43 == 26){
+        //     Columb_Z.push(temp);
+        // }
+        // if(ii % 43 == 27){
+        //     Columb_AA.push(temp);
+        // }
+        // if(ii % 43 == 28){
+        //     Columb_AB.push(temp);
+        // }
+        // if(ii % 43 == 29){
+        //     Columb_AC.push(temp);
+        // }
+        // if(ii % 43 == 30){
+        //     Columb_AD.push(temp);
+        // }
+        // if(ii % 43 == 31){
+        //     Columb_AE.push(temp);
+        // }
+        // if(ii % 43 == 32){
+        //     Columb_AF.push(temp);
+        // }
+        // if(ii % 43 == 33){
+        //     Columb_AG.push(temp);
+        // }
+        // if(ii % 43 == 34){
+        //     Columb_AH.push(temp);
+        // }
+        // if(ii % 43 == 35){
+        //     Columb_AI.push(temp);
+        // }
+        // if(ii % 43 == 36){
+        //     Columb_AJ.push(temp);
+        // }
+        // if(ii % 43 == 37){
+        //     Columb_AK.push(temp);
+        // }
+        // if(ii % 43 == 38){
+        //     Columb_AL.push(temp);
+        // }
+        // if(ii % 43 == 39){
+        //     Columb_AM.push(temp);
+        // }
+        // if(ii % 43 == 40){
+        //     Columb_AN.push(temp);
+        // }
+        // if(ii % 43 == 41){
+        //     Columb_AO.push(temp);
+        // }
+        // if(ii % 43 == 42){
+        //     Columb_AP.push(temp);
+        // }
+        // if(ii % 43 == 43){
+        //     Columb_AQ.push(temp);
+        // }
     }
     console.log("make table");
 
@@ -661,53 +661,5 @@ function findTotalArray(x,y){
         return(PLAYER_20_TOTAL[y]);
     }
 }
-function make2Darray(){
-    temp = Columb_A;
-    console.log(temp);
-    BIGARRAY = [
-        [],
-        [Columb_B],
-        [Columb_C],
-        [Columb_D],
-        [Columb_E],
-        [Columb_F],
-        [Columb_G],
-        [Columb_H],
-        [Columb_I],
-        [Columb_J],
-        [Columb_K],
-        [Columb_L],
-        [Columb_M],
-        [Columb_N],
-        [Columb_O],
-        [Columb_P],
-        [Columb_Q],
-        [Columb_R],
-        [Columb_S],
-        [Columb_T],
-        [Columb_U],
-        [Columb_V],
-        [Columb_W],
-        [Columb_X],
-        [Columb_Y],
-        [Columb_Z],
-        [Columb_AA],
-        [Columb_AB],
-        [Columb_AC],
-        [Columb_AD],
-        [Columb_AE],
-        [Columb_AF],
-        [Columb_AG],
-        [Columb_AH],
-        [Columb_AI],
-        [Columb_AJ],
-        [Columb_AK],
-        [Columb_AL],
-        [Columb_AM],
-        [Columb_AN],
-        [Columb_AO],
-        [Columb_AP],
-        [Columb_AQ]
-    ];
-    console.log(BIGARRAY);
+
 }
