@@ -224,6 +224,7 @@ rreset.addEventListener("change", function(){
 });
 
 function csvToBIGARRAY(csvString) {
+    startingValue = 0;
     for(row = 0; row < 42; row++){
         ii = startingValue;
         for(i = 0; i < 42; i++){
