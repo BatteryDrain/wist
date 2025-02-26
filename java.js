@@ -145,7 +145,7 @@ function csvToBIGARRAY(csvString) {
         totals.appendChild(row2);
         for(j = TABLE_1_OFFSET_X; j < (NUMBER_OF_USERS + TABLE_1_OFFSET_X); j++){
             var cell2 = document.createElement('td');
-            console.log(" j = " + j + "i = " + i);
+            console.log(" j = " + j + " i = " + i);
             cell2.textContent = TOTALSARRAY[j][i];
             row2.appendChild(cell2);
         }
