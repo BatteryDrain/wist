@@ -149,11 +149,11 @@ function csvToBIGARRAY(csvString) {
         SMALLARRAY.push(temp);
     }
 
-    for(row = 0; row < 10; row++){
+    for(row = 0; arrayrow < 10; arrayrow++){
         for(i = 0; i < 43; i++){
             temp = "";
-            console.log("row = " + row + " value = " + SMALLARRAY[(row*42)+i]);
-            BIGARRAY[1].push(SMALLARRAY[(row*42)+i]);
+            console.log("arrayrow = " + arrayrow + " value = " + SMALLARRAY[i]);
+            BIGARRAY[1].push(SMALLARRAY[i]);
         }
     }
     console.log("make table");
