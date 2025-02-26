@@ -234,6 +234,7 @@ function csvToBIGARRAY(csvString) {
                 temp = temp + csvString[ii];
                 ii++
             }
+            console.log(temp);
         SMALLARRAY.push(temp);
     }
 
