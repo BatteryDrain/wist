@@ -149,7 +149,7 @@ function csvToBIGARRAY(csvString) {
         SMALLARRAY.push(temp);
     }
 
-    for(arrayrow = 0; arrayrow < 10; arrayrow++){
+    for(arrayrow = 0; arrayrow < (NUMBER_OF_ROUNDS + 2); arrayrow++){
         for(i = 0; i < 43; i++){
             temp = "";
             console.log("arrayrow = " + arrayrow + " value = " + SMALLARRAY[i + 42 * arrayrow]);
@@ -226,3 +226,10 @@ function totalCalc(i,j){
         }
     }
 }
+function buildTotals(){
+    for(i = TABLE_1_OFFSET_X; i < NUMBER_OF_USERS; i++){
+        for(j = 0 ; j < NUMBER_OF_ROUNDS)
+        BIGARRAY[i][];
+    }
+}
+
