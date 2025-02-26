@@ -127,6 +127,7 @@ function csvToBIGARRAY(csvString) {
 
     buildTotals();
 
+        console.log("fill totals table");
     totals = document.createElement('table');
 
     var headderRow2 = document.createElement('tr');
