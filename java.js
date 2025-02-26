@@ -508,11 +508,14 @@ function findArray(x,y){
     }
 }
 function launchCalcTotals(){
+    console.log("launched launchCalcTotals")
     for(i = 1; i < NUMBER_OF_USERS; i++){
         calculateTotals(ListOfArrays[(i+TABLE_1_OFFSET_X)],ListOfArrays[(i+TABLE_1_OFFSET_X+1)],i);
+        console.log(ListOfArrays[(i+TABLE_1_OFFSET_X)],ListOfArrays[(i+TABLE_1_OFFSET_X+1)],i);
     }
 }
 function calculateTotals(AR1,AR2,PN){
+    console.log("in");
     for( i = 2; i < 10; i++){
         if(AR1[i] - AR2[i] == 0){
             PLAYER_1_TOTAL.push(5);
