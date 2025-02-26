@@ -268,7 +268,7 @@ function csvToBIGARRAY(csvString) {
         bets_and_made.appendChild(row);
         for(j = TABLE_1_OFFSET_X; j < ((NUMBER_OF_USERS * 2)+TABLE_1_OFFSET_X); j++){
             var cell = document.createElement('td');
-            cell.textContent = BIGARRAY[j][i];
+            cell.textContent = BIGARRAY[i][j];
             row.appendChild(cell);
         }
     }
