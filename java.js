@@ -239,8 +239,8 @@ function csvToBIGARRAY(csvString) {
     for(row = 0; row < 10; row++){
         for(i = 0; i < 42; i++){
             temp = "";
-            console.log("row = " + row + " temp = " + temp);
-            BIGARRAY[row].push(temp);
+            console.log("row = " + row + " value = " + SMALLARRAY[i]);
+            BIGARRAY[row].push(SMALLARRAY[i]);
         }
     }
 }
