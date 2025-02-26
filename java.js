@@ -88,7 +88,7 @@ function csvToBIGARRAY(csvString) {
         SMALLARRAY.push(temp);
     }
 
-    for(arrayrow = 0; arrayrow < (NUMBER_OF_ROUNDS + 2); arrayrow++){ //the extra 1 is for safty
+    for(arrayrow = 0; arrayrow < (NUMBER_OF_ROUNDS + 2); arrayrow++){
         for(i = 0; i < 43; i++){
             temp = "";
             console.log("arrayrow = " + arrayrow + " value = " + SMALLARRAY[i + 42 * arrayrow]);
