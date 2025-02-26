@@ -661,5 +661,3 @@ function findTotalArray(x,y){
         return(PLAYER_20_TOTAL[y]);
     }
 }
-
-}
