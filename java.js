@@ -201,7 +201,7 @@ function csvToBIGARRAY(csvString) {
     for(i = 0; i < NUMBER_OF_ROUNDS; i++){
         var row2 = document.createElement('tr');
         totals.appendChild(row2);
-        for(j = TABLE_1_OFFSET_X; j < ((NUMBER_OF_USERS * 2) + TABLE_1_OFFSET_X); j = j + 2){
+        for(j = TABLE_1_OFFSET_X; j < NUMBER_OF_USERS; j++){
             var cell2 = document.createElement('td');
             cell2.textContent = TOTALSARRAY[j][i];
             row2.appendChild(cell2);
@@ -210,7 +210,7 @@ function csvToBIGARRAY(csvString) {
     newt.appendChild(totals);
 }
 function totalCalc(i,j){
-    if(BIGARRAY[i + 2][j] =="" || BIGARRAY[i + 2][j + 1] == ""){
+    if(BIGARRAY[i + 2][j] == "" || BIGARRAY[i + 2][j + 1] == ""){
         return ""
     }
     else{
@@ -229,9 +229,9 @@ function totalCalc(i,j){
     }
 }
 function buildTotals(){
-    for(x = TABLE_1_OFFSET_X; x < NUMBER_OF_USERS; x++){
+    for(x = TABLE_1_OFFSET_X; x < (NUMBER_OF_USERS * 2); x++){
         for(y = 0 ; y < NUMBER_OF_ROUNDS; y++){
-            if(BIGARRAY[x][y] =="" || BIGARRAY[x + 1][y] == ""){
+            if(BIGARRAY[x][y] == "" || BIGARRAY[x + 1][y] == ""){
                 TOTALSARRAY[x].push("");
             }
             else{
