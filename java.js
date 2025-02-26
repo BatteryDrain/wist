@@ -88,7 +88,7 @@ function csvToBIGARRAY(csvString) {
         SMALLARRAY.push(temp);
     }
 
-    for(arrayrow = 0; arrayrow < (NUMBER_OF_ROUNDS + 2); arrayrow++){
+    for(arrayrow = 0; arrayrow < ((NUMBER_OF_ROUNDS + 2) + 1); arrayrow++){ //the extra 1 is for safty
         for(i = 0; i < 43; i++){
             temp = "";
             console.log("arrayrow = " + arrayrow + " value = " + SMALLARRAY[i + 42 * arrayrow]);
@@ -143,7 +143,7 @@ function csvToBIGARRAY(csvString) {
         totals.appendChild(row2);
         for(j = TABLE_1_OFFSET_X; j < (NUMBER_OF_USERS + TABLE_1_OFFSET_X); j++){
             var cell2 = document.createElement('td');
-            console.log("i = " + i + "j = " + j);
+            console.log("i = " + i + " j = " + j);
             cell2.textContent = TOTALSARRAY[j][i];
             row2.appendChild(cell2);
         }
