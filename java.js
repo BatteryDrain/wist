@@ -199,7 +199,7 @@ function newcsvToArray(csvString) {
             // }
         }
         console.log("ii = " + ii + " " + temp);
-        BIGARRAY[ii].push(temp);
+        BIGARRAY[ii].push(temp+",");
         // if(ii % 43 == 1){
         //     Columb_A.push(temp);
         // }
