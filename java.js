@@ -200,9 +200,9 @@ function csvToBIGARRAY(csvString) {
     for(i = 0; i < NUMBER_OF_ROUNDS; i++){
         var row2 = document.createElement('tr');
         totals.appendChild(row2);
-        for(j = 0; j < NUMBER_OF_USERS; j++){
+        for(j = 0; j < NUMBER_OF_USERS * 2; j = j + 2){
             var cell2 = document.createElement('td');
-            cell2.textContent = BIGARRAY[2][1] - BIGARRAY[2][2];
+            cell2.textContent = BIGARRAY[i + 1][j] - BIGARRAY[i + 1][j + 1];
             row2.appendChild(cell2);
         }
     }
