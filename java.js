@@ -202,7 +202,7 @@ function csvToBIGARRAY(csvString) {
         totals.appendChild(row2);
         for(j = 0; j < NUMBER_OF_USERS; j++){
             var cell2 = document.createElement('td');
-            cell2.textContent = "-";
+            cell2.textContent = BIGARRAY[2][1] - BIGARRAY[2][2];
             row2.appendChild(cell2);
         }
     }
