@@ -155,11 +155,11 @@ function csvToBIGARRAY(csvString) {
 function buildTotals(){
     for(x = TABLE_1_OFFSET_X; x < ((NUMBER_OF_USERS * 2) + TABLE_1_OFFSET_X); x++){
         for(y = 2 ; y < (NUMBER_OF_ROUNDS + 2); y++){
-            if(BIGARRAY[x][y] == "" || BIGARRAY[x + 1][y] == ""){
+            if(BIGARRAY[(x - 1)][y] == "" || BIGARRAY[x][y] == ""){
                 TOTALSARRAY[x].push("");
             }
             else{
-                val = BIGARRAY[x][y] - BIGARRAY[x + 1][y];
+                val = BIGARRAY[(x - 1)][y] - BIGARRAY[x][y];
                 if(val == 0){
                     TOTALSARRAY[x].push(5);                
                 }
