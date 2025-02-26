@@ -140,7 +140,7 @@ function csvToBIGARRAY(csvString) {
         headderRow2.appendChild(head2);
     }
 
-    for(i = 0; i < NUMBER_OF_ROUNDS; i++){
+    for(i = TABLE_1_OFFSET_Y; i < (NUMBER_OF_ROUNDS + TABLE_1_OFFSET_Y); i++){
         var row2 = document.createElement('tr');
         totals.appendChild(row2);
         for(j = TABLE_1_OFFSET_X; j < ((NUMBER_OF_USERS * 2) + TABLE_1_OFFSET_X); j = j + 2){ //multiplying by 1 to convert srring to int
