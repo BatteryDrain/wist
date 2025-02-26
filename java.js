@@ -236,7 +236,7 @@ function csvToBIGARRAY(csvString) {
         SMALLARRAY.push(temp);
     }
 
-    for(row = 0; row < (SMALLARRAY.length/42); row++){
+    for(row = 0; row < 10; row++){
         for(i = 0; i < 42; i++){
             temp = "";
             console.log("row = " + row + " temp = " + temp);
