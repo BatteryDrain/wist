@@ -13,7 +13,7 @@ let P8P = 0;
 DATA = "no values,";
 function resetArrays(){
     SMALLARRAY = [];
-    TOTALSARRAY = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
+    TOTALSARRAY = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
     BIGARRAY = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];
 }
 
@@ -143,7 +143,7 @@ function csvToBIGARRAY(csvString) {
     for(i = 0; i < NUMBER_OF_ROUNDS; i++){
         var row2 = document.createElement('tr');
         totals.appendChild(row2);
-        for(j = TABLE_1_OFFSET_X; j < ((NUMBER_OF_USERS * 1) + TABLE_1_OFFSET_X); j++){ //multiplying by 1 to convert srring to int
+        for(j = TABLE_1_OFFSET_X; j < ((NUMBER_OF_USERS * 1) + TABLE_1_OFFSET_X); j = j + 2){ //multiplying by 1 to convert srring to int
             var cell2 = document.createElement('td');
             cell2.textContent = TOTALSARRAY[j][i];
             row2.appendChild(cell2);
