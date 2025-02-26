@@ -662,8 +662,10 @@ function findTotalArray(x,y){
     }
 }
 function make2Darray(){
+    temp = Columb_A;
+    console.log(temp);
     BIGARRAY = [
-        [Columb_A],
+        [],
         [Columb_B],
         [Columb_C],
         [Columb_D],
