@@ -153,8 +153,8 @@ function csvToBIGARRAY(csvString) {
 }
 
 function buildTotals(){
-    for(x = 0; x < (NUMBER_OF_USERS * 2); x++){
-        for(y = 0 ; y < NUMBER_OF_ROUNDS; y++){
+    for(x = 0; x < ((NUMBER_OF_USERS * 2) + TABLE_1_OFFSET_X); x++){
+        for(y = 1 ; y < (NUMBER_OF_ROUNDS + 1); y++){
             if(BIGARRAY[x][y] == "" || BIGARRAY[x + 1][y] == ""){
                 TOTALSARRAY[x].push("");
             }
