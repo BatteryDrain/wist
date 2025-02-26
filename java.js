@@ -233,7 +233,6 @@ function csvToBIGARRAY(csvString) {
                 temp = temp + csvString[ii];
                 ii++
             }
-        startingValue = startingValue + ii;
         console.log("row = " + row + " temp = " + temp);
         SMALLARRAY.push(temp);
     }
