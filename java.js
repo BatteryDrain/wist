@@ -58,49 +58,6 @@ BIGARRAY = [
     []
 ];
 function resetarray(){
-    Columb_A = [];
-    Columb_B = [];
-    Columb_C = [];
-    Columb_D = [];
-    Columb_E = [];
-    Columb_F = [];
-    Columb_G = [];
-    Columb_H = [];
-    Columb_I = [];
-    Columb_J = [];
-    Columb_K = [];
-    Columb_L = [];
-    Columb_M = [];
-    Columb_N = [];
-    Columb_O = [];
-    Columb_P = [];
-    Columb_Q = [];
-    Columb_R = [];
-    Columb_S = [];
-    Columb_T = [];
-    Columb_U = [];
-    Columb_V = [];
-    Columb_W = [];
-    Columb_X = [];
-    Columb_Y = [];
-    Columb_Z = [];
-    Columb_AA = [];
-    Columb_AB = [];
-    Columb_AC = [];
-    Columb_AD = [];
-    Columb_AE = [];
-    Columb_AF = [];
-    Columb_AG = [];
-    Columb_AH = [];
-    Columb_AI = [];
-    Columb_AJ = [];
-    Columb_AK = [];
-    Columb_AL = [];
-    Columb_AM = [];
-    Columb_AN = [];
-    Columb_AO = [];
-    Columb_AP = [];
-    Columb_AQ = [];
     PLAYER_1_TOTAL = [];
     PLAYER_2_TOTAL = [];
     PLAYER_3_TOTAL = [];
@@ -122,51 +79,6 @@ function resetarray(){
     PLAYER_19_TOTAL = [];
     PLAYER_20_TOTAL = [];
 }
-ListOfArrays = [
-"Columb_A",
-"Columb_B",
-"Columb_C",
-"Columb_D",
-"Columb_E",
-"Columb_F",
-"Columb_G",
-"Columb_H",
-"Columb_I",
-"Columb_J",
-"Columb_K",
-"Columb_L",
-"Columb_M",
-"Columb_N",
-"Columb_O",
-"Columb_P",
-"Columb_Q",
-"Columb_R",
-"Columb_S",
-"Columb_T",
-"Columb_U",
-"Columb_V",
-"Columb_W",
-"Columb_X",
-"Columb_Y",
-"Columb_Z",
-"Columb_AA",
-"Columb_AB",
-"Columb_AC",
-"Columb_AD",
-"Columb_AE",
-"Columb_AF",
-"Columb_AG",
-"Columb_AH",
-"Columb_AI",
-"Columb_AJ",
-"Columb_AK",
-"Columb_AL",
-"Columb_AM",
-"Columb_AN",
-"Columb_AO",
-"Columb_AP",
-"Columb_AQ"]
-
 
 /* */
 ARRAY = ["name", "points",];
