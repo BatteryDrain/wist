@@ -253,13 +253,13 @@ function csvToBIGARRAY(csvString) {
     bets_and_made.appendChild(headderRow);
     for(i = TABLE_1_OFFSET_X; i < (NUMBER_OF_USERS*2); i++){
         var head = document.createElement('th');
-        head.textContent = BIGARRAY[i][1] + " bet";
+        head.textContent = BIGARRAY[1][i] + " bet";
         headderRow.appendChild(head);
 
         i++;
 
         var head = document.createElement('th');
-        head.textContent = BIGARRAY[i][1] + " made";
+        head.textContent = BIGARRAY[1][i] + " made";
         headderRow.appendChild(head);
     }
 
@@ -281,7 +281,7 @@ function csvToBIGARRAY(csvString) {
     totals.appendChild(headderRow2);
     for(i = TABLE_1_OFFSET_X; i < ((NUMBER_OF_USERS*2)+1); i = 2 + i){
         var head2 = document.createElement('th');
-        head2.textContent = BIGARRAY[i][1] + " score";
+        head2.textContent = BIGARRAY[1][i] + " score";
         headderRow2.appendChild(head2);
     }
 
