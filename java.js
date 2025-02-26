@@ -140,7 +140,7 @@ function csvToBIGARRAY(csvString) {
         headderRow2.appendChild(head2);
     }
 
-    for(i = 0; i < NUMBER_OF_ROUNDS; i++){
+    for(i = ; i < NUMBER_OF_ROUNDS; i++){
         var row2 = document.createElement('tr');
         totals.appendChild(row2);
         for(j = TABLE_1_OFFSET_X; j < ((NUMBER_OF_USERS * 1) + TABLE_1_OFFSET_X); j++){ //multiplying by 1 to convert srring to int
@@ -152,25 +152,7 @@ function csvToBIGARRAY(csvString) {
     }
     newt.appendChild(totals);
 }
-function totalCalc(i,j){
-    if(BIGARRAY[i + 2][j] == "" || BIGARRAY[i + 2][j + 1] == ""){
-        return ""
-    }
-    else{
-        val = BIGARRAY[i + 2][j] - BIGARRAY[i + 2][j + 1];
-        if(val == 0){
-            return(5);
-        }
-        else{
-            if(val > 0){
-                return(val * -1);
-            }
-            else{
-                return(val);
-            }
-        }
-    }
-}
+
 function buildTotals(){
     for(x = TABLE_1_OFFSET_X; x < ((NUMBER_OF_USERS * 2)+TABLE_1_OFFSET_X); x++){
         console.log("in");
