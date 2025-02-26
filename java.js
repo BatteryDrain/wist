@@ -12,6 +12,10 @@ let P7P = 0;
 let P8P = 0;
 DATA = "no values,";
 SMALLARRAY = [];
+TOTALSARRAY = [
+    [],
+    []
+]
 BIGARRAY = [
     [],
     [],
