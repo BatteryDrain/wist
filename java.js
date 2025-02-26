@@ -152,8 +152,8 @@ function csvToBIGARRAY(csvString) {
     for(arrayrow = 0; arrayrow < 10; arrayrow++){
         for(i = 0; i < 43; i++){
             temp = "";
-            console.log("arrayrow = " + arrayrow + " value = " + SMALLARRAY[i]);
-            BIGARRAY[i].push(SMALLARRAY[i]);
+            console.log("arrayrow = " + arrayrow + " value = " + SMALLARRAY[i + 42 * arrayrow]);
+            BIGARRAY[i].push(SMALLARRAY[i + 42 * arrayrow]);
         }
     }
     console.log("make table");
