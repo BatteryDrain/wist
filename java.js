@@ -61,28 +61,6 @@ BIGARRAY = [
     [],
     []
 ];
-function resetarray(){
-    PLAYER_1_TOTAL = [];
-    PLAYER_2_TOTAL = [];
-    PLAYER_3_TOTAL = [];
-    PLAYER_4_TOTAL = [];
-    PLAYER_5_TOTAL = [];
-    PLAYER_6_TOTAL = [];
-    PLAYER_7_TOTAL = [];
-    PLAYER_8_TOTAL = [];
-    PLAYER_9_TOTAL = [];
-    PLAYER_10_TOTAL = [];
-    PLAYER_11_TOTAL = [];
-    PLAYER_12_TOTAL = [];
-    PLAYER_13_TOTAL = [];
-    PLAYER_14_TOTAL = [];
-    PLAYER_15_TOTAL = [];
-    PLAYER_16_TOTAL = [];
-    PLAYER_17_TOTAL = [];
-    PLAYER_18_TOTAL = [];
-    PLAYER_19_TOTAL = [];
-    PLAYER_20_TOTAL = [];
-}
 
 /* */
 ARRAY = ["name", "points",];
