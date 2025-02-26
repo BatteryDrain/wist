@@ -62,7 +62,6 @@ BIGARRAY = [
     []
 ];
 
-/* */
 ARRAY = ["name", "points",];
 
 sibmitbutton.addEventListener("click", function(){
