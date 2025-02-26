@@ -186,6 +186,8 @@ function csvToBIGARRAY(csvString) {
 
     newt.appendChild(bets_and_made);
 
+    buildTotals();
+
     totals = document.createElement('table');
 
     var headderRow2 = document.createElement('tr');
