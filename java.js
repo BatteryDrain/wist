@@ -153,7 +153,7 @@ function csvToBIGARRAY(csvString) {
         for(i = 0; i < 43; i++){
             temp = "";
             console.log("arrayrow = " + arrayrow + " value = " + SMALLARRAY[i]);
-            BIGARRAY[1].push(SMALLARRAY[i]);
+            BIGARRAY[i].push(SMALLARRAY[i]);
         }
     }
     console.log("make table");
