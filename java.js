@@ -149,7 +149,7 @@ function csvToBIGARRAY(csvString) {
         SMALLARRAY.push(temp);
     }
 
-    for(row = 0; arrayrow < 10; arrayrow++){
+    for(arrayrow = 0; arrayrow < 10; arrayrow++){
         for(i = 0; i < 43; i++){
             temp = "";
             console.log("arrayrow = " + arrayrow + " value = " + SMALLARRAY[i]);
