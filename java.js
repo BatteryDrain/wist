@@ -209,16 +209,21 @@ function csvToBIGARRAY(csvString) {
     newt.appendChild(totals);
 }
 function totalCalc(i,j){
-    val = BIGARRAY[i + 2][j] - BIGARRAY[i + 2][j + 1];
-    if(val == 0){
-        return(5);
+    if(BIGARRAY[i + 2][j] =="" || BIGARRAY[i + 2][j + 1] == ""){
+        return ""
     }
     else{
-        if(val > 0){
-            return(val * -1);
+        val = BIGARRAY[i + 2][j] - BIGARRAY[i + 2][j + 1];
+        if(val == 0){
+            return(5);
         }
         else{
-            return(val);
+            if(val > 0){
+                return(val * -1);
+            }
+            else{
+                return(val);
+            }
         }
     }
 }
