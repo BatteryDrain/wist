@@ -229,7 +229,7 @@ function csvToBIGARRAY(csvString) {
             temp = "";
             ii = 0;
             while(ii < 1000 && csvString[ii] != ","){
-                temp = temp + csvString[i];
+                temp = temp + csvString[ii];
                 ii++
             }
             console.log("row = " + row + " temp = " + temp);
