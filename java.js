@@ -11,9 +11,12 @@ let P6P = 0;
 let P7P = 0;
 let P8P = 0;
 DATA = "no values,";
-SMALLARRAY = [];
-TOTALSARRAY = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
-BIGARRAY = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];
+function resetArrays(){
+    SMALLARRAY = [];
+    TOTALSARRAY = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
+    BIGARRAY = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];
+}
+
 
 ARRAY = ["name", "points",];
 
@@ -71,7 +74,8 @@ rreset.addEventListener("change", function(){
 });
 
 function csvToBIGARRAY(csvString) {
-    console.log("to arrays")
+    resetArrays();
+    console.log("to arrays");
     ii = 0;
     for(i = 0; i < 1000; i++){
         temp = "";
