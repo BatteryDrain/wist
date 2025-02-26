@@ -225,7 +225,7 @@ rreset.addEventListener("change", function(){
 
 function csvToBIGARRAY(csvString) {
     for(row = 0; row < 42; row++){
-        ii = 0;
+        ii = startingValue;
         for(i = 0; i < 42; i++){
             temp = "";
             ii++;
@@ -233,6 +233,7 @@ function csvToBIGARRAY(csvString) {
                 temp = temp + csvString[ii];
                 ii++
             }
+            startingValue = startingValue + ii;
             console.log("row = " + row + " temp = " + temp);
             BIGARRAY[row].push(temp);
         }
