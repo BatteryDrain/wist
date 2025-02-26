@@ -11,6 +11,7 @@ let P6P = 0;
 let P7P = 0;
 let P8P = 0;
 DATA = "no values,";
+SMALLARRAY = [];
 BIGARRAY = [
     [],
     [],
@@ -224,16 +225,28 @@ rreset.addEventListener("change", function(){
 });
 
 function csvToBIGARRAY(csvString) {
+    for(i = 0; i < 42; i++){
+        temp = "";
+        ii++;
+            while(ii < 1000 && csvString[ii] != ","){
+                temp = temp + csvString[ii];
+                ii++
+            }
+        startingValue = startingValue + ii;
+        console.log("row = " + row + " temp = " + temp);
+        SMALLARRAY.push(temp);
+    }
+
     startingValue = 0;
     for(row = 0; row < 42; row++){
         ii = startingValue;
         for(i = 0; i < 42; i++){
             temp = "";
             ii++;
-            while(ii < 1000 && csvString[ii] != ","){
-                temp = temp + csvString[ii];
-                ii++
-            }
+                while(ii < 1000 && csvString[ii] != ","){
+                    temp = temp + csvString[ii];
+                    ii++
+                }
             startingValue = startingValue + ii;
             console.log("row = " + row + " temp = " + temp);
             BIGARRAY[row].push(temp);
