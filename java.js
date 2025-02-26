@@ -202,9 +202,23 @@ function csvToBIGARRAY(csvString) {
         totals.appendChild(row2);
         for(j = TABLE_1_OFFSET_X; j < ((NUMBER_OF_USERS * 2) + TABLE_1_OFFSET_X); j = j + 2){
             var cell2 = document.createElement('td');
-            cell2.textContent = BIGARRAY[i + 1][j] - BIGARRAY[i + 1][j + 1];
+            cell2.textContent = totalCalc(i,j);
             row2.appendChild(cell2);
         }
     }
     newt.appendChild(totals);
+}
+function totalCalc(i,j){
+    val = BIGARRAY[i + 1][j] - BIGARRAY[i + 1][j + 1];
+    if(val == 0){
+        return(5);
+    }
+    else{
+        if(val > 0){
+            return(val * -1);
+        }
+        else{
+            return(val);
+        }
+    }
 }
