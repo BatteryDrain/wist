@@ -43,6 +43,6 @@ table{
     height: 800px;
 } */
 canvas {
-    max-width: 600px;
-    margin: 20px auto;
+    width: 100%;
+    height: auto;
 }
