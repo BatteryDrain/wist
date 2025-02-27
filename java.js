@@ -156,6 +156,7 @@ function csvToBIGARRAY(csvString) {
     }
     newt.appendChild(totals);
     findnames();
+    buildgraph();
 }
 
 function findnames(){
@@ -187,7 +188,7 @@ function buildTotals(){
         }
     }
 }
-window.onload = function () {
+function buildgraph() {
     const ctx = document.getElementById("lineGraph").getContext('2d');
 
     const myChart = new Chart(ctx, {
