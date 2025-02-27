@@ -263,6 +263,8 @@ function buildgraph() {
                         text: 'Values'
                     },
                     beginAtZero: true
+                    min: -10;
+                    max: 90;
                 }
             }
         }
