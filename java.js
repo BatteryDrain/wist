@@ -227,13 +227,13 @@ function buildgraph() {
     }
 
     datasets = [];
-    generateDatasets(datasets);
+    generateDatasets(datasetsin);
     
     lineGraph = new Chart(ctx, {
         type: 'line',
         data: {
             labels: ROUNDS,
-            datasets: datasets
+            datasets: datasetsin
         },
         options: {
             responsive: true,
