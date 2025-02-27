@@ -20,6 +20,15 @@ function resetArrays(){
 
 ARRAY = ["name", "points",];
 
+playernumber.addEventListener("change", function(){
+    NUMBER_OF_USERS = selectedValue;
+    console.log("NUMBER_OF_USERS = " + NUMBER_OF_USERS)
+    NUMBER_OF_ROUNDS = NUMBER_OF_USERS * 3 + 12;
+    var VarSpace = NUMBER_OF_ROUNDS * 36;
+    numberOfPlayers.innerHTML = "there are " + NUMBER_OF_USERS + " players";
+    numberOfRounds.innerHTML = "there will be " + NUMBER_OF_ROUNDS + " rounds";
+});
+
 sibmitbutton.addEventListener("click", function(){
     getplayernumber();
   });
@@ -33,7 +42,7 @@ function getplayernumber() {
   
     // test the selected value
     console.log('Selected value:', selectedValue);
-    document.getElementById('player#').style.display = 'none';
+    document.getElementById('playernumber').style.display = 'none';
     document.getElementById('playernumberlabel').style.display = 'none';
     document.getElementById('sibmitbutton').style.display = 'none';
 
