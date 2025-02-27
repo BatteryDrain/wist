@@ -177,8 +177,10 @@ function calcruntotal(){
             for(ii = 1; ii < j; ii++){
                 val = val + TOTALSARRAY[((i * 2) + 1)][(j - ii)];
             }
-            RUNTOTAL[i].push(val);
-            // console.log(val);
+            if(TOTALSARRAY[((i * 2) + 1)][(j - ii)] != ""){
+                RUNTOTAL[i].push(val);
+                // console.log(val);
+            }
         }
     }
 }
