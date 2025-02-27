@@ -40,11 +40,11 @@ table{
 }
 #newt {
     width: 100%;
-    height: 750px;
+    height: VarSpace;
 }
 #newt2 {
     width: 100%;
-    height: 750px;
+    height: VarSpace;
 }
 canvas {
     width: 100%;

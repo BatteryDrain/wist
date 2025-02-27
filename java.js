@@ -42,6 +42,7 @@ function getplayernumber() {
     NUMBER_OF_USERS = selectedValue;
     console.log("NUMBER_OF_USERS = " + NUMBER_OF_USERS)
     NUMBER_OF_ROUNDS = NUMBER_OF_USERS * 3 + 12;
+    var VarSpace = NUMBER_OF_ROUNDS * 36;
     numberOfPlayers.innerHTML = "there are " + NUMBER_OF_USERS + " players";
     numberOfRounds.innerHTML = "there will be " + NUMBER_OF_ROUNDS + " rounds";
   }
