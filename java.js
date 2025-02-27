@@ -219,29 +219,6 @@ function buildgraph() {
         data: {
             labels: ['January', 'February', 'March', 'April', 'May', 'June'],
             datasets: datasets
-            //  [
-            //     {
-            //         label: PLAYERNAMES[0],
-            //         data: [12, 19, 3, 5, 2, 3],
-            //         borderColor: 'red',
-            //         backgroundColor: 'red',
-            //         borderWidth: 2
-            //     },
-            //     {
-            //         label: PLAYERNAMES[1],
-            //         data: [5, 15, 8, 12, 6, 10],
-            //         borderColor: 'limegreen',
-            //         backgroundColor: 'limegreen',
-            //         borderWidth: 2
-            //     },
-            //     {
-            //         label: PLAYERNAMES[2],
-            //         data: [5, 15, 8, 12, 6, 10],
-            //         borderColor: 'blue',
-            //         backgroundColor: 'blue',
-            //         borderWidth: 2
-            //     }
-            // ]
         },
         options: {
             responsive: true,
