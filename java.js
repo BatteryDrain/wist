@@ -218,13 +218,13 @@ function buildTotals(){
         }
     }
 }
-Graph = null;
+lineGraph = null;
 
 function buildgraph() {
     const ctx = document.getElementById("lineGraph").getContext('2d');
 
-    if(Graph == true){
-        Graph.destroy();
+    if(lineGraph == true){
+        lineGraph.destroy();
     }
 
     datasets = [];
