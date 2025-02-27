@@ -255,8 +255,8 @@ function buildgraph() {
                         text: 'score'
                     },
                     beginAtZero: true,
-                    min: -10,
-                    max: 90
+                    min: -20,
+                    max: 40
                 }
             }
         }
