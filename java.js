@@ -2,6 +2,8 @@ NUMBER_OF_USERS = 0;
 NUMBER_OF_ROUNDS = 0;
 TABLE_1_OFFSET_X = 1;
 TABLE_1_OFFSET_Y = 1;
+MAXVAL = 0;
+MINVAL = 0;
 let P1P = 0;
 let P2P = 0;
 let P3P = 0;
@@ -179,16 +181,24 @@ function findnames(){
 }
 
 function calcruntotal(){
+    MAXVAL = 0;
+    MINVAL = 0;
     for(i = 0; i < NUMBER_OF_USERS; i++){
         console.log("run total for player" + i + " reading: " + ((i * 2) + 1));
         for(j = 1; j < TOTALSARRAY[((i * 2) + 1)].length; j++){
             val = TOTALSARRAY[((i * 2) + 1)][j];
             for(ii = 1; ii < j; ii++){
-                val = (1 * val) + (1 * (TOTALSARRAY[((i * 2) + 1)][(j - ii)]));
+                val = (1 * val) + (1 * (TOTALSARRAY[((i * 2) + 1)][(j - ii)])); //multiplying by 1 to make sure they are ints
             }
             if(val != RUNTOTAL[i][RUNTOTAL[i].length - 1]){
                 RUNTOTAL[i].push(val);
                 console.log(val);
+            }
+            if(val < MINVAL){
+                MINVAL = val;
+            }
+            if(val > MAXVAL){
+                MAXVAL = val; 
             }
         }
     }
