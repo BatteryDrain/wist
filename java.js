@@ -239,9 +239,9 @@ function buildgraph() {
                         display: true,
                         text: 'Values'
                     },
-                    beginAtZero: true
-                    min: -10;
-                    max: 90;
+                    beginAtZero: true,
+                    min: -10,
+                    max: 90
                 }
             }
         }
