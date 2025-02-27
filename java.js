@@ -155,6 +155,13 @@ function csvToBIGARRAY(csvString) {
         }
     }
     newt.appendChild(totals);
+    findnames();
+}
+
+function findnames(){
+    for(i = 0; i < NUMBER_OF_USERS; i++){
+        PLAYERNAMES.push(BIGARRAY[i][1])
+    }
 }
 
 function buildTotals(){
