@@ -40,13 +40,16 @@ table{
 }
 #newt {
     width: 100%;
-    height: 450px;
+    height: 600px;
 }
 #newt2 {
     width: 100%;
-    height: 450px;
+    height: 600px;
 }
 canvas {
     width: 100%;
     height: auto;
+}
+.hide {
+    display: none;
 }
