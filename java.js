@@ -159,6 +159,7 @@ function csvToBIGARRAY(csvString) {
     newt.appendChild(totals);
     findnames();
     calcruntotal();
+
     buildgraph();
 }
 
@@ -212,7 +213,7 @@ function buildgraph() {
         type: 'line',
         data: {
             labels: ['January', 'February', 'March', 'April', 'May', 'June'],
-            datasets: generateDatasets()
+            datasets: generateDatasets(datasets)
             //  [
             //     {
             //         label: PLAYERNAMES[0],
