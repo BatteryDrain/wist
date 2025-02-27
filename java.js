@@ -267,8 +267,8 @@ function generateDatasets(){
         datasets.push({
             label: PLAYERNAMES[i],
             data: RUNTOTAL[i],
-            borderColor: COLORS[i]
-            backgroundColor: COLORS[i]
+            borderColor: COLORS[i],
+            backgroundColor: COLORS[i],
             borderWidth: 2
         })
     }
