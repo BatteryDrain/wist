@@ -170,14 +170,14 @@ function findnames(){
 
 function calcruntotal(){
     for(i = 0; i < NUMBER_OF_USERS; i++){
-        console.log("run total for player" + i + "reading: " + ((i * 2) + 1));
+        // console.log("run total for player" + i + "reading: " + ((i * 2) + 1));
         for(j = 1; j < TOTALSARRAY[((i * 2) + 1)].length; j++){
             val = TOTALSARRAY[((i * 2) + 1)][j];
             for(ii = 1; ii < j; ii++){
                 val = val + TOTALSARRAY[((i * 2) + 1)][(j - ii)];
             }
             RUNTOTAL[i].push(val);
-            console.log(val);
+            // console.log(val);
         }
     }
 }
