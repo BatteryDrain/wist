@@ -21,6 +21,12 @@ function resetArrays(){
     ROUNDS = [];
 }
 
+function createRounds(){
+    ROUNDS = [];
+    for(i = 0; i < NUMBER_OF_ROUNDS; i++){
+        ROUNDS.push(i+1);
+    }
+}
 
 ARRAY = ["name", "points",];
 
@@ -29,10 +35,7 @@ playernumber.addEventListener("change", function(){
     console.log("NUMBER_OF_USERS = " + NUMBER_OF_USERS)
     NUMBER_OF_ROUNDS = NUMBER_OF_USERS * 3 + 12;
     var VarSpace = NUMBER_OF_ROUNDS * 36;
-    ROUNDS = [];
-    for(i = 0; i < NUMBER_OF_ROUNDS; i++){
-        ROUNDS.push(i+1);
-    }
+    createRounds();
     numberOfPlayers.innerHTML = "there are " + NUMBER_OF_USERS + " players";
     numberOfRounds.innerHTML = "there will be " + NUMBER_OF_ROUNDS + " rounds";
 });
@@ -60,10 +63,7 @@ function getplayernumber() {
     console.log("NUMBER_OF_USERS = " + NUMBER_OF_USERS)
     NUMBER_OF_ROUNDS = NUMBER_OF_USERS * 3 + 12;
     var VarSpace = NUMBER_OF_ROUNDS * 36;
-    ROUNDS = [];
-    for(i = 0; i < NUMBER_OF_ROUNDS; i++){
-        ROUNDS.push(i+1);
-    }
+    createRounds();
     numberOfPlayers.innerHTML = "there are " + NUMBER_OF_USERS + " players";
     numberOfRounds.innerHTML = "there will be " + NUMBER_OF_ROUNDS + " rounds";
 }
