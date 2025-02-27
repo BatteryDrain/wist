@@ -19,7 +19,6 @@ function resetArrays(){
     PLAYERNAMES = [];
     COLORS = ["blue","red","limegreen","pink","purple","orange","pink","brown","cyan","magenta","lime","black","green","yellow",];
     RUNTOTAL = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];
-    ROUNDS = [];
 }
 
 function createRounds(){
