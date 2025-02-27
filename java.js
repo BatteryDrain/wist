@@ -45,7 +45,7 @@ function getplayernumber() {
     var VarSpace = NUMBER_OF_ROUNDS * 36;
     numberOfPlayers.innerHTML = "there are " + NUMBER_OF_USERS + " players";
     numberOfRounds.innerHTML = "there will be " + NUMBER_OF_ROUNDS + " rounds";
-  }
+}
 function getdata (){
     newt.innerHTML = "";
     newt2.innerHTML = "";
