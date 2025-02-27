@@ -71,9 +71,6 @@ function getplayernumber() {
 function getdata (){
     newt.innerHTML = "";
     newt2.innerHTML = "";
-    if(Graph == true){
-        Graph.destroy();
-    }
     const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWpkVgP8kZvSW-uAyznifIDcgRzT7BHZVwlEWr7zSKTyDRTLZCah_YDnhB6fYvwzQhmAXJ6eQoNS6m/pub?output=csv';
   
     fetch(url)
@@ -221,8 +218,14 @@ function buildTotals(){
         }
     }
 }
+Graph = null;
+
 function buildgraph() {
     const ctx = document.getElementById("lineGraph").getContext('2d');
+
+    if(Graph == true){
+        Graph.destroy();
+    }
 
     datasets = [];
     generateDatasets(datasets);
