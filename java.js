@@ -76,17 +76,23 @@ rreset.addEventListener("change", function(){
 function csvToBIGARRAY(csvString) {
     resetArrays();
     console.log("to arrays");
-    ii = 0;
-    for(i = 0; i < DATA.length; i++){
-        temp = "";
-        ii++;
-            while(ii < 1000 && csvString[ii] != "," && csvString[ii] != "\\r\\"){
-                temp = temp + csvString[ii];
-                ii++
-            }
-            console.log(temp);
-        SMALLARRAY.push(temp);
-    }
+    // ii = 0;
+    // for(i = 0; i < DATA.length; i++){
+    //     temp = "";
+    //     ii++;
+    //         while(ii < 1000 && csvString[ii] != "," && csvString[ii] != "\\r\\"){
+    //             temp = temp + csvString[ii];
+    //             ii++
+    //         }
+    //         console.log(temp);
+    //     SMALLARRAY.push(temp);
+    // }
+    const SMALLARRAY = csvString
+    .split("\\r\\n")  // Split into rows
+    .map(row => row.split(","))  // Split each row into columns (2D array)
+    .flat();  // Flatten into a 1D array
+
+    console.log(SMALLARRAY);
 
     for(row = 0; row < (NUMBER_OF_ROUNDS + 2); row++){
         for(i = 0; i < 43; i++){
