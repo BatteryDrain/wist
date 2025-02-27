@@ -246,7 +246,7 @@ function buildgraph() {
                 y: {
                     title: {
                         display: true,
-                        text: 'Values'
+                        text: 'score'
                     },
                     beginAtZero: true,
                     min: -10,
