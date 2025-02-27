@@ -209,11 +209,14 @@ function buildTotals(){
 function buildgraph() {
     const ctx = document.getElementById("lineGraph").getContext('2d');
 
+    datasets = [];
+    generateDatasets(datasets);
+    
     const myChart = new Chart(ctx, {
         type: 'line',
         data: {
             labels: ['January', 'February', 'March', 'April', 'May', 'June'],
-            datasets: generateDatasets(datasets)
+            datasets: datasets
             //  [
             //     {
             //         label: PLAYERNAMES[0],
