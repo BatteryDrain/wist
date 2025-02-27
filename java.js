@@ -11,7 +11,7 @@ let P6P = 0;
 let P7P = 0;
 let P8P = 0;
 DATA = "no values,";
-Graph = null;
+lineGraph = null;
 function resetArrays(){
     SMALLARRAY = [];
     TOTALSARRAY = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];
@@ -218,7 +218,6 @@ function buildTotals(){
         }
     }
 }
-lineGraph = null;
 
 function buildgraph() {
     const ctx = document.getElementById("lineGraph").getContext('2d');
