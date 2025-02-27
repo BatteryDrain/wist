@@ -240,7 +240,7 @@ function buildgraph() {
                 x: {
                     title: {
                         display: true,
-                        text: 'Months'
+                        text: 'rounds'
                     }
                 },
                 y: {
