@@ -16,7 +16,8 @@ function resetArrays(){
     TOTALSARRAY = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];
     BIGARRAY = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];
     PLAYERNAMES = [];
-    COLORS = ["blue", "red", "limegreen", "pink", "purple", "orange", "pink", "brown", "cyan", "magenta", "lime", "black", "green", "yellow", ];
+    COLORS = ["blue","red","limegreen","pink","purple","orange","pink","brown","cyan","magenta","lime","black","green","yellow",];
+    RUNTOTAL = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];
 }
 
 
@@ -157,6 +158,7 @@ function csvToBIGARRAY(csvString) {
     }
     newt.appendChild(totals);
     findnames();
+    //calcruntotal();
     buildgraph();
 }
 
@@ -166,9 +168,23 @@ function findnames(){
     }
 }
 
+function calcruntotal(){
+    for(i = 0; i < NUMBER_OF_USERS; i++){
+        for(j = 1; j < TOTALSARRAY[i].length; j++){
+            ii = 1;
+            val = 
+            while(ii != j){
+
+                ii++
+            }
+            RUNTOTAL[i].push(val);
+        }
+    }
+}
+
 function buildTotals(){
     for(x = TABLE_1_OFFSET_X; x < ((NUMBER_OF_USERS * 2) + TABLE_1_OFFSET_X); x = x +2){
-        for(y = 1 ; y < (NUMBER_OF_ROUNDS + 1); y++){
+        for(y = 1 ; y < (NUMBER_OF_ROUNDS + 2); y++){
             if(BIGARRAY[x][y] == "" || BIGARRAY[x + 1][y] == ""){
                 TOTALSARRAY[x].push("");
             }
@@ -247,5 +263,13 @@ function buildgraph() {
     });
 }
 function generateDatasets(){
-
+    for (let i = 0; i < numPlayers; i++) {
+        datasets.push({
+            label: PLAYERNAMES[i],
+            data: RUNTOTAL[i],
+            borderColor: COLORS[i]
+            backgroundColor: COLORS[i]
+            borderWidth: 2
+        })
+    }
 }
