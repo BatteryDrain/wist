@@ -159,6 +159,7 @@ function csvToBIGARRAY(csvString) {
     newt.appendChild(totals);
     findnames();
     calcruntotal();
+    generateDatasets();
     buildgraph();
 }
 
