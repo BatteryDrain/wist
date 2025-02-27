@@ -158,8 +158,8 @@ function csvToBIGARRAY(csvString) {
     }
     newt.appendChild(totals);
     findnames();
-    //calcruntotal();
-    //buildgraph();
+    calcruntotal();
+    buildgraph();
 }
 
 function findnames(){
@@ -170,7 +170,7 @@ function findnames(){
 
 function calcruntotal(){
     for(i = 0; i < NUMBER_OF_USERS; i++){
-        // console.log("run total for player" + i + "reading: " + ((i * 2) + 1));
+        // console.log("run total for player" + i + " reading: " + ((i * 2) + 1));
         for(j = 1; j < TOTALSARRAY[((i * 2) + 1)].length; j++){
             val = TOTALSARRAY[((i * 2) + 1)][j];
             for(ii = 1; ii < j; ii++){
@@ -263,7 +263,7 @@ function buildgraph() {
     });
 }
 function generateDatasets(){
-    for (let i = 0; i < numPlayers; i++) {
+    for (let i = 0; i < NUMBER_OF_USERS; i++) {
         datasets.push({
             label: PLAYERNAMES[i],
             data: RUNTOTAL[i],
