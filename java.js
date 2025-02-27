@@ -170,6 +170,7 @@ function findnames(){
 
 function calcruntotal(){
     for(i = 0; i < NUMBER_OF_USERS; i++){
+        console.log("run total for player" + i);
         for(j = 1; j < TOTALSARRAY[i].length; j++){
             val = TOTALSARRAY[i][j];
             for(ii = 1; ii < j; ii++){
