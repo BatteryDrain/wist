@@ -229,7 +229,7 @@ function buildgraph() {
     datasets = [];
     generateDatasets(datasets);
     
-    const lineGraph = new Chart(ctx, {
+    lineGraph = new Chart(ctx, {
         type: 'line',
         data: {
             labels: ROUNDS,
