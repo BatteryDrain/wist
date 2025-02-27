@@ -161,14 +161,14 @@ function buildTotals(){
             else{
                 val = BIGARRAY[x][y] - BIGARRAY[x + 1][y];
                 if(val == 0){
-                    TOTALSARRAY[(x / 2)].push(5);                
+                    TOTALSARRAY[x].push(5);                
                 }
                 else{
                     if(val > 0){
-                        TOTALSARRAY[(x / 2)].push(val * -1);
+                        TOTALSARRAY[x].push(val * -1);
                     }
                     else{
-                        TOTALSARRAY[(x / 2)].push(val);
+                        TOTALSARRAY[x].push(val);
                     }
                 }
             }
