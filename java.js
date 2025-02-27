@@ -21,7 +21,7 @@ function resetArrays(){
 ARRAY = ["name", "points",];
 
 playernumber.addEventListener("change", function(){
-    NUMBER_OF_USERS = selectedValue;
+    NUMBER_OF_USERS = document.getElementById('playernumber');
     console.log("NUMBER_OF_USERS = " + NUMBER_OF_USERS)
     NUMBER_OF_ROUNDS = NUMBER_OF_USERS * 3 + 12;
     var VarSpace = NUMBER_OF_ROUNDS * 36;
@@ -35,7 +35,7 @@ sibmitbutton.addEventListener("click", function(){
 
 function getplayernumber() {
     // Get the select element by its ID
-    var selectElement = document.getElementById('player#');
+    var selectElement = document.getElementById('playernumber');
   
     // Retrieve the selected value
     var selectedValue = selectElement.value;
