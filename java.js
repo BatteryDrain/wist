@@ -223,7 +223,7 @@ lineGraph = null;
 function buildgraph() {
     const ctx = document.getElementById("lineGraph").getContext('2d');
 
-    if(lineGraph == true){
+    if(lineGraph instanceof Chart){
         lineGraph.destroy();
     }
 
