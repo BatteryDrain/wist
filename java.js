@@ -212,7 +212,7 @@ function buildgraph() {
         type: 'line',
         data: {
             labels: ['January', 'February', 'March', 'April', 'May', 'June'],
-            datasets: generateDatasets();
+            datasets: generateDatasets()
             //  [
             //     {
             //         label: PLAYERNAMES[0],
