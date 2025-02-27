@@ -88,11 +88,10 @@ function csvToBIGARRAY(csvString) {
         SMALLARRAY.push(temp);
     }
 
-    for(arrayrow = 0; arrayrow < (NUMBER_OF_ROUNDS + 2); arrayrow++){
+    for(row = 0; row < (NUMBER_OF_ROUNDS + 2); row++){
         for(i = 0; i < 43; i++){
-            // temp = "";
-            console.log("arrayrow = " + arrayrow + " value = " + SMALLARRAY[i + 42 * arrayrow]);
-            BIGARRAY[i].push(SMALLARRAY[i + 42 * arrayrow]);
+            console.log("arrayrow = " + arrayrow + " value = " + SMALLARRAY[i + 42 * row]);
+            BIGARRAY[i].push(SMALLARRAY[i + 42 * row]);
         }
     }
     console.log("make table");
