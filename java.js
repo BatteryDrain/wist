@@ -159,7 +159,7 @@ function csvToBIGARRAY(csvString) {
 }
 
 function findnames(){
-    for(i = TABLE_1_OFFSET_X; i < (NUMBER_OF_USERS + TABLE_1_OFFSET_X); i++){
+    for(i = TABLE_1_OFFSET_X; i < ((NUMBER_OF_USERS * 2) + TABLE_1_OFFSET_X); i = i + 2){
         PLAYERNAMES.push(BIGARRAY[i][1])
     }
 }
