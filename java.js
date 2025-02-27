@@ -77,7 +77,7 @@ function csvToBIGARRAY(csvString) {
     resetArrays();
     console.log("to arrays");
     ii = 0;
-    for(i = 0; i < 1000; i++){
+    for(i = 0; i < DATA.length; i++){
         temp = "";
         ii++;
             while(ii < 1000 && csvString[ii] != "," && csvString[ii] != "\\r\\"){
