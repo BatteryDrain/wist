@@ -164,13 +164,13 @@ function csvToBIGARRAY(csvString) {
 
 function findnames(){
     for(i = TABLE_1_OFFSET_X; i < ((NUMBER_OF_USERS * 2) + TABLE_1_OFFSET_X); i = i + 2){
-        PLAYERNAMES.push(BIGARRAY[i][1])
+        PLAYERNAMES.push(BIGARRAY[i][1]);
     }
 }
 
 function calcruntotal(){
     for(i = 0; i < NUMBER_OF_USERS; i++){
-        console.log("run total for player" + i);
+        console.log("run total for player" + i + "reading: " + ((i * 2) + 1));
         for(j = 1; j < TOTALSARRAY[((i * 2) + 1)].length; j++){
             val = TOTALSARRAY[((i * 2) + 1)][j];
             for(ii = 1; ii < j; ii++){
