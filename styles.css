@@ -41,10 +41,12 @@ table{
 #newt {
     width: 100%;
     height: VarSpace;
+    min-height: 750px;
 }
 #newt2 {
     width: 100%;
     height: VarSpace;
+    min-height: 750px;
 }
 canvas {
     width: 100%;
