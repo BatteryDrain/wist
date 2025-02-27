@@ -199,22 +199,22 @@ function buildgraph() {
                 {
                     label: PLAYERNAMES[0],
                     data: [12, 19, 3, 5, 2, 3],
-                    borderColor: 'rgba(255, 0, 170, 0.2)',
-                    backgroundColor: 'rgba(255, 0, 170, 0.2)',
+                    borderColor: 'red',
+                    backgroundColor: 'red',
                     borderWidth: 2
                 },
                 {
                     label: PLAYERNAMES[1],
                     data: [5, 15, 8, 12, 6, 10],
-                    borderColor: 'green',
-                    backgroundColor: 'green',
+                    borderColor: 'limegreen',
+                    backgroundColor: 'limegreen',
                     borderWidth: 2
                 },
                 {
                     label: PLAYERNAMES[2],
                     data: [5, 15, 8, 12, 6, 10],
-                    borderColor: 'rgba(0, 0, 255, 0.2)',
-                    backgroundColor: 'rgba(0, 0, 255, 0.2)',
+                    borderColor: 'blue',
+                    backgroundColor: 'blue',
                     borderWidth: 2
                 }
             ]
