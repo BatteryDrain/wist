@@ -159,7 +159,7 @@ function csvToBIGARRAY(csvString) {
     newt.appendChild(totals);
     findnames();
     //calcruntotal();
-    buildgraph();
+    //buildgraph();
 }
 
 function findnames(){
@@ -168,19 +168,17 @@ function findnames(){
     }
 }
 
-// function calcruntotal(){
-//     for(i = 0; i < NUMBER_OF_USERS; i++){
-//         for(j = 1; j < TOTALSARRAY[i].length; j++){
-//             ii = 1;
-//             val = 
-//             while(ii != j){
-
-//                 ii++
-//             }
-//             RUNTOTAL[i].push(val);
-//         }
-//     }
-// }
+function calcruntotal(){
+    for(i = 0; i < NUMBER_OF_USERS; i++){
+        for(j = 1; j < TOTALSARRAY[i].length; j++){
+            val = TOTALSARRAY[i][j];
+            for(ii = 1; ii < j; ii++){
+                val = val + TOTALSARRAY[i][(j - ii)];
+            }
+            RUNTOTAL[i].push(val);
+        }
+    }
+}
 
 function buildTotals(){
     for(x = TABLE_1_OFFSET_X; x < ((NUMBER_OF_USERS * 2) + TABLE_1_OFFSET_X); x = x +2){
