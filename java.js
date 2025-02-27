@@ -159,7 +159,6 @@ function csvToBIGARRAY(csvString) {
     newt.appendChild(totals);
     findnames();
     calcruntotal();
-    generateDatasets();
     buildgraph();
 }
 
@@ -263,7 +262,7 @@ function buildgraph() {
         }
     });
 }
-function generateDatasets(){
+function generateDatasets(datasets){
     for (let i = 0; i < NUMBER_OF_USERS; i++) {
         datasets.push({
             label: PLAYERNAMES[i],
