@@ -177,7 +177,7 @@ function calcruntotal(){
             for(ii = 1; ii < j; ii++){
                 val = val + TOTALSARRAY[((i * 2) + 1)][(j - ii)];
             }
-            if(TOTALSARRAY[((i * 2) + 1)][(j - ii)] != ""){
+            if(val != RUNTOTAL[i][RUNTOTAL[i].length - 1]){
                 RUNTOTAL[i].push(val);
                 console.log(val);
             }
