@@ -2,7 +2,7 @@ NUMBER_OF_USERS = 0;
 NUMBER_OF_ROUNDS = 0;
 TABLE_1_OFFSET_X = 1;
 TABLE_1_OFFSET_Y = 1;
-STOP = true;
+STOP = false;
 RATE = 10;
 MAXVAL = 0;
 MINVAL = 0;
@@ -71,7 +71,7 @@ function getplayernumber() {
     numberOfPlayers.innerHTML = "there are " + NUMBER_OF_USERS + " players";
     numberOfRounds.innerHTML = "there will be " + NUMBER_OF_ROUNDS + " rounds";
 }
-function getdata (){
+function getdata(){
     newt.innerHTML = "";
     newt2.innerHTML = "";
     const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWpkVgP8kZvSW-uAyznifIDcgRzT7BHZVwlEWr7zSKTyDRTLZCah_YDnhB6fYvwzQhmAXJ6eQoNS6m/pub?output=csv';
@@ -272,6 +272,7 @@ function buildgraph() {
             }
         }
     });
+    resetonseconds();
 }
 function generateDatasets(datasets){
     for (let i = 0; i < NUMBER_OF_USERS; i++) {
@@ -284,11 +285,12 @@ function generateDatasets(datasets){
         })
     }
 }
-function secondstest(){
+function resetonseconds(){
     seconds = new Date().getTime() / 1000;
     timeout.innerHTML="time: " + seconds;
     if(STOP == false){
-        refreshontime();
+        //refreshontime();
+        getdata();
     }
 }
 
@@ -301,7 +303,7 @@ stopbutton.addEventListener("click", function(){
     if(STOP == true){
         STOP = false;
         console.log("stopping refresh = " + STOP);
-        secondstest();
+        resetonseconds();
         stopbutton.innerHTML="stop";
     }
     else{
