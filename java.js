@@ -3,6 +3,7 @@ NUMBER_OF_ROUNDS = 0;
 TABLE_1_OFFSET_X = 1;
 TABLE_1_OFFSET_Y = 1;
 STOP = true;
+RATE = 30000;
 MAXVAL = 0;
 MINVAL = 0;
 let P1P = 0;
@@ -292,7 +293,7 @@ function secondstest(){
 }
 
 function refreshontime(){
-    RefreshRate = setTimeout(secondstest, 3000);
+    RefreshRate = setTimeout(secondstest, RATE);
 }
 
 stopbutton.addEventListener("click", function(){
@@ -301,11 +302,14 @@ stopbutton.addEventListener("click", function(){
         STOP = false;
         console.log("stopping refresh = " + STOP);
         secondstest();
-        topbutton.innerHTML="stop";
+        stopbutton.innerHTML="stop";
     }
     else{
         STOP = true;
         console.log("stopping refresh = " + STOP);
         stopbutton.innerHTML="start";
     }
+});
+rreset.addEventListener("change", function(){
+    RATE = rreset.value;
 });
