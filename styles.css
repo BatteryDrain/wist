@@ -31,7 +31,7 @@ table{
     display: flex;
     flex-direction: column;
 }
-#globalVARs p{
+.globalVARs p{
     margin-bottom: 10px;
 }
 #newt {
