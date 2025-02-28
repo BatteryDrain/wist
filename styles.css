@@ -11,11 +11,7 @@ input{
     border: none;
     background-color: white;
 }
-#controls{
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-}
+
 table{
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -54,4 +50,9 @@ canvas {
 }
 .hide {
     display: none;
+}
+.controls{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
 }

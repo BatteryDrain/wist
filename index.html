@@ -11,38 +11,33 @@
   </head>
   <body>
    <main>
-    <div id = "controls">
-        <label id="playernumberlabel" for="playernumber" class="player number select">number of players:</label>
-        <select id="playernumber" class="player number select">
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option> 
-        </select>
-        <div id = "globalVARs">
-            <p id = "numberOfPlayers"></p>
-            <p id = "numberOfRounds"></p>
-        </div>
-
-        <button id="sibmitbutton" class="player number select">submit</button>
-
-        <div>
-            <canvas id="bar_chart"></canvas>
-        </div>
-
-        <button id = "reset">fetch data</button>
-        <label for="rreset">refreash rate: </label>
-
-        <select id="rreset">
-            <option value="30" selected>30 seconds</option>
-            <option value="5">5 seconds</option>
-            <option value="1">1 second</option>
-        </select>
-
-        <p id = "timeout">time: </p>
-        <button id = "stopbutton">start</button>
-
+    
+    <label id="playernumberlabel" for="playernumber" class="player number select">number of players:</label>
+    <select class = "controls" id="playernumber" class="player number select">
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option> 
+    </select>
+    <div id = "globalVARs">
+        <p id = "numberOfPlayers"></p>
+        <p id = "numberOfRounds"></p>
     </div>
+
+    <button class = "controls" id="sibmitbutton" class="player number select">submit</button>
+
+    <button class = "controls" id = "reset">fetch data</button>
+    <label for="rreset">refreash rate: </label>
+
+    <select class = "controls" id="rreset">
+        <option value="30" selected>30 seconds</option>
+        <option value="5">5 seconds</option>
+        <option value="1">1 second</option>
+    </select>
+
+    <p id = "timeout">time: </p>
+    <button class = "controls" id = "stopbutton">start</button>
+    
     <p id="note">note: each player gets delt __ cards</p>
 
       <div id = "newt" width = 100% height = 600px>
