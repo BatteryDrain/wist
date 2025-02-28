@@ -297,7 +297,7 @@ function refreshontime(){
 
 stopbutton.addEventListener("click", function(){
     console.log("clicked");
-    if(STOP = true){
+    if(STOP == true){
         STOP = false;
         console.log("started");
     }
