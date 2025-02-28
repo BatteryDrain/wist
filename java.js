@@ -286,7 +286,7 @@ function generateDatasets(datasets){
 }
 function secondstest(){
     seconds = new Date().getTime() / 1000;
-    timetest.innerHTML="time: " + seconds;
+    timeout.innerHTML="time: " + seconds;
     if(STOP == false){
         refreshontime();
     }
