@@ -3,7 +3,7 @@ NUMBER_OF_ROUNDS = 0;
 TABLE_1_OFFSET_X = 1;
 TABLE_1_OFFSET_Y = 1;
 STOP = true;
-RATE = 30000;
+RATE = 30;
 MAXVAL = 0;
 MINVAL = 0;
 let P1P = 0;
@@ -293,7 +293,7 @@ function secondstest(){
 }
 
 function refreshontime(){
-    RefreshRate = setTimeout(secondstest, (RATE * 1)); //multiplying by one to make str an int
+    RefreshRate = setTimeout(secondstest, (RATE * 1000)); //multiplying by one to make str an int
 }
 
 stopbutton.addEventListener("click", function(){
