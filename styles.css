@@ -55,4 +55,6 @@ canvas {
     display: flex;
     flex-direction: column;
     width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
