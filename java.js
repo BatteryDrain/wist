@@ -299,10 +299,11 @@ stopbutton.addEventListener("click", function(){
     console.log("clicked");
     if(STOP == true){
         STOP = false;
-        console.log("started");
+        console.log("refresh" + STOP);
     }
     else{
         STOP = true;
-        console.log("stopped");
+        console.log("refresh" + STOP);
+        secondstest();
     }
 });
