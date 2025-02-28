@@ -294,6 +294,7 @@ function refreshontime(){
     RefreshRate = setTimeout(secondstest, 3000);
 }
 stopbutton.addEventListener("change", function(){
+    console.log("clicked");
     if(STOP = true){
         STOP = false;
         console.log("start");
