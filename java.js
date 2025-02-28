@@ -293,7 +293,7 @@ function secondstest(){
 }
 
 function refreshontime(){
-    RefreshRate = setTimeout(secondstest, RATE);
+    RefreshRate = setTimeout(secondstest, (RATE * 1)); //multiplying by one to make str an int
 }
 
 stopbutton.addEventListener("click", function(){
