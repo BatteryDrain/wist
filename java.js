@@ -286,7 +286,7 @@ function generateDatasets(datasets){
 function secondstest(){
     seconds = new Date().getTime() / 1000;
     timetest.innerHTML="time: " + seconds;
-    if(STOP != true){
+    if(STOP == false){
         refreshontime();
     }
 }
@@ -299,11 +299,11 @@ stopbutton.addEventListener("click", function(){
     console.log("clicked");
     if(STOP == true){
         STOP = false;
-        console.log("refresh = " + STOP);
+        console.log("stopping refresh = " + STOP);
+        secondstest();
     }
     else{
         STOP = true;
-        console.log("refresh = " + STOP);
-        secondstest();
+        console.log("stopping refresh = " + STOP);
     }
 });
