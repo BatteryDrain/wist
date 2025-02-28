@@ -299,7 +299,7 @@ stopbutton.addEventListener("click", function(){
     console.log("clicked");
     if(STOP = true){
         STOP = false;
-        console.log("start");
+        console.log("started");
     }
     else{
         STOP = true;
