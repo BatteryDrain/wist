@@ -2,6 +2,7 @@ NUMBER_OF_USERS = 0;
 NUMBER_OF_ROUNDS = 0;
 TABLE_1_OFFSET_X = 1;
 TABLE_1_OFFSET_Y = 1;
+STOP = false;
 MAXVAL = 0;
 MINVAL = 0;
 let P1P = 0;
@@ -285,7 +286,20 @@ function generateDatasets(datasets){
 function secondstest(){
     seconds = new Date().getTime() / 1000;
     timetest.innerHTML="time: " + seconds;
+    if(STOP != true){
+        refreshontime();
+    }
 }
 function refreshontime(){
     RefreshRate = setTimeout(secondstest, 3000);
 }
+stopbutton.addEventListener("change", function(){
+    if(STOP = true){
+        STOP = false;
+        console.log("start");
+    }
+    else{
+        STOP = true;
+        console.log("stopped");
+    }
+});
