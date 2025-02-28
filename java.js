@@ -297,12 +297,12 @@ function refreshontime(){
 
 stopbutton.addEventListener("change", function(){
     console.log("clicked");
-    if(STOP = true){
-        STOP = false;
-        console.log("start");
-    }
-    else{
-        STOP = true;
-        console.log("stopped");
-    }
+    // if(STOP = true){
+    //     STOP = false;
+    //     console.log("start");
+    // }
+    // else{
+    //     STOP = true;
+    //     console.log("stopped");
+    // }
 });
