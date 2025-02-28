@@ -286,3 +286,6 @@ function secondstest(){
     seconds = new Date().getTime() / 1000;
     timetest.innerHTML="time: " + seconds;
 }
+function refreshontime(){
+    RefreshRate = setTimeout(secondstest, 3000);
+}
