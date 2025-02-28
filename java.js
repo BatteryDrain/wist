@@ -299,7 +299,6 @@ function refreshontime(){
 }
 
 stopbutton.addEventListener("click", function(){
-    console.log("clicked");
     if(STOP == true){
         STOP = false;
         console.log("stopping refresh = " + STOP);
