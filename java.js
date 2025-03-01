@@ -174,7 +174,7 @@ function csvToBIGARRAY(csvString) {
     calcruntotal();
     buildgraph();
     
-    resetonseconds();
+    refreshontime();
 }
 
 function findnames(){
