@@ -216,7 +216,7 @@ function buildTotals(){
             else{
                 val = BIGARRAY[x][y] - BIGARRAY[x + 1][y];
                 if(val == 0){
-                    TOTALSARRAY[x].push(5);                
+                    TOTALSARRAY[x].push(5 + BIGARRAY[x][y]);                
                 }
                 else{
                     if(val > 0){
