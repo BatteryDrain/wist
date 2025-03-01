@@ -295,7 +295,7 @@ function resetonseconds(){
 }
 
 function refreshontime(){
-    RefreshRate = setTimeout(secondstest, (RATE * 1000)); //multiplying by 100 to make into seconds
+    RefreshRate = setTimeout(resetonseconds, (RATE * 1000)); //multiplying by 100 to make into seconds
 }
 
 stopbutton.addEventListener("click", function(){
