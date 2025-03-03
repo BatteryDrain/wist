@@ -287,7 +287,7 @@ function generateDatasets(datasets){
 }
 function resetonseconds(){
     seconds = new Date().getTime() / 1000;
-    timeout.innerHTML="time: " + seconds;
+    timeout.innerHTML = "time: " + seconds;
     if(STOP == false){
         //refreshontime();
         getdata();
@@ -295,7 +295,7 @@ function resetonseconds(){
 }
 
 function refreshontime(){
-    RefreshRate = setTimeout(resetonseconds, (RATE * 1000)); //multiplying by 100 to make into seconds
+    RefreshRate = setTimeout(resetonseconds, (RATE * 1000)); //multiplying by 1000 to make mm into seconds
 }
 
 stopbutton.addEventListener("click", function(){
