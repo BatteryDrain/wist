@@ -210,7 +210,7 @@ function calcruntotal(){
 function buildTotals(){
     for(x = TABLE_1_OFFSET_X; x < ((NUMBER_OF_USERS * 2) + TABLE_1_OFFSET_X); x = x +2){
         for(y = 1 ; y < (NUMBER_OF_ROUNDS + 2); y++){
-            if(BIGARRAY[x][y] == "" || BIGARRAY[x + 1][y] == ""){
+            if(BIGARRAY[x][y] == "" || BIGARRAY[x + 1][y] == ""){ 
                 TOTALSARRAY[x].push("");
             }
             else{
