@@ -215,7 +215,7 @@ function buildTotals(){
             }
             else{
                 val = BIGARRAY[x][y] - BIGARRAY[x + 1][y];
-                if(val == 0){
+                if((val * 1) == 0){//multiplying by one to make int
                     TOTALSARRAY[x].push(5 + (BIGARRAY[x][y] * 1));//multiply by one to make int                
                 }
                 else{
