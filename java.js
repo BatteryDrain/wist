@@ -314,3 +314,8 @@ stopbutton.addEventListener("click", function(){
 rreset.addEventListener("change", function(){
     RATE = rreset.value;
 });
+
+hideOrShow.addEventListener("click", () => {
+    newt.classList.toggle("hide");
+    newt2.classList.toggle("hide");
+});
