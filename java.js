@@ -318,4 +318,12 @@ rreset.addEventListener("change", function(){
 hideOrShow.addEventListener("click", () => {
     newt.classList.toggle("hide");
     newt2.classList.toggle("hide");
+    value = hideOrShow.innerHTML;
+    console.log(value);
+    if(value == "show graphs"){
+        hideOrShow.innerHTML = "hide graphs";
+    }
+    else{
+        hideOrShow.innerHTML = "show graphs";
+    }
 });
