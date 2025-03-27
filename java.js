@@ -320,10 +320,10 @@ hideOrShow.addEventListener("click", () => {
     newt2.classList.toggle("hide");
     value = hideOrShow.innerHTML;
     console.log(value);
-    if(value == "show graphs"){
-        hideOrShow.innerHTML = "hide graphs";
+    if(value == "show tables"){
+        hideOrShow.innerHTML = "hide tables";
     }
     else{
-        hideOrShow.innerHTML = "show graphs";
+        hideOrShow.innerHTML = "show tables";
     }
 });
