@@ -1,12 +1,19 @@
+*{
+    box-sizing: border-box;
+ } 
+
 input{
     display: none;
 }
+
 #savenames{
     display: none;
 }
+
 #note{
     display:none;
 }
+
 .color{
     border: none;
     background-color: white;
@@ -27,34 +34,51 @@ table{
   tr:nth-child(even) {
     background-color: #dddddd;
   }
+
 #globalVARs{
     display: flex;
     flex-direction: column;
 }
+
 .globalVARs p{
     margin-bottom: 10px;
 }
+
 #newt {
     width: 100%;
     height: VarSpace;
     /* min-height: 750px; */
 }
+
 #newt2 {
     width: 100%;
     height: VarSpace;
     /* min-height: 750px; */
 }
+
 canvas {
     width: 100%;
     height: auto;
 }
+
 .hide {
     display: none;
 }
+
 .controls{
     display: flex;
     flex-direction: column;
     width: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.divgroup {
+    display: flex;
+    flex-direction: row;
+}
+
+select {
+    margin: 0;
+    margin-left: 10px;
 }

@@ -11,14 +11,16 @@
   </head>
   <body>
    <main>
+    <div class="divgroup">
+        <label id="playernumberlabel" for="playernumber" class="player number select">number of players:</label>
 
-    <label id="playernumberlabel" for="playernumber" class="player number select">number of players:</label>
-    <select class = "controls" id="playernumber" class="player number select">
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option> 
-    </select>
+        <select class = "controls" id="playernumber" class="player number select">
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option> 
+        </select>
+    </div>
 
     <p class = "globalVARs" id = "numberOfPlayers"></p>
     <p class = "globalVARs" id = "numberOfRounds"></p>
@@ -26,13 +28,16 @@
     <button class = "controls" id="sibmitbutton" class="player number select">submit</button>
 
     <button class = "controls" id = "reset">fetch data</button>
-    <label for="rreset">refreash rate: </label>
 
-    <select class = "controls" id="rreset">
-        <option value="10" selected>10 seconds</option>
-        <option value="5">5 seconds</option>
-        <option value="3">3 second</option>
-    </select>
+    <div class="divgroup">
+        <label for="rreset">refreash rate: </label>
+
+        <select class = "controls" id="rreset">
+            <option value="10" selected>10 seconds</option>
+            <option value="5">5 seconds</option>
+            <option value="3">3 second</option>
+        </select>
+    </div>
     
     <button class = "controls" id = "stopbutton">stop</button>
 
