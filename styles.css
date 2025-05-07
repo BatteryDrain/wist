@@ -88,6 +88,11 @@ nav {
     flex-direction: row;
 }
 
+#graphstuff {
+    display: flex;
+    flex-direction: row;
+}
+
 @media screen and (max-width:828px) {
     nav {
         flex-direction: column;
@@ -95,6 +100,10 @@ nav {
 
     select {
         margin: 10px;
+    }
+
+    #graphstuff {
+        flex-direction: column;
     }
 
 }
