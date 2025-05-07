@@ -308,6 +308,7 @@ stopbutton.addEventListener("click", function(){
     else{
         STOP = true;
         console.log("stopping refresh = " + STOP);
+        resetonseconds();
         stopbutton.innerHTML="start";
     }
 });
