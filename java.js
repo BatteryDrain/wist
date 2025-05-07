@@ -290,6 +290,7 @@ function resetonseconds(){
     // timeout.innerHTML = "time: " + seconds;
     if(STOP == false){
         refreshontime();
+        OLDDATA = DATA;
         getdata();
     }
 }
@@ -308,7 +309,6 @@ stopbutton.addEventListener("click", function(){
     else{
         STOP = true;
         console.log("stopping refresh = " + STOP);
-        //resetonseconds();
         stopbutton.innerHTML="start";
     }
 });
