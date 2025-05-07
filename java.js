@@ -287,7 +287,7 @@ function generateDatasets(datasets){
 }
 function resetonseconds(){
     seconds = new Date().getTime() / 1000;
-    timeout.innerHTML = "time: " + seconds;
+    // timeout.innerHTML = "time: " + seconds;
     if(STOP == false){
         refreshontime();
         getdata();
