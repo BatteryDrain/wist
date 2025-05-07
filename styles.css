@@ -82,3 +82,19 @@ select {
     margin: 0;
     margin-left: 10px;
 }
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width:828px) {
+    main {
+        flex-direction: column;
+    }
+
+    select {
+        margin: 10px;
+    }
+    
+}
