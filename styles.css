@@ -83,18 +83,18 @@ select {
     margin-left: 10px;
 }
 
-main {
+nav {
     display: flex;
     flex-direction: row;
 }
 
 @media screen and (max-width:828px) {
-    main {
+    nav {
         flex-direction: column;
     }
 
     select {
         margin: 10px;
     }
-    
+
 }
