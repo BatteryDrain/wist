@@ -11,39 +11,41 @@
   </head>
   <body>
    <main>
-    <div class="divgroup">
-        <label id="playernumberlabel" for="playernumber" class="player number select">number of players:</label>
+    <nav>
+        <div class="divgroup">
+            <label id="playernumberlabel" for="playernumber" class="player number select">number of players:</label>
 
-        <select class = "controls" id="playernumber" class="player number select">
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option> 
-        </select>
-    </div>
+            <select class = "controls" id="playernumber" class="player number select">
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option> 
+            </select>
+        </div>
 
-    <p class = "globalVARs" id = "numberOfPlayers"></p>
-    <p class = "globalVARs" id = "numberOfRounds"></p>
+        <p class = "globalVARs" id = "numberOfPlayers"></p>
+        <p class = "globalVARs" id = "numberOfRounds"></p>
 
-    <button class = "controls" id="sibmitbutton" class="player number select">submit</button>
+        <button class = "controls" id="sibmitbutton" class="player number select">submit</button>
 
-    <button class = "controls" id = "reset">fetch data</button>
+        <button class = "controls" id = "reset">fetch data</button>
 
-    <div class="divgroup">
-        <label for="rreset">refreash rate: </label>
+        <div class="divgroup">
+            <label for="rreset">refreash rate: </label>
 
-        <select class = "controls" id="rreset">
-            <option value="10" selected>10 seconds</option>
-            <option value="5">5 seconds</option>
-            <option value="3">3 second</option>
-        </select>
-    </div>
-    
-    <button class = "controls" id = "stopbutton">stop</button>
+            <select class = "controls" id="rreset">
+                <option value="10" selected>10 seconds</option>
+                <option value="5">5 seconds</option>
+                <option value="3">3 second</option>
+            </select>
+        </div>
+        
+        <button class = "controls" id = "stopbutton">stop</button>
 
-    <button class="controls" id="hideOrShow">show tables</button>
-    
-    <p id="note">note: each player gets delt __ cards</p>
+        <button class="controls" id="hideOrShow">show tables</button>
+        
+        <p id="note">note: each player gets delt __ cards</p>
+    </nav>
 
       <div id = "newt" width = 100% height = 600px class="hide">
 
