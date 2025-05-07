@@ -40,8 +40,8 @@ playernumber.addEventListener("change", function(){
     NUMBER_OF_ROUNDS = NUMBER_OF_USERS * 3 + 12;
     var VarSpace = NUMBER_OF_ROUNDS * 36;
     createRounds();
-    numberOfPlayers.innerHTML = "there are " + NUMBER_OF_USERS + " players";
-    numberOfRounds.innerHTML = "there will be " + NUMBER_OF_ROUNDS + " rounds";
+    // numberOfPlayers.innerHTML = "there are " + NUMBER_OF_USERS + " players";
+    // numberOfRounds.innerHTML = "there will be " + NUMBER_OF_ROUNDS + " rounds";
 });
 
 sibmitbutton.addEventListener("click", function(){
