@@ -40,8 +40,6 @@ playernumber.addEventListener("change", function(){
     NUMBER_OF_ROUNDS = NUMBER_OF_USERS * 3 + 12;
     var VarSpace = NUMBER_OF_ROUNDS * 36;
     createRounds();
-    // numberOfPlayers.innerHTML = "there are " + NUMBER_OF_USERS + " players";
-    // numberOfRounds.innerHTML = "there will be " + NUMBER_OF_ROUNDS + " rounds";
 });
 
 sibmitbutton.addEventListener("click", function(){
@@ -291,12 +289,12 @@ function resetonseconds(){
     if(STOP == false){
         refreshontime();
         OLDDATA = DATA;
-        getdata();
+        // getdata();
     }
 }
 
 function refreshontime(){
-    RefreshRate = setTimeout(resetonseconds, (RATE * 1000)); //multiplying by 1000 to make mm into seconds
+    RefreshRate = setTimeout(getdata, (RATE * 1000)); //multiplying by 1000 to make mm into seconds
 }
 
 stopbutton.addEventListener("click", function(){
