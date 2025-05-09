@@ -301,7 +301,7 @@ stopbutton.addEventListener("click", function(){
     if(STOP == true){
         STOP = false;
         console.log("stopping refresh = " + STOP);
-        resetonseconds();
+        // resetonseconds();
         stopbutton.innerHTML="stop";
     }
     else{
